@@ -17,10 +17,12 @@ const x = reactive({
 });
 console.log(x);
 const props = defineProps({
+  // eslint-disable-next-line vue/require-default-prop
   error: Object,
 });
 const errorObj = ref(props);
 console.log(errorObj);
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const handleError = () => clearError({ redirect: "/" });
 </script>

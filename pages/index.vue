@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Test> </Test>
+    <ContentDoc path="/" />
   </div>
 </template>
 

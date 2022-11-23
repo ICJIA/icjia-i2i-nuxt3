@@ -20,6 +20,7 @@ export default defineNuxtConfig({
   css: [
     "vuetify/lib/styles/main.sass",
     "@mdi/font/css/materialdesignicons.min.css",
+    "~/assets/css/main.scss",
   ],
   build: {
     transpile: ["vuetify"],
@@ -35,6 +36,10 @@ export default defineNuxtConfig({
     },
   },
   modules: [
+    "@nuxtjs/apollo",
+    "@pinia/nuxt",
+    "@vueuse/nuxt",
+    "@nuxt/content",
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     async (options, nuxt) => {
       await nuxt.hooks.hook("vite:extendConfig", (config) => {
@@ -43,4 +48,17 @@ export default defineNuxtConfig({
       });
     },
   ],
+  content: {
+    documentDriven: false,
+    markdown: {
+      mdc: true,
+    },
+  },
+  apollo: {
+    clients: {
+      default: {
+        httpEndpoint: "https://r3.icjia-api.cloud/graphql",
+      },
+    },
+  },
 });
