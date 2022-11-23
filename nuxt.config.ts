@@ -57,6 +57,7 @@ export default defineNuxtConfig({
   apollo: {
     clients: {
       default: {
+        inMemoryCacheOptions: {},
         httpEndpoint: "https://r3.icjia-api.cloud/graphql",
       },
     },
