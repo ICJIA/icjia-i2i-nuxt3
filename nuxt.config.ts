@@ -35,10 +35,12 @@ export default defineNuxtConfig({
     },
   },
   modules: [
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     async (options, nuxt) => {
-      nuxt.hooks.hook("vite:extendConfig", (config) =>
-        config.plugins.push(vuetify())
-      );
+      await nuxt.hooks.hook("vite:extendConfig", (config) => {
+        // console.log(config);
+        config?.plugins?.push(vuetify());
+      });
     },
   ],
 });
