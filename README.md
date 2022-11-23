@@ -1,4 +1,4 @@
-# ICJIA i2i NUXT 3 Test
+# ICJIA i2i NUXT 3
 
 Description here
 
