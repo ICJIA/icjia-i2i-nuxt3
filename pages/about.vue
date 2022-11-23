@@ -1,7 +1,10 @@
 <template>
   <div>
     <h1>Test GraphQL</h1>
-    {{ data }}
+    <div v-if="data">
+      <pre>{{ data }}</pre>
+    </div>
+    <div v-else>Loading</div>
   </div>
 </template>
 
@@ -20,8 +23,8 @@ const query = gql`
   }
 `;
 
-const { data } = await useAsyncQuery(query);
-console.log("data:", data);
+const { data } = await useLazyAsyncQuery(query);
+// console.log("data:", data);
 </script>
 
 <style lang="scss" scoped></style>
