@@ -11,6 +11,7 @@
 <script setup>
 const config = useRuntimeConfig();
 const color = useColor();
+
 console.log("env : ", config.public.apiBase);
 console.log("color: ", color.value);
 </script>
