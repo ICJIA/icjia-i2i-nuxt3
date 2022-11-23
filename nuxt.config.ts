@@ -23,11 +23,7 @@ export default defineNuxtConfig({
   build: {
     transpile: ["vuetify"],
   },
-  vite: {
-    define: {
-      "process.env.DEBUG": false,
-    },
-  },
+  vite: {},
   runtimeConfig: {
     // The private keys which are only available within server-side
     // apiSecret: "123",

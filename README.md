@@ -1,6 +1,6 @@
 # ICJIA i2i NUXT 3 Test
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Description here
 
 ## Setup
 
@@ -10,19 +10,14 @@ Install the dependencies:
 # yarn
 yarn install
 
-# npm
-npm install
-
-# pnpm
-pnpm install --shamefully-hoist
 ```
 
 ## Development Server
 
-Start the development server on http://localhost:3000
+Start the development server on http://localhost:8000
 
 ```bash
-npm run dev
+yarn dev
 ```
 
 ## Production
@@ -30,19 +25,27 @@ npm run dev
 Build the application for production:
 
 ```bash
-npm run build
+yarn build
 ```
+
+```bash
+yarn generate
+```
+
+## Preview
 
 Locally preview production build:
 
 ```bash
-npm run preview
+yarn preview
 ```
+
+## Deploy
 
 Build static version of the application:
 
 ```bash
-npm run generate
+yarn generate
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
