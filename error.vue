@@ -1,8 +1,12 @@
 <template>
   <div>
-    <div @click="handleError">Clear errors</div>
     {{ x }}<br />
     {{ errorObj }}<br />
+    <nuxt-link
+      style="font-weight: 900; cursor: pointer"
+      @click.prevent="handleError"
+      >Clear errors</nuxt-link
+    ><br />
   </div>
 </template>
 

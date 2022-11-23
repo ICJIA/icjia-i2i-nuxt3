@@ -1,10 +1,16 @@
 <template>
   <div>
-    <v-card class="mx-auto" width="400" prepend-icon="mdi-home">
-      <template #title> This is a title </template>
+    <v-container>
+      <v-row>
+        <v-col>
+          <v-card class="mx-auto" width="400" prepend-icon="mdi-home">
+            <template #title> This is a title </template>
 
-      <v-card-text> This is content </v-card-text>
-    </v-card>
+            <v-card-text> This is the content. </v-card-text>
+          </v-card>
+        </v-col></v-row
+      ></v-container
+    >
   </div>
 </template>
 

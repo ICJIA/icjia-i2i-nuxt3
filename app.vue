@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <v-app id="i2i">
     <NuxtPage></NuxtPage>
-  </div>
+  </v-app>
 </template>
 
 <script setup>
