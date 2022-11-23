@@ -1,6 +1,7 @@
 // nuxt.config.ts
 //
-// https://v3.nuxtjs.org/api/configuration/nuxt.config
+// https://v3.nuxtjs.org/api/configuration/nuxt.config\
+
 import vuetify from "vite-plugin-vuetify";
 export default defineNuxtConfig({
   app: {
@@ -9,7 +10,6 @@ export default defineNuxtConfig({
       viewport: "width=device-width, initial-scale=1",
       title: "i2i | Institute to Innovate",
       meta: [
-        // <meta name="description" content="My amazing site">
         {
           name: "description",
           content: "Investing in Public Safety by Investing in You.",
@@ -57,7 +57,6 @@ export default defineNuxtConfig({
   apollo: {
     clients: {
       default: {
-        inMemoryCacheOptions: {},
         httpEndpoint: "https://r3.icjia-api.cloud/graphql",
       },
     },
