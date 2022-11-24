@@ -2,8 +2,9 @@
 <template>
   <div>
     <h1>Test GraphQL</h1>
-    {{ data }}
+
     <div v-if="data">
+      {{ data }}
       <ContentDoc path="/about">
         <template #not-found>
           <h1>Document not found</h1>
