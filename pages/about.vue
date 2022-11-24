@@ -24,6 +24,8 @@ const query = gql`
         attributes {
           title
           slug
+          summary
+          body
         }
       }
     }

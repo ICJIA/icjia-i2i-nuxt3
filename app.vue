@@ -1,7 +1,9 @@
 <template>
   <v-app id="i2i">
     <div>
-      <NuxtLink to="/">Home</NuxtLink> | <NuxtLink to="/about/">About</NuxtLink>
+      <NuxtLink to="/">Home</NuxtLink> |
+      <NuxtLink to="/about/">About</NuxtLink> |
+      <NuxtLink to="/blog/">Blog</NuxtLink>
     </div>
     <NuxtPage></NuxtPage>
   </v-app>
@@ -9,5 +11,5 @@
 
 <script setup>
 // Get all request headers
-const headers = useRequestHeaders();
+// const headers = useRequestHeaders();
 </script>
