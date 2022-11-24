@@ -11,12 +11,16 @@
       class="text-center"
       fill-height
       fluid
-      style="background: #eee; min-height: 100vh"
+      style="background: #eaeaea; min-height: 100vh"
     >
       <v-row align="center" justify="center"
-        ><v-col>
-          <h1 style="font-size: 80px">{{ errorObj.error.statusCode }}</h1>
-          <p>{{ errorObj.error.statusMessage.split(":")[0] }}</p>
+        ><v-col class="mt-12">
+          <h1 style="font-size: 120px; color: #bbb">
+            {{ errorObj.error.statusCode }}
+          </h1>
+          <p>
+            <strong>{{ errorObj.error.statusMessage.split(":")[0] }}</strong>
+          </p>
 
           <v-btn class="mt-8" @click="handleError">Go Home</v-btn>
         </v-col></v-row

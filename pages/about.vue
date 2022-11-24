@@ -1,15 +1,14 @@
 <!-- eslint-disable vue/no-template-shadow -->
 <template>
   <div>
-    <h1>Test GraphQL</h1>
-
     <div v-if="data">
-      {{ data }}
       <ContentDoc path="/about">
         <template #not-found>
           <h1>Document not found</h1>
         </template>
       </ContentDoc>
+      <h2>Test GraphQL</h2>
+      {{ data }}
     </div>
     <div v-else>Loading</div>
   </div>

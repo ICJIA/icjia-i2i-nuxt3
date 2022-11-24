@@ -64,10 +64,16 @@ export default defineNuxtConfig({
     display: "swap",
     prefetch: true,
     families: {
-      Roboto: true,
-      Lato: true,
-      Raleway: {
+      Roboto: {
         wght: [100, 400, 700, 900],
+        ital: [100],
+      },
+      Lato: {
+        wght: [100, 400, 700, 900],
+        ital: [100],
+      },
+      Raleway: {
+        wght: [100, 400, 900],
         ital: [100],
       },
     },
