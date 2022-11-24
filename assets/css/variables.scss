@@ -5,6 +5,10 @@ $font-size-root: 18px;
 
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Raleway';
+  font-family: 'Raleway' !important;
   
+}
+
+a {
+font-family: 'Roboto' !important;
 }
