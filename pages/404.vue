@@ -1,9 +1,6 @@
 <template>
-  <div>This is the 404 page in pages directory</div>
+  <div>
+    <h1>404 -- page not found</h1>
+    <p>Sorry, the page you are looking for does not exist.</p>
+  </div>
 </template>
-
-<script>
-export default {};
-</script>
-
-<style lang="scss" scoped></style>

@@ -1,12 +1,8 @@
 <template>
   <div>
+    <div @click="handleError">Clear errors</div>
     {{ x }}<br />
     {{ errorObj }}<br />
-    <nuxt-link
-      style="font-weight: 900; cursor: pointer"
-      @click.prevent="handleError"
-      >Clear errors</nuxt-link
-    ><br />
   </div>
 </template>
 
@@ -17,12 +13,10 @@ const x = reactive({
 });
 console.log(x);
 const props = defineProps({
-  // eslint-disable-next-line vue/require-default-prop
   error: Object,
 });
 const errorObj = ref(props);
 console.log(errorObj);
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const handleError = () => clearError({ redirect: "/" });
 </script>
