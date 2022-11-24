@@ -20,7 +20,7 @@ export default defineNuxtConfig({
   css: [
     "vuetify/lib/styles/main.sass",
     "@mdi/font/css/materialdesignicons.min.css",
-    "~/assets/css/main.scss",
+    "~/assets/css/variables.scss",
     "~/assets/css/github-markdown.css",
   ],
   build: {
@@ -36,7 +36,9 @@ export default defineNuxtConfig({
       apiSecret: process.env.NUXT_API_SECRET || "default_other_url",
     },
   },
+
   modules: [
+    "@nuxtjs/google-fonts",
     "@nuxtjs/apollo",
     "@pinia/nuxt",
     "@vueuse/nuxt",
@@ -56,6 +58,21 @@ export default defineNuxtConfig({
       anchorLinks: false,
     },
   },
+  googleFonts: {
+    inject: true,
+    download: true,
+    display: "swap",
+    prefetch: true,
+    families: {
+      Roboto: true,
+      Lato: true,
+      Raleway: {
+        wght: [100, 400, 700, 900],
+        ital: [100],
+      },
+    },
+  },
+
   apollo: {
     clients: {
       default: {

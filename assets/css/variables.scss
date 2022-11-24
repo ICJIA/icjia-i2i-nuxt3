@@ -1,0 +1,10 @@
+$body-font-family: 'Lato';
+// $heading-font-family: 'Raleway';
+$font-size-root: 18px;
+@import './node_modules/vuetify/_styles.scss';
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway';
+  
+}
