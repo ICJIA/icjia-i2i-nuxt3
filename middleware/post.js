@@ -10,8 +10,12 @@ export default defineNuxtRouteMiddleware((to, from) => {
     .then((post) => {
       console.log("post length: ", Object.keys(post).length);
       if (Object.keys(post).length === 1) {
-        console.log("404 Error");
-        return router.push({ path: "/404" });
+        console.log("404 Error: Referrer: ", from.path);
+        const URIEncodedPath = encodeURIComponent(from.path);
+        return router.push({
+          name: `404`,
+          query: { referrer: URIEncodedPath },
+        });
         // throw showError({ statusCode: 404, statusMessage: "Page Not Found" });
       }
     });

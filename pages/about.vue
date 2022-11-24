@@ -26,6 +26,7 @@ const query = gql`
           slug
           summary
           body
+          section
         }
       }
     }
