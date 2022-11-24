@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h1>Sandbox</h1>
     <div>{{ redirect() }}</div>
   </div>
 </template>
