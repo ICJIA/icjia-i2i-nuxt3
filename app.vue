@@ -3,7 +3,8 @@
     <div>
       <NuxtLink to="/">Home</NuxtLink> |
       <NuxtLink to="/about/">About</NuxtLink> |
-      <NuxtLink to="/blog/">Blog</NuxtLink>
+      <NuxtLink to="/blog/">Blog</NuxtLink> |
+      <NuxtLink to="/sandbox/">Sandbox</NuxtLink>
     </div>
     <NuxtPage></NuxtPage>
   </v-app>
