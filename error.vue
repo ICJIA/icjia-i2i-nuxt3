@@ -30,6 +30,7 @@ const props = defineProps({
   error: Object,
 });
 console.log("Error: ", props.error.statusCode);
+console.log("Error URL: ", props.error.url);
 const errorObj = ref(props);
 
 const handleError = () => clearError({ redirect: "/" });

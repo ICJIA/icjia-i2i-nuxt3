@@ -18,8 +18,9 @@ const redirect = () => {
 <template>
   <main>
     <div v-if="data">
-      <ContentDoc :key="data.title" :value="data">
-        <template #empty></template>
+      <ContentDoc :key="data.title" :value="data" class="markdown-body">
+        <template #empty>Document not found</template>
+        <template #not-found>Document not found</template>
       </ContentDoc>
     </div>
     <div v-else>{{ redirect() }}</div>

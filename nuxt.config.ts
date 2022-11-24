@@ -21,6 +21,7 @@ export default defineNuxtConfig({
     "vuetify/lib/styles/main.sass",
     "@mdi/font/css/materialdesignicons.min.css",
     "~/assets/css/main.scss",
+    "~/assets/css/github-markdown.css",
   ],
   build: {
     transpile: ["vuetify"],
@@ -52,6 +53,7 @@ export default defineNuxtConfig({
     documentDriven: false,
     markdown: {
       mdc: true,
+      anchorLinks: false,
     },
   },
   apollo: {

@@ -6,7 +6,9 @@
       <NuxtLink to="/blog/">Blog</NuxtLink> |
       <NuxtLink to="/sandbox/">Sandbox</NuxtLink>
     </div>
-    <NuxtPage></NuxtPage>
+    <div class="markdown-body">
+      <NuxtPage></NuxtPage>
+    </div>
   </v-app>
 </template>
 

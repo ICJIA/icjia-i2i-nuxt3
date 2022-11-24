@@ -54,6 +54,11 @@
     "webpack": ">=5.75.0"
   },
   "dependencies": {
-    "vite-plugin-vuetify": "^1.0.0"
+    "axios": "^1.2.0",
+    "faker": "^6.6.6",
+    "glob": "^8.0.3",
+    "slugify": "^1.6.5",
+    "vite-plugin-vuetify": "^1.0.0",
+    "yaml": "^2.1.3"
   }
 }
