@@ -13,4 +13,9 @@
 <script setup>
 // Get all request headers
 // const headers = useRequestHeaders();
+useHead({
+  htmlAttrs: {
+    lang: "en",
+  },
+});
 </script>
