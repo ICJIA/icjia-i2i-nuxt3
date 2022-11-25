@@ -8,7 +8,7 @@
         <NuxtLink to="/sandbox/">Sandbox</NuxtLink>
       </div>
       <div class="markdown-body">
-        <NuxtLoadingIndicator color="blue" height="2" />
+        <NuxtLoadingIndicator color="blue" :height="2" />
         <NuxtPage />
       </div>
     </v-app>
