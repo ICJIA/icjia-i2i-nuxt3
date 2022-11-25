@@ -3,7 +3,7 @@
     <v-container>
       <v-row>
         <v-col>
-          <v-card class="mx-auto" width="400" prepend-icon="mdi-home">
+          <v-card class="" prepend-icon="mdi-home">
             <template #title> This is a Vue Component </template>
 
             <v-card-text>

@@ -1,5 +1,5 @@
 <template>
-  <v-container style="margin-top: -20px"
+  <v-container
     ><v-row
       ><v-col>
         <h1>Blog List</h1>

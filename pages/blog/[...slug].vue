@@ -16,13 +16,17 @@ const redirect = () => {
 </script>
 
 <template>
-  <main>
-    <div v-if="data">
-      <ContentDoc :key="data.title" :value="data" class="markdown-body">
-        <template #empty>Document not found</template>
-        <template #not-found>Document not found</template>
-      </ContentDoc>
-    </div>
-    <div v-else>{{ redirect() }}</div>
-  </main>
+  <v-container class="mt-6"
+    ><v-row
+      ><v-col>
+        <div v-if="data">
+          <ContentDoc :key="data.title" :value="data" class="markdown-body">
+            <template #empty>Document not found</template>
+            <template #not-found>Document not found</template>
+          </ContentDoc>
+        </div>
+        <div v-else>{{ redirect() }}</div>
+      </v-col></v-row
+    ></v-container
+  >
 </template>

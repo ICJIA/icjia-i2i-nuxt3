@@ -1,7 +1,8 @@
 <template>
-  <div>
-    <ContentDoc path="/" />
-  </div>
+  <v-container
+    ><v-row
+      ><v-col> <ContentDoc path="/" /> </v-col></v-row
+  ></v-container>
 </template>
 
 <script setup></script>

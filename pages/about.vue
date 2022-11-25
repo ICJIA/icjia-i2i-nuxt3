@@ -1,17 +1,21 @@
 <!-- eslint-disable vue/no-template-shadow -->
 <template>
-  <div>
-    <div v-if="data">
-      <ContentDoc path="/about">
-        <template #not-found>
-          <h1>Document not found</h1>
-        </template>
-      </ContentDoc>
-      <h2>Test GraphQL</h2>
-      {{ data }}
-    </div>
-    <div v-else>Loading</div>
-  </div>
+  <v-container
+    ><v-row
+      ><v-col>
+        <div v-if="data">
+          <ContentDoc path="/about">
+            <template #not-found>
+              <h1>Document not found</h1>
+            </template>
+          </ContentDoc>
+          <h2>Test GraphQL</h2>
+          {{ data }}
+        </div>
+        <div v-else>Loading</div>
+      </v-col></v-row
+    ></v-container
+  >
 </template>
 
 <script setup>

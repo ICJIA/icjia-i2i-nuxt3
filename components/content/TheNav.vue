@@ -14,11 +14,11 @@
     <v-btn to="/about">About</v-btn>
     <v-btn to="/blog">Blog</v-btn>
     <v-btn to="/sandbox">Sandbox</v-btn>
-    <template #append>
+    <!-- <template #append>
       <v-btn icon>
         <v-icon>mdi-dots-vertical</v-icon>
       </v-btn>
-    </template>
+    </template> -->
   </v-app-bar>
 </template>
 
