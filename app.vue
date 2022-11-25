@@ -1,18 +1,11 @@
 <template>
-  <NuxtLayout>
-    <v-app id="i2i">
-      <div>
-        <NuxtLink to="/">Home</NuxtLink> |
-        <NuxtLink to="/about/">About</NuxtLink> |
-        <NuxtLink to="/blog/">Blog</NuxtLink> |
-        <NuxtLink to="/sandbox/">Sandbox</NuxtLink>
-      </div>
-      <div class="markdown-body">
-        <NuxtLoadingIndicator color="blue" :height="2" />
-        <NuxtPage />
-      </div>
-    </v-app>
-  </NuxtLayout>
+  <v-app id="i2i">
+    <TheNav></TheNav>
+    <v-main class="markdown-body">
+      <NuxtLoadingIndicator color="blue" :height="2" />
+      <NuxtPage />
+    </v-main>
+  </v-app>
 </template>
 
 <script setup>
