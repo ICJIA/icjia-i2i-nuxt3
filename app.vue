@@ -1,8 +1,9 @@
 <template>
   <v-app id="i2i">
     <TheNav></TheNav>
-    <NuxtLoadingIndicator color="blue" />
+
     <div class="markdown-body mt-12">
+      <NuxtLoadingIndicator color="blue" />
       <NuxtPage :transition="false"></NuxtPage>
     </div>
   </v-app>

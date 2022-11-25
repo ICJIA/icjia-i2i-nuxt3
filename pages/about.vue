@@ -38,7 +38,7 @@ const query = gql`
   }
 `;
 
-const { data } = await useLazyAsyncQuery(query);
+const { data } = await useAsyncQuery(query);
 // console.log("data:", data);
 </script>
 
