@@ -16,10 +16,10 @@ const redirect = () => {
 </script>
 
 <template>
-  <v-container class="mt-6"
+  <v-container
     ><v-row
       ><v-col>
-        <div v-if="data">
+        <div v-if="data" class="mt-6">
           <ContentDoc :key="data.title" :value="data" class="markdown-body">
             <template #empty>Document not found</template>
             <template #not-found>Document not found</template>

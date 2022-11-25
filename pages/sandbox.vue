@@ -1,9 +1,4 @@
-<template>
-  <div>
-    <h1>Sandbox</h1>
-    <div>{{ redirect() }}</div>
-  </div>
-</template>
+<template><div></div></template>
 
 <script setup>
 const route = useRoute();
@@ -11,12 +6,13 @@ const router = useRouter();
 
 const URIEncodedPath = encodeURIComponent(route.path);
 console.log("URIEncodedPath:", URIEncodedPath);
-const redirect = () => {
+
+(function () {
   router.push({
     name: `404`,
     query: { referrer: URIEncodedPath },
   });
-};
+})();
 </script>
 
 <style lang="scss" scoped></style>
