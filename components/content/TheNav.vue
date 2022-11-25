@@ -10,6 +10,7 @@
       <v-btn to="/about" class="hidden-sm-and-down">About</v-btn>
       <v-btn to="/blog" class="hidden-sm-and-down">Blog</v-btn>
       <v-btn to="/redirect" class="hidden-sm-and-down">404</v-btn>
+      <v-btn to="/sandbox" class="hidden-sm-and-down">Sandbox</v-btn>
 
       <template #append>
         <v-btn icon class="hidden-md-and-up">
