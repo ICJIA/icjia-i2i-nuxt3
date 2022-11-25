@@ -2,10 +2,10 @@
   <v-app id="i2i">
     <TheNav></TheNav>
 
-    <div class="markdown-body mt-12">
-      <NuxtLoadingIndicator color="blue" />
+    <NuxtLoadingIndicator color="blue" />
+    <v-main class="markdown-body">
       <NuxtPage :transition="false"></NuxtPage>
-    </div>
+    </v-main>
   </v-app>
 </template>
 

@@ -1,12 +1,5 @@
 <template>
   <div>
-    <div>
-      <NuxtLink to="/">Home</NuxtLink> |
-      <NuxtLink to="/about/">About</NuxtLink> |
-      <NuxtLink to="/blog/">Blog</NuxtLink> |
-      <NuxtLink to="/sandbox/">Sandbox</NuxtLink>
-    </div>
-
     <v-container
       class="text-center"
       fill-height

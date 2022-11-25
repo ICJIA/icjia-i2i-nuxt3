@@ -1,11 +1,6 @@
 <template>
-  <!-- <div>
-    <NuxtLink to="/">Home</NuxtLink> | <NuxtLink to="/about/">About</NuxtLink> |
-    <NuxtLink to="/blog/">Blog</NuxtLink> |
-    <NuxtLink to="/sandbox/">Sandbox</NuxtLink>
-  </div> -->
   <div>
-    <v-app-bar color="grey darken-1">
+    <v-app-bar color="grey darken-1" app>
       <template #prepend>
         <v-app-bar-nav-icon></v-app-bar-nav-icon>
       </template>
@@ -14,7 +9,7 @@
       <v-btn to="/">Home</v-btn>
       <v-btn to="/about">About</v-btn>
       <v-btn to="/blog">Blog</v-btn>
-      <v-btn to="/sandbox">Sandbox</v-btn>
+      <v-btn to="/redirect">404 redirect</v-btn>
       <!-- <template #append>
       <v-btn icon>
         <v-icon>mdi-dots-vertical</v-icon>
