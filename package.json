@@ -57,6 +57,7 @@
     "faker": "^6.6.6",
     "glob": "^8.0.3",
     "lodash": "^4.17.21",
+    "mitt": "^3.0.0",
     "slugify": "^1.6.5",
     "vite-plugin-vuetify": "^1.0.0",
     "yaml": "^2.1.3"

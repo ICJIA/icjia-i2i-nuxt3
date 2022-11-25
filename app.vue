@@ -5,6 +5,7 @@
     <NuxtLoadingIndicator color="blue" />
     <v-main class="markdown-body">
       <NuxtPage :transition="false"></NuxtPage>
+      <div></div>
     </v-main>
   </v-app>
 </template>
