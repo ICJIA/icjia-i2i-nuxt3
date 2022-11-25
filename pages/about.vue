@@ -37,10 +37,7 @@ const query = gql`
 `;
 
 const { data } = await useLazyAsyncQuery(query);
-useHead({
-  title: "My App",
-  meta: [{ name: "description", content: "My amazing site." }],
-});
+// console.log("data:", data);
 </script>
 
 <style lang="scss" scoped></style>
