@@ -12,9 +12,11 @@
           <h2>Alt test with composable</h2>
           {{ altState }}
           <br />
-          <v-btn id="nav" @click="altToggle"
-            >Click me to toggle nav state</v-btn
-          >
+          <v-btn id="nav" @click="altToggle">Click me to toggle nav state</v-btn
+          ><br />
+          {{ counter }}
+          <br />
+          <v-btn id="nav" @click="counterUpdate">Click me</v-btn>
         </v-col></v-row
       ></v-container
     >
@@ -36,6 +38,11 @@ const altState = useNav();
 const altToggle = () => {
   altState.value = !altState.value;
 };
+const counter = useSimpleCounter(15);
+const counterUpdate = () => {
+  counter.value = counter.value + 1;
+};
+console.log("counter: ", counter.value);
 </script>
 
 <style lang="scss" scoped></style>
