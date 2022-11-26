@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     head: {
       charset: "utf-8",
       viewport: "width=device-width, initial-scale=1",
-      title: "%s | Institute to Innovate",
+      title: "Institute to Innovate",
       meta: [
         {
           name: "description",
@@ -27,6 +27,7 @@ export default defineNuxtConfig({
     "vuetify/lib/styles/main.sass",
     "@mdi/font/css/materialdesignicons.min.css",
     "~/assets/css/variables.scss",
+    "~/assets/css/app.css",
     "~/assets/css/github-markdown.css",
   ],
   build: {
