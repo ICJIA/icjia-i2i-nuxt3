@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     head: {
       charset: "utf-8",
       viewport: "width=device-width, initial-scale=1",
-      title: "i2i | Institute to Innovate",
+      title: "%s | Institute to Innovate",
       meta: [
         {
           name: "description",

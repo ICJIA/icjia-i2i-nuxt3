@@ -1,33 +1,40 @@
 <template>
   <div>
-    <h1>Sandbox here</h1>
+    <v-container
+      ><v-row
+        ><v-col>
+          <h1>Sandbox here</h1>
 
-    <p>This is a paragraph.</p>
-    <p>This is another paragraph.</p>
-
-    <v-btn id="button">Click me to hide paragraphs</v-btn>
+          <h2>Global state test</h2>
+          {{ state.navToggle }}
+          <br />
+          <v-btn id="nav" @click="toggle">Click me to toggle nav state</v-btn>
+          <h2>Alt test with composable</h2>
+          {{ altState }}
+          <br />
+          <v-btn id="nav" @click="altToggle"
+            >Click me to toggle nav state</v-btn
+          >
+        </v-col></v-row
+      ></v-container
+    >
   </div>
 </template>
 
-<script>
-export default {
-  setup() {
-    console.log("Setup");
-    useHead({
-      title: "My App",
-    });
+<script setup>
+import { useGlobalState } from "~/global.js";
 
-    return {};
-  },
-  mounted() {
-    console.log("Mounted");
-    // jquery test
-    $(document).ready(function () {
-      $("button").click(function () {
-        $("p").hide();
-      });
-    });
-  },
+useHead({
+  title: "My App",
+});
+const state = useGlobalState();
+
+const toggle = () => {
+  state.navToggle.value = !state.navToggle.value;
+};
+const altState = useNav();
+const altToggle = () => {
+  altState.value = !altState.value;
 };
 </script>
 
