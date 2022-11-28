@@ -50,28 +50,35 @@ axios
     const pages = res.data.data.pages.data;
 
     let section;
-    pages.forEach((page) => {
+    const site = pages.map((page) => {
+      const obj = { ...page };
       if (page.attributes.section !== "root") {
         section = page.attributes.section.toLowerCase();
         const directoryPath = path.join(contentDir, `${section}`);
         if (fs.existsSync(directoryPath)) {
           fsExtra.emptyDirSync(directoryPath);
           // console.log("section deleted: ", directoryPath);
+          obj.attributes.path = `/${section}/${page.attributes.slug}.md`;
         }
       } else {
         const filePath = path.join(contentDir, `${page.attributes.slug}.md`);
         if (fs.existsSync(filePath)) {
           fs.unlinkSync(filePath);
+          obj.attributes.path = `/${page.attributes.slug}.md`;
           // console.log("Root file deleted:", filePath);
         }
       }
+      // console.log(obj);
+      return obj;
     });
-    jsonfile.writeFileSync(`../server/api/site.json`, pages, function (err) {
+
+    jsonfile.writeFileSync(`./public/site.json`, site, function (err) {
       if (err) {
         console.error(err);
       }
+      console.log("site.json created in /public/");
     });
-    pages.forEach((page) => {
+    site.forEach((page) => {
       if (page.attributes.section === "root") {
         section = "";
       } else {
@@ -88,6 +95,7 @@ axios
       // console.log("directoryPath", directoryPath);
 
       const content = formatMarkdown(page.attributes);
+      console.log(content);
       fs.writeFileSync(filePath, content);
     });
   });
