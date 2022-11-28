@@ -11,8 +11,7 @@ const { data } = await useAsyncData(`content-${path}`, async () => {
   return post;
 });
 const redirect = () => {
-  // router.push("/404");
-  throw showError({ statusCode: 404, statusMessage: "Page Not Found" });
+  router.push("/404");
 };
 </script>
 
@@ -22,12 +21,15 @@ const redirect = () => {
       ><v-row
         ><v-col>
           <div v-if="data" class="mt-6">
-            <ContentDoc :key="data.title" :value="data" class="markdown-body">
+            <ContentDoc :key="data?.title" :value="data" class="markdown-body">
               <template #empty>Document not found</template>
               <template #not-found>Document not found</template>
             </ContentDoc>
           </div>
           <div v-else>{{ redirect() }}</div>
+          <!-- <div v-if="data">
+            {{ data }}
+          </div> -->
         </v-col></v-row
       ></v-container
     >
