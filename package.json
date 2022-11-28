@@ -2,6 +2,7 @@
   "private": true,
   "scripts": {
     "build": "npm run create:markdown && nuxt build",
+    "build:serve": "npm run create:markdown && nuxt build && node .output/server/index.mjs ",
     "build:edge": "NITRO_PRESET=netlify-edge nuxt build",
     "create:markdown": "node ./creators/createMarkdown.js",
     "dev": "kill-port 8000 && npm run create:markdown && nuxt dev --port=8000 -o",

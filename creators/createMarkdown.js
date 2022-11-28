@@ -7,10 +7,6 @@ const _ = require("lodash");
 const API = "https://r3.icjia-api.cloud";
 const yaml = require("yaml");
 const fsExtra = require("fs-extra");
-// const contentManifest = [];
-// const previousContent = require("../public/manifests/content.json");
-
-// console.log("previousContent", previousContent);
 
 const contentDir = path.join(__dirname, "../content");
 
@@ -57,7 +53,7 @@ axios
         const directoryPath = path.join(contentDir, `${section}`);
         if (fs.existsSync(directoryPath)) {
           fsExtra.emptyDirSync(directoryPath);
-          // console.log("section deleted: ", directoryPath);
+
           obj.attributes.path = `/${section}/${page.attributes.slug}.md`;
         }
       } else {
@@ -65,10 +61,9 @@ axios
         if (fs.existsSync(filePath)) {
           fs.unlinkSync(filePath);
           obj.attributes.path = `/${page.attributes.slug}.md`;
-          // console.log("Root file deleted:", filePath);
         }
       }
-      // console.log(obj);
+      console.log("Markdown content created: ", obj.attributes.path);
       return obj;
     });
 
@@ -86,16 +81,14 @@ axios
       }
 
       const basename = page.attributes.slug;
-      // const section = page.attributes.section;
       const filePath = path.join(contentDir, `${section}/${basename}.md`);
       const directoryPath = path.join(contentDir, `${section}`);
       if (!fs.existsSync(directoryPath)) {
         fs.mkdirSync(directoryPath);
       }
-      // console.log("directoryPath", directoryPath);
 
       const content = formatMarkdown(page.attributes);
-      console.log(content);
+      // console.log(content);
       fs.writeFileSync(filePath, content);
     });
   });
