@@ -3,10 +3,7 @@ import { createVuetify } from "vuetify";
 // import * as directives from "vuetify/directives";
 
 export default defineNuxtPlugin((nuxtApp) => {
-  const vuetify = createVuetify({
-    // components,
-    // directives,
-  });
+  const vuetify = createVuetify({});
 
   nuxtApp.vueApp.use(vuetify);
 });
