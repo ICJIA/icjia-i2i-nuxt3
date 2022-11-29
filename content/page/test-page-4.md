@@ -7,6 +7,7 @@ createdAt: 2022-11-28T17:27:48.051Z
 updatedAt: 2022-11-28T19:20:36.148Z
 publishedAt: 2022-11-28T17:27:49.263Z
 path: /page/test-page-4
+url: https://i2i.icjia.dev/page/test-page-4
 ---
 
 This is the body

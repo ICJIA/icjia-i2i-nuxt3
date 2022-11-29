@@ -16,6 +16,8 @@
     Screen xs: {{ xs }}<br />
     <h2>App config</h2>
     {{ appConfig }}
+    <h2>Sitemap</h2>
+    Click to view <a href="/sitemap.xml">sitemap.xml</a>
   </div>
 </template>
 

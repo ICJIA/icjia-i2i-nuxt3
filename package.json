@@ -64,6 +64,7 @@
     "kill-port": "^2.0.1",
     "lodash": "^4.17.21",
     "mitt": "^3.0.0",
+    "sitemap": "^7.1.1",
     "slugify": "^1.6.5",
     "vite-plugin-vuetify": "^1.0.0",
     "yaml": "^2.1.3"
