@@ -20,3 +20,5 @@
   <NuxtLink to="/blog/blog-post-99">Blog post 99 (error)</NuxtLink><br /> -->
   </div>
 </template>
+
+<script setup></script>
