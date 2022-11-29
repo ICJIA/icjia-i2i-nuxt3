@@ -16,10 +16,10 @@ export default defineNuxtConfig({
         },
       ],
       script: [
-        {
-          src: "https://code.jquery.com/jquery-3.6.1.slim.min.js",
-          type: "text/javascript",
-        },
+        // {
+        //   src: "https://code.jquery.com/jquery-3.6.1.slim.min.js",
+        //   type: "text/javascript",
+        // },
       ],
     },
   },
