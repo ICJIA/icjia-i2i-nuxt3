@@ -12,7 +12,7 @@
     <v-btn to="/sandbox" class="hidden-sm-and-down">Sandbox</v-btn>
 
     <template #append>
-      <v-btn icon>
+      <v-btn icon to="/search">
         <v-icon>mdi-magnify</v-icon>
       </v-btn>
     </template>
