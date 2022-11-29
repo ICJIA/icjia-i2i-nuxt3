@@ -1,6 +1,6 @@
 <template>
   <v-app id="i2i">
-    <TheNav></TheNav>
+    <!-- <TheNav></TheNav> -->
     <TheSidebar></TheSidebar>
 
     <NuxtLoadingIndicator color="blue" />

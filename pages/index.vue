@@ -6,6 +6,8 @@
           <h1>This is the home page</h1>
           <Test></Test></v-col></v-row
     ></v-container>
+
+    {{ $vuetify.display }}
   </div>
 </template>
 
