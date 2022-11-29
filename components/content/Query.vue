@@ -1,8 +1,9 @@
 <!-- eslint-disable vue/no-template-shadow -->
 <template>
-  <div>
+  <div v-if="data">
     {{ data }}
   </div>
+  <div v-else>Loading ...</div>
 </template>
 
 <script setup>

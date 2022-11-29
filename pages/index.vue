@@ -6,11 +6,24 @@
           <h1>This is the home page</h1>
           <Test></Test></v-col></v-row
     ></v-container>
-
-    {{ $vuetify.display }}
+    <h2>Display config (resize to see reactive changes)</h2>
+    {{ $vuetify.display }}<br />
+    Screen xxl: {{ xxl }}<br />
+    Screen xl: {{ xl }}<br />
+    Screen lg: {{ lg }}<br />
+    Screen md: {{ md }}<br />
+    Screen sm: {{ sm }}<br />
+    Screen xs: {{ xs }}<br />
+    <h2>App config</h2>
+    {{ appConfig }}
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { useDisplay } from "vuetify";
+import { onMounted } from "vue";
+const { xs, sm, md, lg, xl, xxl } = useDisplay();
+const appConfig = useAppConfig();
+</script>
 
 <style lang="scss" scoped></style>

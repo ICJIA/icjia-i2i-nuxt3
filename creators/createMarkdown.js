@@ -24,6 +24,9 @@ const query = `query {
           summary
           body
           section
+          createdAt
+          updatedAt
+          publishedAt
         }
       }
     }
