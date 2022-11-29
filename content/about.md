@@ -10,4 +10,9 @@ This is the body for the about page (via Strapi)
 
 ## Test GraphQL query
 
-::query
+:query
+
+## Vue component
+
+:test
+

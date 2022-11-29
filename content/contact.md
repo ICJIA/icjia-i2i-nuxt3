@@ -6,12 +6,6 @@ section: root
 path: /contact
 ---
 
-This is the markdown body for the about page (via Strapi)
+This is the markdown body for the content  page (via Strapi)
 
-## This is a live GraphQL query
 
-:query
-
-## This is a Vue component
-
-:test

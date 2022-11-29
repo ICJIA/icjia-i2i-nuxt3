@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-container
+    <v-container fluid
       ><v-row
         ><v-col> <ContentDoc path="/" /> </v-col></v-row
     ></v-container>
