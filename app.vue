@@ -1,6 +1,7 @@
 <template>
   <v-app id="i2i">
     <TheNav></TheNav>
+    <TheSidebar></TheSidebar>
 
     <NuxtLoadingIndicator color="blue" />
     <v-main class="markdown-body">
@@ -18,4 +19,11 @@ useHead({
     lang: "en",
   },
 });
+
+const altState = useNav();
+
+const click = () => {
+  console.log("click");
+  // if (altState.value) altState.value = false;
+};
 </script>
