@@ -9,6 +9,8 @@ const yaml = require("yaml");
 const fsExtra = require("fs-extra");
 
 const contentDir = path.join(__dirname, "../content");
+fsExtra.emptyDirSync(contentDir);
+console.log("Content directory cleared");
 
 const siteContent = [];
 
@@ -50,18 +52,17 @@ axios
       const obj = { ...page };
       if (page.attributes.section !== "root") {
         section = page.attributes.section.toLowerCase();
-        const directoryPath = path.join(contentDir, `${section}`);
-        if (fs.existsSync(directoryPath)) {
-          fsExtra.emptyDirSync(directoryPath);
-
-          obj.attributes.path = `/${section}/${page.attributes.slug}.md`;
-        }
+        // const directoryPath = path.join(contentDir, `${section}`);
+        // if (fs.existsSync(directoryPath)) {
+        //   fsExtra.emptyDirSync(directoryPath);
+        // }
+        obj.attributes.path = `/${section}/${page.attributes.slug}`;
       } else {
-        const filePath = path.join(contentDir, `${page.attributes.slug}.md`);
-        if (fs.existsSync(filePath)) {
-          fs.unlinkSync(filePath);
-          obj.attributes.path = `/${page.attributes.slug}.md`;
-        }
+        // const filePath = path.join(contentDir, `/${page.attributes.slug}.md`);
+        // if (fs.existsSync(filePath)) {
+        //   fs.unlinkSync(filePath);
+        // }
+        obj.attributes.path = `/${page.attributes.slug}`;
       }
       console.log("Markdown content created: ", obj.attributes.path);
       return obj;

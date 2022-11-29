@@ -1,3 +1,12 @@
-# This is from Nuxt content
+---
+title: Home
+slug: index
+summary: This is the home page
+section: root
+path: /index
+---
 
-:test
+# This is from Nuxt content (via Strapi)
+
+::test
+

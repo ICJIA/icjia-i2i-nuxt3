@@ -9,7 +9,7 @@
           {{ state.navToggle }}
           <br />
           <v-btn id="nav" @click="toggle">Click me to toggle nav state</v-btn>
-          <h2>Alt test with composable</h2>
+          <h2>Alt state with composable</h2>
           {{ altState }}
           <br />
           <v-btn id="nav" @click="altToggle">Click me to toggle nav state</v-btn
@@ -27,7 +27,7 @@
 import { useGlobalState } from "~/global.js";
 
 useHead({
-  title: "My App",
+  title: "Sandbox",
 });
 const state = useGlobalState();
 

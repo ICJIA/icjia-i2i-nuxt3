@@ -7,8 +7,8 @@
 
       <v-app-bar-title>Title here</v-app-bar-title>
       <v-btn to="/" class="hidden-sm-and-down">Home</v-btn>
-      <v-btn to="/page/about" class="hidden-sm-and-down">About</v-btn>
-
+      <v-btn to="/about" class="hidden-sm-and-down">About</v-btn>
+      <v-btn to="/contact" class="hidden-sm-and-down">Contact</v-btn>
       <v-btn to="/page" class="hidden-sm-and-down">Page</v-btn>
       <v-btn to="/sandbox" class="hidden-sm-and-down">Sandbox</v-btn>
 
