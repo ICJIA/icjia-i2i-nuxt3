@@ -20,7 +20,7 @@
 </template>
 
 <script setup>
-const nav = useNav();
+const nav = useNavToggle();
 const toggleNav = () => {
   console.log("click menu icon");
   nav.value = !nav.value;

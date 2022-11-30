@@ -34,7 +34,7 @@ const state = useGlobalState();
 const toggle = () => {
   state.navToggle.value = !state.navToggle.value;
 };
-const altState = useNav();
+const altState = useNavToggle();
 const altToggle = () => {
   altState.value = !altState.value;
 };

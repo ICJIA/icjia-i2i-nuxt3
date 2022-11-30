@@ -1,6 +1,7 @@
 <template>
   <v-app id="i2i">
-    <TheNav></TheNav>
+    <!-- <TheNav></TheNav> -->
+    <AltNav></AltNav>
     <TheSidebar></TheSidebar>
 
     <NuxtLoadingIndicator color="blue" />
@@ -20,7 +21,7 @@ useHead({
   },
 });
 
-const altState = useNav();
+const altState = useNavToggle();
 
 const click = () => {
   console.log("click");

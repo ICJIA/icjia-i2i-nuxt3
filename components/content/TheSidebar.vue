@@ -24,7 +24,7 @@
 
 <script setup>
 const drawer = ref(false);
-const altState = useNav();
+const altState = useNavToggle();
 watch(drawer, (val) => {
   altState.value = drawer.value;
 });
