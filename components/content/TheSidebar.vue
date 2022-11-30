@@ -1,16 +1,19 @@
 <template>
   <div class="d-flex">
-    <v-navigation-drawer v-model="drawer" temporary color="purple darken-4">
-      <v-list color="transparent">
-        <v-list-item
-          prepend-icon="mdi-view-dashboard"
-          title="Dashboard"
-        ></v-list-item>
-        <v-list-item
-          prepend-icon="mdi-account-box"
-          title="Account"
-        ></v-list-item>
-        <v-list-item prepend-icon="mdi-gavel" title="Admin"></v-list-item>
+    <v-navigation-drawer
+      v-if="isMounted"
+      v-model="drawer"
+      temporary
+      color="purple darken-4"
+    >
+      <v-list>
+        <v-list-item prepend-icon="mdi-view-dashboard" to="/">Home</v-list-item>
+        <v-list-item prepend-icon="mdi-view-dashboard" to="/about"
+          >About</v-list-item
+        >
+        <v-list-item prepend-icon="mdi-view-dashboard" to="/page"
+          >Page</v-list-item
+        >
       </v-list>
 
       <template #append>
@@ -23,6 +26,7 @@
 </template>
 
 <script setup>
+const isMounted = ref(false);
 const drawer = ref(false);
 const altState = useNavToggle();
 watch(drawer, (val) => {
@@ -35,6 +39,10 @@ const click = () => {
   console.log("click sidebar");
   altState.value = false;
 };
+
+onMounted(() => {
+  isMounted.value = true;
+});
 </script>
 
 <style lang="scss" scoped></style>

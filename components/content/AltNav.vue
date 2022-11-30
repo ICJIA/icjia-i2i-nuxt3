@@ -6,8 +6,12 @@
       color="white"
       height="90"
       style="z-index: 50"
-      class="pr-10"
+      class="pl-5 pr-10"
     >
+      <div class="hover hamburger text-center" @click="toggleNav">
+        <v-icon icon="mdi-menu" size="large"></v-icon>
+        <div style="font-size: 10px; font-weight: 900">MENU</div>
+      </div>
       <v-spacer></v-spacer>
       <span v-if="isMounted">
         <span
@@ -69,7 +73,7 @@
               size="default"
               class="hidden-sm-and-down navItem"
               style="font-weight: 900 !important; font-size: 16px"
-              >{{ menu.main }}
+              >{{ menu.main }}&nbsp;
               <v-icon v-if="menu.icon" right small color="black">{{
                 menu.icon
               }}</v-icon>

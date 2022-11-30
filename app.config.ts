@@ -63,5 +63,11 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      main: "Sitemap",
+      link: "/sitemap.xml",
+      external: true,
+      icon: "mdi-open-in-new",
+    },
   ],
 });
