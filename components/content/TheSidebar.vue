@@ -4,7 +4,7 @@
       v-if="isMounted"
       v-model="drawer"
       temporary
-      color="purple darken-4"
+      style="background: #eee"
     >
       <v-list>
         <v-list-item prepend-icon="mdi-view-dashboard" to="/">Home</v-list-item>

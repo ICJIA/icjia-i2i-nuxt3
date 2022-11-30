@@ -9,8 +9,8 @@ export default defineAppConfig({
       nudgeLeft: "78px",
     },
     {
-      main: "Item 2",
-      link: "/about",
+      main: "Sandbox",
+      link: "/sandbox",
       nudgeLeft: "78px",
     },
     // {

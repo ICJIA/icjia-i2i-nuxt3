@@ -20,6 +20,9 @@
         </v-col></v-row
       ></v-container
     >
+    <v-container fluid
+      ><v-row><v-col cols="12" md="6">Test 1 col</v-col></v-row></v-container
+    >
   </div>
 </template>
 

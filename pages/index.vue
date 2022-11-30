@@ -1,22 +1,29 @@
 <template>
   <NuxtLayout name="home">
-    <v-container
-      ><v-row
-        ><v-col>
-          <h1>This is the home page</h1>
-          <Test></Test></v-col></v-row
-    ></v-container>
+    <div v-if="data && isMounted" class="markdown-body">
+      <ContentDoc :key="data?.title" :value="data">
+        <template #empty>Document not found</template>
+        <template #not-found>Document not found</template>
+      </ContentDoc>
+    </div>
   </NuxtLayout>
 </template>
 
-<script setup lang="ts">
-import { useDisplay } from "vuetify";
+<script setup>
+const { path } = useRoute();
+const router = useRouter();
+const isMounted = ref(false);
 
-const appConfig = useAppConfig();
+// const error = useError();
+const { data } = await useAsyncData(`content-home`, async () => {
+  const post = await queryContent().where({ _path: "/" }).findOne();
+  return post;
+});
+const redirect = () => {
+  router.push("/404");
+};
 
 onMounted(() => {
-  console.log("page mounted");
+  isMounted.value = true;
 });
 </script>
-
-<style lang="scss" scoped></style>
