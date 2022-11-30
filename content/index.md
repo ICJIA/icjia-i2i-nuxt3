@@ -4,7 +4,7 @@ slug: index
 summary: This is the summary
 section: root
 createdAt: 2022-11-30T18:49:02.692Z
-updatedAt: 2022-11-30T20:50:37.501Z
+updatedAt: 2022-11-30T20:58:10.348Z
 publishedAt: 2022-11-30T18:49:04.434Z
 path: /index
 url: https://i2i.icjia.dev/index

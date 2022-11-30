@@ -15,7 +15,7 @@
       </v-row>
     </template>
 
-    <v-row v-if="isMounted" align="center">
+    <v-row align="center">
       <div class="banner">
         <v-col cols="12" class="text-center">
           <h1
@@ -39,7 +39,7 @@
           <div style="color: #fff; font-size: 16wpx; font-weight: 700" class="">
             <slot name="tagline">Tagline here</slot>
             <br />
-            <slot name="call-to-action">Call to action here</slot>
+            <slot name="call-to-action"><HomeButtons></HomeButtons></slot>
           </div>
         </v-col>
       </div>
