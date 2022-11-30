@@ -4,6 +4,7 @@
     :height="550"
     cover
     src="https://agency.icjia-api.cloud/uploads/markus_winkler_a_Y_Pt_Ekn_Qm_XE_unsplash_0f61baccac.jpg"
+    lazy-src="https://agency.icjia-api.cloud/uploads/thumbnail_markus_winkler_a_Y_Pt_Ekn_Qm_XE_unsplash_0f61baccac.jpg"
   >
     <template #placeholder>
       <v-row class="fill-height ma-0" align="center" justify="center">
