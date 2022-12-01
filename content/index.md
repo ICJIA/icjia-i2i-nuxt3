@@ -4,7 +4,7 @@ slug: index
 summary: This is the summary
 section: root
 createdAt: 2022-11-30T18:49:02.692Z
-updatedAt: 2022-12-01T02:13:11.923Z
+updatedAt: 2022-12-01T04:46:56.496Z
 publishedAt: 2022-11-30T18:49:04.434Z
 path: /
 url: https://i2i.icjia.dev
@@ -22,13 +22,17 @@ i2i supports “grassroots” organizations and community groups committed to ch
 
 </div>
 
+<div style="height: 300px; background: #3C5984" class="text-center">
+
 <div style="background: #3C5984" class="text-center">
 
 :home-boxes
 
 </div>
 
-<div  style="background: #f1f1f1 !important; color: #000!important; border-top: 1px solid #ddd;" class="py-12" id="services">
+</div>
+
+<div  style="margin-top: -15px; background: #f4f4f4 !important; color: #000!important; border-top: 1px solid #ddd;" class="py-3" id="services">
 
 <div class="v-container v-container--fluid">
 
@@ -84,11 +88,23 @@ The **PARLOR Process** is an evidenced-informed approach designed to address the
 
 </div>
 
-<div style="height: 500px; background: #3C5984" class="text-center">
+<div style="background: #3C5984" class="text-left">
 
-<div class="pt-12" style="">
+<div class="v-container v-container--fluid">
 
-<h2 style="color: #fff" id="cohort-listing">TODO: Cohort listing here </h2>
+<div class="v-row">
+
+<div class="v-col-12">
+
+<h2 style="color: #fff" id="cohorts">Cohorts </h2>
+
+<p style="color: #fff">The participating organizations will receive training (i.e., webinars, workshops, in-person consultation, etc.) on various topics to strengthen their organization's infrastructure.</p>
+
+<p style="color: #fff; font-weight: 900">Cohorts will be announced in January 2023.</p
+
+</div>
+
+</div>
 
 </div>
 
