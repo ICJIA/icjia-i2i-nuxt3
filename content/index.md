@@ -4,7 +4,7 @@ slug: index
 summary: This is the summary
 section: root
 createdAt: 2022-11-30T18:49:02.692Z
-updatedAt: 2022-12-01T01:53:27.315Z
+updatedAt: 2022-12-01T01:56:17.488Z
 publishedAt: 2022-11-30T18:49:04.434Z
 path: /
 url: https://i2i.icjia.dev
@@ -78,7 +78,15 @@ The **PARLOR Process** is an evidenced-informed approach designed to address the
 
 </div>
 
-<div style="height: 500px">TODO: cohort listing here </div>
+<div style="height: 500px" class="text-center">
+
+<div class="mt-12">
+
+<strong>TODO: cohort listing here </strong>
+
+</div>
+
+</div>
 
 <div  style="background: #f1f1f1 !important; color: #000!important; border-top: 1px solid #ddd;" class="py-12" id="contact-info">
 

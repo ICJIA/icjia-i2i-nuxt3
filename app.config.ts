@@ -40,8 +40,8 @@ export default defineAppConfig({
           link: "/page",
         },
         {
-          title: "Values",
-          link: "/about/icjia-values",
+          title: "Sandbox",
+          link: "/sandbox",
         },
         {
           divider: true,
