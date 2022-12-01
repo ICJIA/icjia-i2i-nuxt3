@@ -25,11 +25,14 @@ i2i supports “grassroots” organizations and community groups committed to ch
 
 </div>
 
+
 <div style="background: #3C5984" class="text-center">
 
-::home-boxes
+:home-boxes
 
 </div>
+
+
 
 <div  style="margin-top: -15px; background: #f4f4f4 !important; color: #000!important; border-top: 1px solid #ddd;" class="py-3" id="services">
 

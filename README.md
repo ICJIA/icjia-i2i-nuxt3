@@ -2,7 +2,7 @@
 
 # ICJIA i2i NUXT 3
 
-Description here
+Test site for the i2i project
 
 ## Setup
 
@@ -22,6 +22,20 @@ Start the development server on http://localhost:8000
 yarn dev
 ```
 
+## Preview
+
+```bash
+yarn preview
+```
+
+## Build & Preview
+
+Locally preview production build (port 3000):
+
+```bash
+yarn build:serve
+```
+
 ## Production
 
 Build the application for production:
@@ -30,24 +44,6 @@ Build the application for production:
 yarn build
 ```
 
-```bash
-yarn generate
-```
-
-## Preview
-
-Locally preview production build:
-
-```bash
-yarn preview
-```
-
-## Deploy
-
-Build static version of the application:
-
-```bash
-yarn generate
-```
+_Netlify will automatically deploy the live site when changes are pushed to the master branch._
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

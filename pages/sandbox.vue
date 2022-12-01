@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-container fluid
+    <v-container
       ><v-row
         ><v-col>
           <h1>Sandbox</h1>
@@ -15,8 +15,11 @@
     <v-container
       ><v-row
         ><v-col>
-          <div class="text-center">
-            <h2>Responsive column adjustment for cohort listings</h2>
+          <v-card elevation="5" class="px-12 py-5" color="grey-lighten-4">
+            <h2>CSS column adjustment for cohort listings</h2>
+            <p class="mb-10">
+              <strong>Resize browser window to see adjustment</strong>
+            </p>
             <ul>
               <li>content</li>
               <li>content</li>
@@ -49,9 +52,8 @@
               <li>content</li>
               <li>content</li>
             </ul>
-            <p>Resize browser window to see adjustment</p>
 
-            <pre class="text-left">
+            <pre class="mt-10" style="border: 1px solid #aaa">
 ul {
   -webkit-columns: 1;
   -moz-columns: 1;
@@ -84,7 +86,7 @@ ul li {
 }
 </pre
             >
-          </div>
+          </v-card>
         </v-col></v-row
       ></v-container
     >

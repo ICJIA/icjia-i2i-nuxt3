@@ -3371,6 +3371,11 @@ cross-spawn@^7.0.2, cross-spawn@^7.0.3:
     shebang-command "^2.0.0"
     which "^2.0.1"
 
+crypto-js@^3.1.5:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/crypto-js/-/crypto-js-3.3.0.tgz#846dd1cce2f68aacfa156c8578f926a609b7976b"
+  integrity sha512-DIT51nX0dCfKltpRiXV+/TVZq+Qq2NgF4644+K7Ttnla7zEzqc+kjJyiB96BHNyUTBxyjzRcZYpUdZa+QAqi6Q==
+
 css-declaration-sorter@^6.3.1:
   version "6.3.1"
   resolved "https://registry.yarnpkg.com/css-declaration-sorter/-/css-declaration-sorter-6.3.1.tgz#be5e1d71b7a992433fb1c542c7a1b835e45682ec"
@@ -8742,6 +8747,13 @@ through2@^4.0.0:
   version "2.3.8"
   resolved "https://registry.yarnpkg.com/through/-/through-2.3.8.tgz#0dd4c9ffaabc357960b1b724115d7e0e86a2e1f5"
   integrity sha512-w89qg7PI8wAdvX60bMDP+bFoD5Dvhm9oLheFp5O4a2QF0cSBGsBX4qZmadPMvVqlLJBBci+WqGGOAPvcDeNSVg==
+
+thumbor-url-builder@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/thumbor-url-builder/-/thumbor-url-builder-0.1.1.tgz#8869081a219adb5e581b3529d7ab592b56439e7c"
+  integrity sha512-CWCKaAFB6xni07xjvdEqKU7PonBtSseVjmHnmenI+6LgiU77O0weAt67N2c39Mfz82ORYZEBW6GMtrw+orWUnA==
+  dependencies:
+    crypto-js "^3.1.5"
 
 tiny-glob@^0.2.9:
   version "0.2.9"

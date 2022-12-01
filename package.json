@@ -67,6 +67,7 @@
     "moment": "^2.29.4",
     "sitemap": "^7.1.1",
     "slugify": "^1.6.5",
+    "thumbor-url-builder": "^0.1.1",
     "vite-plugin-vuetify": "^1.0.0",
     "yaml": "^2.1.3"
   }

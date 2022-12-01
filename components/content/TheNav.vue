@@ -30,6 +30,7 @@
         class="hover ml-4 mr-4"
         src="/i2iSmall.png"
         width="55"
+        height="55"
         @click="$router.push('/')"
       />
       <div class="hover hidden-sm-and-down">
