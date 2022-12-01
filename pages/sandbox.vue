@@ -5,18 +5,10 @@
         ><v-col>
           <h1>Sandbox</h1>
 
-          <!-- <h2>Global state test</h2>
-          {{ state.navToggle }}
-          <br />
-          <v-btn id="nav" @click="toggle">Click me to toggle nav state</v-btn> -->
           <h2>Global state with composable</h2>
           {{ altState }}
           <br />
           <v-btn id="nav" @click="altToggle">Toggle nav state</v-btn>
-          <!-- <br />
-          {{ counter }}
-          <br />
-          <v-btn id="nav" @click="counterUpdate">Click me</v-btn> -->
         </v-col></v-row
       ></v-container
     >

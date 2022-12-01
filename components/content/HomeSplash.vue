@@ -79,7 +79,7 @@ onMounted(() => {
   width: 100%;
   background: rgba(79, 80, 79, 0.5);
   padding: 30px;
-  margin-top: 150px;
+  margin-top: 100px;
 }
 
 .bg {

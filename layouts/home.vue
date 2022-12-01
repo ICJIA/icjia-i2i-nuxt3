@@ -1,7 +1,6 @@
 <template>
-  <div class="bg_black">
+  <div style="min-height: 650px">
     <HomeSplash> </HomeSplash>
-
     <slot />
   </div>
 </template>

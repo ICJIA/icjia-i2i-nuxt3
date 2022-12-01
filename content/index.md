@@ -10,7 +10,6 @@ path: /
 url: https://i2i.icjia.dev
 ---
 
-
 <div style="background: #fff" class="mt-12 mb-12 px-12" id="about" >
 
 <img src="https://agency.icjia-api.cloud/uploads/i2i_logo_text_small_6ff6ea89a9.png" style="float: left; padding-right: 20px; padding-bottom: 10px;" width="120">
@@ -23,13 +22,9 @@ i2i supports “grassroots” organizations and community groups committed to ch
 
 </div>
 
-<div style="height: 300px; background: #3C5984" class="text-center">
+<div style="background: #3C5984" class="text-center">
 
-<div class="pt-12" style="">
-
-<h2 style="color: #fff">TODO: Boxes here </h2>
-
-</div>
+:home-boxes
 
 </div>
 
@@ -93,7 +88,7 @@ The **PARLOR Process** is an evidenced-informed approach designed to address the
 
 <div class="pt-12" style="">
 
-<h2 style="color: #fff">TODO: Cohort listing here </h2>
+<h2 style="color: #fff" id="cohort-listing">TODO: Cohort listing here </h2>
 
 </div>
 
