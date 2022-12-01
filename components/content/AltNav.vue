@@ -1,6 +1,13 @@
 <template>
   <div>
-    <v-app-bar fixed app color="white" style="z-index: 50" class="pl-5 pr-10">
+    <v-app-bar
+      fixed
+      app
+      color="white"
+      style="z-index: 50"
+      size="90"
+      class="pl-5 pr-10"
+    >
       <div v-if="!nav" class="hover hamburger text-center" @click="toggleNav">
         <v-icon icon="mdi-menu" size="large"></v-icon>
         <div style="font-size: 10px; font-weight: 900">MENU</div>

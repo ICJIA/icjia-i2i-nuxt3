@@ -58,10 +58,14 @@ axios
       if (page.attributes.section !== "root") {
         section = page.attributes.section.toLowerCase();
         obj.attributes.path = `/${section}/${page.attributes.slug}`;
+      } else if (page.attributes.slug === "index") {
+        obj.attributes.path = `/`;
+        obj.attributes.url = `${SITE_URL}`;
       } else {
         obj.attributes.path = `/${page.attributes.slug}`;
+        obj.attributes.url = `${SITE_URL}${obj.attributes.path}`;
       }
-      obj.attributes.url = `${SITE_URL}${obj.attributes.path}`;
+
       console.log("Markdown content created: ", obj.attributes.path);
       return obj;
     });
