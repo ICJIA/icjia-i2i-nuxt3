@@ -17,6 +17,6 @@
 
 <script setup>
 const click = (id) => {
-  alert("TODO:\n\nbutton click -- scroll to section id:\n\n#" + id);
+  alert("TODO:\n\nbutton click\n\nScroll to section: #" + id);
 };
 </script>
