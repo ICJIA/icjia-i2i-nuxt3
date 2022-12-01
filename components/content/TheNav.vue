@@ -8,13 +8,41 @@
       size="90"
       class="pl-5 pr-10"
     >
-      <div v-if="!nav" class="hover hamburger text-center" @click="toggleNav">
+      <div
+        v-if="!nav"
+        class="hover hamburger text-center hidden-md-and-up"
+        @click="toggleNav"
+      >
         <v-icon icon="mdi-menu" size="large"></v-icon>
         <div style="font-size: 10px; font-weight: 900">MENU</div>
       </div>
-      <div v-else class="hover hamburger text-center" @click="toggleNav">
+      <div
+        v-else
+        class="hover hamburger text-center hidden-md-and-up"
+        @click="toggleNav"
+      >
         <v-icon icon="mdi-window-close" size="large"></v-icon>
         <div style="font-size: 10px; font-weight: 900">CLOSE</div>
+      </div>
+      <v-spacer class="hidden-md-and-up"></v-spacer>
+      <img
+        alt="ICJIA Logo"
+        class="hover ml-4 mr-4"
+        src="/i2iSmall.png"
+        width="55"
+        @click="$router.push('/')"
+      />
+      <div class="hover hidden-sm-and-down">
+        <span
+          style="
+            font-weight: 900 !important;
+            font-size: 26px;
+            letter-spacing: 0.004em;
+          "
+          class="agency"
+          @click="$router.push('/')"
+          >INSTITUTE TO INNOVATE</span
+        >
       </div>
       <v-spacer></v-spacer>
       <span v-if="isMounted">
