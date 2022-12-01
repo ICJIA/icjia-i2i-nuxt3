@@ -3,25 +3,22 @@
     <v-container fluid
       ><v-row
         ><v-col>
-          <h1>Sandbox here</h1>
+          <h1>Sandbox</h1>
 
           <!-- <h2>Global state test</h2>
           {{ state.navToggle }}
           <br />
           <v-btn id="nav" @click="toggle">Click me to toggle nav state</v-btn> -->
-          <h2>Alt state with composable</h2>
+          <h2>Global state with composable</h2>
           {{ altState }}
           <br />
-          <v-btn id="nav" @click="altToggle">Click me to toggle nav state</v-btn
-          ><br />
+          <v-btn id="nav" @click="altToggle">Toggle nav state</v-btn>
+          <!-- <br />
           {{ counter }}
           <br />
-          <v-btn id="nav" @click="counterUpdate">Click me</v-btn>
+          <v-btn id="nav" @click="counterUpdate">Click me</v-btn> -->
         </v-col></v-row
       ></v-container
-    >
-    <v-container fluid
-      ><v-row><v-col cols="12" md="6">Test 1 col</v-col></v-row></v-container
     >
   </div>
 </template>

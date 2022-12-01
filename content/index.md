@@ -10,6 +10,7 @@ path: /
 url: https://i2i.icjia.dev
 ---
 
+
 <div style="background: #fff" class="mt-12 mb-12 px-12" id="about" >
 
 <img src="https://agency.icjia-api.cloud/uploads/i2i_logo_text_small_6ff6ea89a9.png" style="float: left; padding-right: 20px; padding-bottom: 10px;" width="120">
@@ -98,7 +99,7 @@ The **PARLOR Process** is an evidenced-informed approach designed to address the
 
 </div>
 
-<div  style="background: #f1f1f1 !important; color: #000!important; border-top: 1px solid #ddd;" class="py-2" id="contact-info">
+<div  style="background: #f1f1f1 !important; color: #000!important; border-top: 1px solid #ddd;" class="py-12" id="contact-info">
 
 <div class="v-container v-container--fluid">
 

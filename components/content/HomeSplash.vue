@@ -2,6 +2,7 @@
   <v-img
     width="100%"
     :height="650"
+    aspect-ratio="1"
     cover
     src="https://agency.icjia-api.cloud/uploads/markus_winkler_a_Y_Pt_Ekn_Qm_XE_unsplash_0f61baccac.jpg"
     lazy-src="https://agency.icjia-api.cloud/uploads/thumbnail_markus_winkler_a_Y_Pt_Ekn_Qm_XE_unsplash_0f61baccac.jpg"
@@ -20,9 +21,11 @@
       <div class="banner">
         <v-col cols="12" class="text-center">
           <div class="bg">
-            <img
+            <v-img
               width="100"
-              src="https://r3.icjia-api.cloud/uploads/thumbnail_i2i_Small_eeb3f8b872.png"
+              class="mx-auto"
+              src="https://r3.icjia-api.cloud/uploads/small_i2i_Small_eeb3f8b872.png"
+              lazy-src="https://r3.icjia-api.cloud/uploads/thumbnail_i2i_Small_eeb3f8b872.png"
             />
           </div>
           <h1
