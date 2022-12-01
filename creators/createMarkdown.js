@@ -55,15 +55,21 @@ axios
     let section;
     const site = pages.map((page) => {
       const obj = { ...page };
+      obj.attributes.draft = false;
+      obj.attributes.description = page.attributes.summary;
+      obj.attributes.navigation = true;
       if (page.attributes.section !== "root") {
         section = page.attributes.section.toLowerCase();
         obj.attributes.path = `/${section}/${page.attributes.slug}`;
-      } else if (page.attributes.slug === "index") {
-        obj.attributes.path = `/`;
-        obj.attributes.url = `${SITE_URL}`;
+        obj.attributes.url = `${SITE_URL}${obj.attributes.path}`;
       } else {
         obj.attributes.path = `/${page.attributes.slug}`;
         obj.attributes.url = `${SITE_URL}${obj.attributes.path}`;
+      }
+
+      if (page.attributes.slug === "index") {
+        obj.attributes.path = `/`;
+        obj.attributes.url = `${SITE_URL}`;
       }
 
       console.log("Markdown content created: ", obj.attributes.path);

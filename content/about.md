@@ -6,6 +6,9 @@ section: root
 createdAt: 2022-11-28T19:34:21.908Z
 updatedAt: 2022-11-30T14:34:51.755Z
 publishedAt: 2022-11-28T19:34:35.699Z
+draft: false
+description: This is the summary for the about page
+navigation: true
 path: /about
 url: https://i2i.icjia.dev/about
 ---

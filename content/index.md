@@ -6,6 +6,9 @@ section: root
 createdAt: 2022-11-30T18:49:02.692Z
 updatedAt: 2022-12-01T04:46:56.496Z
 publishedAt: 2022-11-30T18:49:04.434Z
+draft: false
+description: This is the summary
+navigation: true
 path: /
 url: https://i2i.icjia.dev
 ---
