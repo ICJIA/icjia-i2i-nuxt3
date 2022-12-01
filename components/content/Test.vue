@@ -18,7 +18,7 @@
 
 <script setup>
 const config = useRuntimeConfig();
-
+console.log(config);
 console.log("env apiBase: ", config.public.apiBase);
 console.log("env thumborKey: ", config.public.thumborKey);
 </script>

@@ -8,10 +8,13 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.app-title {
     font-family: 'Raleway' !important;
 
 }
+
+
 
 a {
     font-family: 'Roboto' !important;
@@ -20,4 +23,36 @@ a {
 
 .hover {
     cursor: pointer
+}
+
+ul.cohort-list {
+    -webkit-columns: 1;
+    -moz-columns: 1;
+    columns: 1;
+    padding-left: 0;
+}
+
+ul.cohort-list li {
+    list-style-position: inside;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+}
+
+@media only screen and (min-width: 768px) {
+    ul.cohort-list {
+        -webkit-columns: 2;
+        -moz-columns: 2;
+        columns: 2;
+        padding-left: 0;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    ul.cohort-list {
+        -webkit-columns: 3;
+        -moz-columns: 3;
+        columns: 3;
+        padding-left: 0;
+    }
 }

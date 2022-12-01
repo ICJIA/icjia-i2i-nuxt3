@@ -114,36 +114,3 @@ const counterUpdate = () => {
 };
 console.log("counter: ", counter.value);
 </script>
-
-<style lang="scss" scoped>
-ul {
-  -webkit-columns: 1;
-  -moz-columns: 1;
-  columns: 1;
-  padding-left: 0;
-}
-ul li {
-  list-style-position: inside;
-  -webkit-column-break-inside: avoid;
-  page-break-inside: avoid;
-  break-inside: avoid;
-}
-
-@media only screen and (min-width: 768px) {
-  ul {
-    -webkit-columns: 2;
-    -moz-columns: 2;
-    columns: 2;
-    padding-left: 0;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  ul {
-    -webkit-columns: 3;
-    -moz-columns: 3;
-    columns: 3;
-    padding-left: 0;
-  }
-}
-</style>

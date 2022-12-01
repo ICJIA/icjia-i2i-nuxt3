@@ -40,7 +40,7 @@
             font-size: 26px;
             letter-spacing: 0.004em;
           "
-          class="agency"
+          class="agency app-title"
           @click="$router.push('/')"
           >INSTITUTE 2 INNOVATE</span
         >
