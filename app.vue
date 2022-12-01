@@ -12,10 +12,6 @@
 </template>
 
 <script setup>
-// Get all request headers
-// const headers = useRequestHeaders();
-const key = useThumbor("test");
-console.log(key);
 useHead({
   htmlAttrs: {
     lang: "en",

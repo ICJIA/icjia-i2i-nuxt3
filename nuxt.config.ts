@@ -50,6 +50,7 @@ export default defineNuxtConfig({
     "@nuxtjs/google-fonts",
     "@nuxtjs/apollo",
     "@pinia/nuxt",
+    "@nuxt/image-edge",
     "@vueuse/nuxt",
     "@nuxt/content",
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -88,6 +89,18 @@ export default defineNuxtConfig({
     },
   },
 
+  image: {
+    // The screen sizes predefined by `@nuxt/image`:
+    screens: {
+      xs: 320,
+      sm: 640,
+      md: 768,
+      lg: 1024,
+      xl: 1280,
+      xxl: 1536,
+      "2xl": 1536,
+    },
+  },
   apollo: {
     clients: {
       default: {

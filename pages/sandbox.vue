@@ -1,5 +1,13 @@
 <template>
-  <div>
+  <div style="">
+    <h2 id="nuxt-image">Nuxt Image (optimized)</h2>
+    <div class="text-center">
+      <nuxt-img
+        src="https://agency.icjia-api.cloud/uploads/i2i_small_transparent_a6cfd95a04.png"
+        quality="10"
+        width="175"
+      />
+    </div>
     <v-container
       ><v-row
         ><v-col>

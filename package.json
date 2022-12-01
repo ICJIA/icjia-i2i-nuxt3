@@ -1,5 +1,9 @@
 {
   "private": true,
+  "author": {
+    "name": "Illinois Criminal Justice Information Authority",
+    "email": "cja.info@illinois.gov"
+  },
   "scripts": {
     "build": "npm run create:markdown && nuxt build",
     "build:serve": "npm run create:markdown && nuxt build && node .output/server/index.mjs ",
@@ -18,6 +22,7 @@
     "@commitlint/config-conventional": "^17.3.0",
     "@mdi/font": "^7.0.96",
     "@nuxt/content": "^2.2.2",
+    "@nuxt/image-edge": "^1.0.0-27827328.bc9ddc0",
     "@nuxt/test-utils-edge": "3.0.1-rc.0-27817270.4f2bfbe",
     "@nuxtjs/apollo": "^5.0.0-alpha.4",
     "@nuxtjs/eslint-config-typescript": "^12.0.0",
@@ -57,6 +62,7 @@
     "@vueuse/core": "^9.6.0",
     "@vueuse/integrations": "^9.6.0",
     "axios": "1.1.3",
+    "dotenv": "^16.0.3",
     "faker": "^6.6.6",
     "fs-extra": "^10.1.0",
     "glob": "^8.0.3",

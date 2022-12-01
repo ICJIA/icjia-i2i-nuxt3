@@ -116,7 +116,7 @@
           </span>
         </span>
       </span>
-      <span v-else class="text center"> <TheLoader></TheLoader></span>
+      <span v-else class="text center pl-5"><TheLoader></TheLoader></span>
     </v-app-bar>
   </div>
 </template>

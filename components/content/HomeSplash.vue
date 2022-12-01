@@ -4,7 +4,7 @@
     :height="650"
     aspect-ratio="1"
     cover
-    src="https://agency.icjia-api.cloud/uploads/markus_winkler_a_Y_Pt_Ekn_Qm_XE_unsplash_0f61baccac.jpg"
+    src="https://agency.icjia-api.cloud/uploads/large_markus_winkler_a_Y_Pt_Ekn_Qm_XE_unsplash_0f61baccac.jpg"
     lazy-src="https://agency.icjia-api.cloud/uploads/thumbnail_markus_winkler_a_Y_Pt_Ekn_Qm_XE_unsplash_0f61baccac.jpg"
   >
     <template #placeholder>
@@ -27,6 +27,11 @@
               src="https://r3.icjia-api.cloud/uploads/thumbnail_i2i_Small_eeb3f8b872.png"
               lazy-src="https://r3.icjia-api.cloud/uploads/thumbnail_i2i_Small_eeb3f8b872.png"
             />
+            <!-- <nuxt-img
+              src="https://agency.icjia-api.cloud/uploads/i2i_small_transparent_a6cfd95a04.png"
+              quality="10"
+              width="75"
+            /> -->
           </div>
           <h1
             style="color: #fff; font-size: 40px !important; margin-top: 0px"
