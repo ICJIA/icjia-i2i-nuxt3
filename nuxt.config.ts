@@ -42,6 +42,7 @@ export default defineNuxtConfig({
     public: {
       apiBase: process.env.NUXT_PUBLIC_API_BASE_URL || "default_api_url",
       apiSecret: process.env.NUXT_API_SECRET || "default_other_url",
+      thumborKey: process.env.NUXT_THUMBOR_KEY || "thumbor key not specified",
     },
   },
 
