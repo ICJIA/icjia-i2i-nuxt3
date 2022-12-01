@@ -42,7 +42,8 @@
           "
           class="agency app-title"
           @click="$router.push('/')"
-          >INSTITUTE 2 INNOVATE</span
+          >INSTITUTE 2 INNOVATE |
+          <span style="color: #fea30b; font-size: 30px">i2i</span></span
         >
       </div>
 
