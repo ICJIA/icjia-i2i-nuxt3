@@ -4,7 +4,7 @@ slug: index
 summary: This is the summary
 section: root
 createdAt: 2022-11-30T18:49:02.692Z
-updatedAt: 2022-12-01T04:46:56.496Z
+updatedAt: 2022-12-01T12:58:32.951Z
 publishedAt: 2022-11-30T18:49:04.434Z
 draft: false
 description: This is the summary
@@ -25,13 +25,9 @@ i2i supports “grassroots” organizations and community groups committed to ch
 
 </div>
 
-<div style="height: 300px; background: #3C5984" class="text-center">
-
 <div style="background: #3C5984" class="text-center">
 
-:home-boxes
-
-</div>
+::home-boxes
 
 </div>
 

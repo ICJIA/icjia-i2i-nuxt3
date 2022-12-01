@@ -24,7 +24,7 @@
             <v-img
               width="100"
               class="mx-auto"
-              src="https://r3.icjia-api.cloud/uploads/small_i2i_Small_eeb3f8b872.png"
+              src="https://r3.icjia-api.cloud/uploads/thumbnail_i2i_Small_eeb3f8b872.png"
               lazy-src="https://r3.icjia-api.cloud/uploads/thumbnail_i2i_Small_eeb3f8b872.png"
             />
           </div>

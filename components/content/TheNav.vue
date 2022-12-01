@@ -44,6 +44,7 @@
           >INSTITUTE TO INNOVATE</span
         >
       </div>
+
       <v-spacer></v-spacer>
       <span v-if="isMounted">
         <span
