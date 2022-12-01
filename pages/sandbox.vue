@@ -20,7 +20,7 @@
             <p class="mb-10">
               <strong>Resize browser window to see adjustment</strong>
             </p>
-            <ul>
+            <ul class="cohort-list">
               <li>content</li>
               <li>content</li>
               <li>content</li>
@@ -54,13 +54,13 @@
             </ul>
 
             <pre class="mt-10" style="border: 1px solid #aaa">
-ul {
+ul.cohort-list {
   -webkit-columns: 1;
   -moz-columns: 1;
   columns: 1;
   padding-left: 0;
 }
-ul li {
+ul.cohort-list li {
   list-style-position: inside;
   -webkit-column-break-inside: avoid;
   page-break-inside: avoid;
@@ -68,7 +68,7 @@ ul li {
 }
 
 @media only screen and (min-width: 768px) {
-  ul {
+  ul.cohort-list {
     -webkit-columns: 2;
     -moz-columns: 2;
     columns: 2;
@@ -77,7 +77,7 @@ ul li {
 }
 
 @media only screen and (min-width: 1024px) {
-  ul {
+  ul.cohort-list {
     -webkit-columns: 3;
     -moz-columns: 3;
     columns: 3;

@@ -32,7 +32,7 @@
             style="color: #fff; font-size: 40px !important; margin-top: 0px"
             class="hidden-sm-and-down"
           >
-            Institute to Innovate
+            Institute 2 Innovate
           </h1>
 
           <h1

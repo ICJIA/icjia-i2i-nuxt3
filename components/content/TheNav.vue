@@ -42,7 +42,7 @@
           "
           class="agency"
           @click="$router.push('/')"
-          >INSTITUTE TO INNOVATE</span
+          >INSTITUTE 2 INNOVATE</span
         >
       </div>
 
