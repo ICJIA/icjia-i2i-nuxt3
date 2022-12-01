@@ -12,42 +12,82 @@
         </v-col></v-row
       ></v-container
     >
-    <div class="text-center">
-      <h2>Responsive column adjustment</h2>
-      <ul>
-        <li>content</li>
-        <li>content</li>
-        <li>content</li>
-        <li>content</li>
-        <li>content</li>
-        <li>content</li>
-        <li>content</li>
-        <li>content</li>
-        <li>content</li>
-        <li>content</li>
-        <li>content</li>
-        <li>content</li>
-        <li>content</li>
-        <li>content</li>
-        <li>content</li>
-        <li>content</li>
-        <li>content</li>
-        <li>content</li>
-        <li>content</li>
-        <li>content</li>
-        <li>content</li>
-        <li>content</li>
-        <li>content</li>
-        <li>content</li>
-        <li>content</li>
-        <li>content</li>
-        <li>content</li>
-        <li>content</li>
-        <li>content</li>
-        <li>content</li>
-      </ul>
-      <p>Resize browser window to see adjustment</p>
-    </div>
+    <v-container
+      ><v-row
+        ><v-col>
+          <div class="text-center">
+            <h2>Responsive column adjustment for cohort listings</h2>
+            <ul>
+              <li>content</li>
+              <li>content</li>
+              <li>content</li>
+              <li>content</li>
+              <li>content</li>
+              <li>content</li>
+              <li>content</li>
+              <li>content</li>
+              <li>content</li>
+              <li>content</li>
+              <li>content</li>
+              <li>content</li>
+              <li>content</li>
+              <li>content</li>
+              <li>content</li>
+              <li>content</li>
+              <li>content</li>
+              <li>content</li>
+              <li>content</li>
+              <li>content</li>
+              <li>content</li>
+              <li>content</li>
+              <li>content</li>
+              <li>content</li>
+              <li>content</li>
+              <li>content</li>
+              <li>content</li>
+              <li>content</li>
+              <li>content</li>
+              <li>content</li>
+            </ul>
+            <p>Resize browser window to see adjustment</p>
+
+            <pre class="text-left">
+ul {
+  -webkit-columns: 1;
+  -moz-columns: 1;
+  columns: 1;
+  padding-left: 0;
+}
+ul li {
+  list-style-position: inside;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+@media only screen and (min-width: 768px) {
+  ul {
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
+    padding-left: 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  ul {
+    -webkit-columns: 3;
+    -moz-columns: 3;
+    columns: 3;
+    padding-left: 0;
+  }
+}
+</pre
+            >
+          </div>
+        </v-col></v-row
+      ></v-container
+    >
   </div>
 </template>
 
