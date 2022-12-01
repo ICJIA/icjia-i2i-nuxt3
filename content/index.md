@@ -4,13 +4,13 @@ slug: index
 summary: This is the summary
 section: root
 createdAt: 2022-11-30T18:49:02.692Z
-updatedAt: 2022-12-01T01:56:17.488Z
+updatedAt: 2022-12-01T02:13:11.923Z
 publishedAt: 2022-11-30T18:49:04.434Z
 path: /
 url: https://i2i.icjia.dev
 ---
 
-<div style="background: #fff" class="mt-12 px-12" id="about" >
+<div style="background: #fff" class="mt-12 mb-12 px-12" id="about" >
 
 <img src="https://agency.icjia-api.cloud/uploads/i2i_logo_text_small_6ff6ea89a9.png" style="float: left; padding-right: 20px; padding-bottom: 10px;" width="120">
 
@@ -19,6 +19,16 @@ The [Illinois Criminal Justice Information Authority (ICJIA)](/) is launching a 
 Throughout the State of Illinois, thousands of organizations work directly with communities and individuals while struggling with capacity. Historical disinvestment continues to plague “grassroots” organizations, leaving them vulnerable and at risk of dissolving. These groups will benefit from additional support to address their fundamental challenges and organizational needs.
 
 i2i supports “grassroots” organizations and community groups committed to changing the circumstance of violence in their communities. i2i will be a resource for these partners to ensure that their capacity is increased and assist them on a path to sustainability.
+
+</div>
+
+<div style="height: 300px; background: #3C5984" class="text-center">
+
+<div class="pt-12" style="">
+
+<h2 style="color: #fff">TODO: Boxes here </h2>
+
+</div>
 
 </div>
 
@@ -78,17 +88,17 @@ The **PARLOR Process** is an evidenced-informed approach designed to address the
 
 </div>
 
-<div style="height: 500px" class="text-center">
+<div style="height: 500px; background: #3C5984" class="text-center">
 
-<div class="mt-12">
+<div class="pt-12" style="">
 
-<strong>TODO: cohort listing here </strong>
-
-</div>
+<h2 style="color: #fff">TODO: Cohort listing here </h2>
 
 </div>
 
-<div  style="background: #f1f1f1 !important; color: #000!important; border-top: 1px solid #ddd;" class="py-12" id="contact-info">
+</div>
+
+<div  style="background: #f1f1f1 !important; color: #000!important; border-top: 1px solid #ddd;" class="py-2" id="contact-info">
 
 <div class="v-container v-container--fluid">
 
