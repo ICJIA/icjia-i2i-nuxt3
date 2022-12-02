@@ -1,16 +1,27 @@
-// const crypto = require("crypto-js");
+import CryptoES from "crypto-es";
 
-import * as lib from "crypto-js";
-import * as dotenv from "dotenv";
-const crypto = lib.default; // see https://github.com/motdotla/dotenv#how-do-i-use-dotenv-with-import
-const env = dotenv.config();
-const key = env.parsed.NUXT_THUMBOR_KEY;
+function Thumbor(securityKey, thumborServerUrl) {
+  "use strict";
+  this.THUMBOR_SECURITY_KEY = securityKey;
+  this.THUMBOR_URL_SERVER = thumborServerUrl;
+  this.imagePath = "";
+  this.width = 0;
+  this.height = 0;
+  this.smart = false;
+  this.fitInFlag = false;
+  this.withFlipHorizontally = false;
+  this.withFlipVertically = false;
+  this.halignValue = null;
+  this.valignValue = null;
+  this.cropValues = null;
+  this.meta = false;
+  this.filtersCalls = "";
+}
 
-ThumborUrlBuilder.prototype = {
+Thumbor.prototype = {
   TOP: "top",
   MIDDLE: "middle",
   BOTTOM: "bottom",
-
   RIGHT: "right",
   CENTER: "center",
   LEFT: "left",
@@ -26,38 +37,31 @@ ThumborUrlBuilder.prototype = {
         : imagePath;
     return this;
   },
+
   /**
    * Converts operation array to string
    * @return {String}
    */
   getOperationPath: function () {
     const parts = this.urlParts();
-
     if (parts.length === 0) {
       return "";
     }
-
     return parts.join("/") + "/";
   },
+
   /**
    * Build operation array
-   *
-   * @TODO Should be refactored so that strings are generated in the
-   * commands as opposed to in 1 massive function
-   *
    * @return {Array}
    */
   urlParts: function () {
     if (!this.imagePath) {
       throw new Error("The image url can't be null or empty.");
     }
-
     const parts = [];
-
     if (this.meta) {
       parts.push("meta");
     }
-
     if (this.cropValues) {
       parts.push(
         this.cropValues.left +
@@ -69,11 +73,9 @@ ThumborUrlBuilder.prototype = {
           this.cropValues.bottom
       );
     }
-
     if (this.fitInFlag) {
       parts.push("fit-in");
     }
-
     if (
       this.width ||
       this.height ||
@@ -81,40 +83,32 @@ ThumborUrlBuilder.prototype = {
       this.withFlipVertically
     ) {
       let sizeString = "";
-
       if (this.withFlipHorizontally) {
         sizeString += "-";
       }
       sizeString += this.width;
-
       sizeString += "x";
-
       if (this.withFlipVertically) {
         sizeString += "-";
       }
       sizeString += this.height;
-
       parts.push(sizeString);
     }
-
     if (this.halignValue) {
       parts.push(this.halignValue);
     }
-
     if (this.valignValue) {
       parts.push(this.valignValue);
     }
-
     if (this.smart) {
       parts.push("smart");
     }
-
     if (this.filtersCalls.length) {
-      parts.push("filters:" + this.filtersCalls.join(":"));
+      parts.push("filters:" + this.filtersCalls);
     }
-
     return parts;
   },
+
   /**
    * Resize the image to the specified dimensions. Overrides any previous call
    * to `fitIn` or `resize`.
@@ -130,6 +124,7 @@ ThumborUrlBuilder.prototype = {
   resize: function (width, height) {
     this.width = width;
     this.height = height;
+    this.fitInFlag = false;
     return this;
   },
 
@@ -137,6 +132,7 @@ ThumborUrlBuilder.prototype = {
     this.smart = smartCrop;
     return this;
   },
+
   /**
    * Resize the image to fit in a box of the specified dimensions. Overrides
    * any previous call to `fitIn` or `resize`.
@@ -150,6 +146,7 @@ ThumborUrlBuilder.prototype = {
     this.fitInFlag = true;
     return this;
   },
+
   /**
    * Flip image horizontally
    */
@@ -157,6 +154,7 @@ ThumborUrlBuilder.prototype = {
     this.withFlipHorizontally = true;
     return this;
   },
+
   /**
    * Flip image vertically
    */
@@ -164,12 +162,12 @@ ThumborUrlBuilder.prototype = {
     this.withFlipVertically = true;
     return this;
   },
+
   /**
    * Specify horizontal alignment used if width is altered due to cropping
    * @param  {String} halign 'left', 'center', 'right'
    */
   halign: function (halign) {
-    console.log("halign: ", halign);
     if (
       halign === this.LEFT ||
       halign === this.RIGHT ||
@@ -181,6 +179,7 @@ ThumborUrlBuilder.prototype = {
     }
     return this;
   },
+
   /**
    * Specify vertical alignment used if height is altered due to cropping
    * @param  {String} valign 'top', 'middle', 'bottom'
@@ -197,6 +196,7 @@ ThumborUrlBuilder.prototype = {
     }
     return this;
   },
+
   /**
    * Specify that JSON metadata should be returned instead of the thumbnailed
    * image.
@@ -206,14 +206,16 @@ ThumborUrlBuilder.prototype = {
     this.meta = metaDataOnly;
     return this;
   },
+
   /**
    * Append a filter, e.g. quality(80)
    * @param  {String} filterCall
    */
   filter: function (filterCall) {
-    this.filtersCalls.push(filterCall);
+    this.filtersCalls = filterCall;
     return this;
   },
+
   /**
    * Manually specify crop window.
    * @param  {Integer} left
@@ -223,51 +225,21 @@ ThumborUrlBuilder.prototype = {
    * @return {[type]}
    */
   crop: function (left, top, right, bottom) {
-    if (left > 0 && top > 0 && right > 0 && bottom > 0) {
-      this.cropValues = {
-        left,
-        top,
-        right,
-        bottom,
-      };
-    }
+    this.cropValues = {
+      left,
+      top,
+      right,
+      bottom,
+    };
     return this;
   },
+
   /**
    * Combine image url and operations with secure and unsecure (unsafe) paths
    * @return {String}
    */
   buildUrl: function () {
-    const operation = this.getOperationPath();
-
-    if (this.THUMBOR_SECURITY_KEY) {
-      let key = crypto.HmacSHA1(
-        operation + this.imagePath,
-        this.THUMBOR_SECURITY_KEY
-      );
-      key = crypto.enc.Base64.stringify(key);
-
-      key = key.replace(/\+/g, "-").replace(/\//g, "_");
-
-      return (
-        this.THUMBOR_URL_SERVER + "/" + key + "/" + operation + this.imagePath
-      );
-    } else {
-      return this.THUMBOR_URL_SERVER + "/unsafe/" + operation + this.imagePath;
-    }
+    return this.THUMBOR_URL_SERVER + "/unsafe/" + operation + this.imagePath;
   },
 };
-
-export default ThumborUrlBuilder;
-
-// const thumborURL = new ThumborUrlBuilder(key, "http://image.icjia.cloud");
-
-// const url = thumborURL
-//   .setImagePath(
-//     "https://agency.icjia-api.cloud/uploads/i2i_small_transparent_a6cfd95a04.png"
-//   )
-//   .resize(50, 50)
-//   .smartCrop(true)
-//   .buildUrl();
-
-// console.log(url);
+export { Thumbor };
