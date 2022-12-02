@@ -62,7 +62,7 @@
             style="height: 300px"
             class="py-5 px-2 text-center info-card hover"
             :class="{ boxGutter: gutter }"
-            @click="click({ id: 'cohort-listing', type: 'scrollTo' })"
+            @click="click({ id: 'cohorts', type: 'scrollTo' })"
           >
             <v-container fill-height fluid>
               <v-row align="center" justify="center">

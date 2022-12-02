@@ -3,7 +3,11 @@ import { createVuetify } from "vuetify";
 // import * as directives from "vuetify/directives";
 
 export default defineNuxtPlugin((nuxtApp) => {
-  const vuetify = createVuetify({});
+  const vuetify = createVuetify({
+    icons: {
+      iconfont: "mdiSvg", // 'mdi' || 'mdiSvg' || 'md' || 'fa' || 'fa4' || 'faSvg'
+    },
+  });
 
   nuxtApp.vueApp.use(vuetify);
 });
