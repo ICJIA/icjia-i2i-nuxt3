@@ -10,7 +10,7 @@
         <p style="font-size: 16px; color: #fff; font-weight: 300" class="mt-4">
           The Illinois Criminal Justice Information Authority uses cookies and
           related technology to personalize content and perform site analytics.
-          For more information, see our
+          For more information, see our&nbsp;
           <a href="#" style="color: #fff">privacy policy</a>.
         </p>
         <v-card-actions>
