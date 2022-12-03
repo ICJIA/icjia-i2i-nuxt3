@@ -8,6 +8,7 @@
       <NuxtPage></NuxtPage>
       <div></div>
     </v-main>
+
     <TheFooter></TheFooter>
   </v-app>
 </template>
