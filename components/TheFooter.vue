@@ -77,9 +77,14 @@
               style="font-size: 12px; font-weight: 300; color: #ccc"
             >
               <strong
-                >&#169; 2023 Illinois Criminal Justice Information
-                Authority</strong
-              >
+                >&#169; 2023
+                <a
+                  href="https://icjia.illinois.gov"
+                  target="_blank"
+                  style="color: #aaa"
+                  >Illinois Criminal Justice Information Authority</a
+                >
+              </strong>
             </div></v-col
           >
         </v-row>

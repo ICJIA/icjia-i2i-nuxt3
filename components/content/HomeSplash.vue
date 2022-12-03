@@ -34,7 +34,7 @@
             /> -->
           </div>
           <h1
-            style="color: #fff; font-size: 40px !important; margin-top: 0px"
+            style="color: #fff; font-size: 55px !important; margin-top: 0px"
             class="hidden-sm-and-down"
           >
             Institute 2 Innovate

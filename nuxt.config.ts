@@ -17,6 +17,7 @@ export default defineNuxtConfig({
           content: "Investing in Public Safety by Investing in You.",
         },
       ],
+      link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
       script: [
         // {
         //   src: "https://code.jquery.com/jquery-3.6.1.slim.min.js",
@@ -40,10 +41,12 @@ export default defineNuxtConfig({
     // The private keys which are only available within server-side
     // apiSecret: "123",
     // Keys within public, will be also exposed to the client-side
+    private: {
+      thumborKey: process.env.NUXT_THUMBOR_KEY || "thumbor key not specified",
+    },
     public: {
       apiBase: process.env.NUXT_PUBLIC_API_BASE_URL || "default_api_url",
       apiSecret: process.env.NUXT_API_SECRET || "default_other_url",
-      thumborKey: process.env.NUXT_THUMBOR_KEY || "thumbor key not specified",
     },
   },
 
