@@ -82,6 +82,24 @@ axios
       }
       console.log("site.json created in /public/");
     });
+
+    const searchIndex = site.map((page) => {
+      const obj = { ...page.attributes };
+      obj.id = page.id;
+      return obj;
+    });
+
+    jsonfile.writeFileSync(
+      `./public/searchIndex.json`,
+      searchIndex,
+      function (err) {
+        if (err) {
+          console.error(err);
+        }
+        console.log("site.json created in /public/");
+      }
+    );
+
     site.forEach((page) => {
       if (page.attributes.section === "root") {
         section = "";

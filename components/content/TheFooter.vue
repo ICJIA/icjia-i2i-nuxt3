@@ -68,7 +68,10 @@
             >
           </v-row>
           <v-row
-            ><v-col class="text-center" style="" @click="scrollTop"
+            ><v-col
+              class="text-center"
+              style="margin-bottom: -22px"
+              @click="scrollTop"
               ><span class="goToTop"> BACK TO TOP </span
               ><v-icon small right style="color: #fff; font-size: 10px"
                 >mdi-chevron-up</v-icon
