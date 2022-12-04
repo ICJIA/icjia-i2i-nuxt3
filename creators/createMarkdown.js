@@ -29,6 +29,7 @@ const query = `query {
           createdAt
           updatedAt
           publishedAt
+          searchMeta
         }
       }
     }
@@ -55,6 +56,11 @@ axios
     let section;
     const site = pages.map((page) => {
       const obj = { ...page };
+      obj.attributes.rawText = obj?.attributes?.body?.replace(
+        /[^a-z0-9]/gi,
+        ""
+      );
+
       obj.attributes.draft = false;
       obj.attributes.description = page.attributes.summary;
       obj.attributes.navigation = true;
@@ -90,7 +96,7 @@ axios
     });
 
     jsonfile.writeFileSync(
-      `./public/searchIndex.json`,
+      `./assets/searchIndex.json`,
       searchIndex,
       function (err) {
         if (err) {

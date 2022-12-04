@@ -47,7 +47,12 @@
 
 <script setup>
 import Fuse from "fuse.js";
-import searchIndex from "../public/searchIndex.json";
+import searchIndex from "~~/assets/json/searchIndex.json";
+
+useHead({
+  title: "Search",
+});
+
 const options = {
   isCaseSensitive: false,
   includeScore: true,
@@ -61,7 +66,7 @@ const options = {
   useExtendedSearch: false,
   ignoreLocation: false,
   ignoreFieldNorm: false,
-  keys: ["title", "summary"],
+  keys: ["title", "summary", "searchMeta", "rawText"],
 };
 const query = ref("Institute 2 Innovate");
 
@@ -72,9 +77,9 @@ const fuse = new Fuse(searchIndex, options);
 let result = ref(fuse.search(query.value));
 
 const instantSearch = () => {
-  console.log("query: ", query.value);
+  // console.log("query: ", query.value);
   result = fuse.search(query.value);
-  console.log("result: ", result);
+  // console.log("result: ", result);
 };
 </script>
 

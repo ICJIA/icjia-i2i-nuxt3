@@ -6,6 +6,8 @@ section: page
 createdAt: 2022-11-23T21:03:53.696Z
 updatedAt: 2022-11-28T17:31:10.861Z
 publishedAt: 2022-11-23T21:06:39.750Z
+searchMeta: null
+rawText: Thisisthebodyforthetestpagetest
 draft: false
 description: This is the summary for the test page
 navigation: true
