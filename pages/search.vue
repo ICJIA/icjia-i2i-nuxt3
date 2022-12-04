@@ -14,18 +14,19 @@
         @input="instantSearch"
       />
     </v-form>
-
-    <h2 v-if="result && query.length">Search results:</h2>
-    Found: {{ result.length }}
-    <div v-if="result.length">
-      <v-card
-        v-for="(result, index) in result"
-        :key="`fuse-${index}`"
-        class="px-5 py-5 mx-5 my-10"
-        elevation="5"
-      >
-        <p>{{ result.item }}</p>
-      </v-card>
+    <div v-if="result && query && query.length">
+      <h2>Search results:</h2>
+      Found: {{ result.length }}
+      <div v-if="result.length">
+        <v-card
+          v-for="(result, index) in result"
+          :key="`fuse-${index}`"
+          class="px-5 py-5 mx-5 my-10"
+          elevation="5"
+        >
+          <p>{{ result.item }}</p>
+        </v-card>
+      </div>
     </div>
     <h4>Search query</h4>
     <pre>    {{ query }}</pre>
@@ -52,7 +53,7 @@ const options = {
   useExtendedSearch: false,
   ignoreLocation: false,
   ignoreFieldNorm: false,
-  keys: ["title", "summary", "body"],
+  keys: ["title", "summary"],
 };
 const query = ref("Institute 2 Innovate");
 
