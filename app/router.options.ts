@@ -8,7 +8,7 @@ export default {
       if (to.hash) {
         setTimeout(
           () => {
-            resolve({ el: to.hash, top: 60, behavior: "smooth" });
+            resolve({ top: 0, left: 0, behavior: "smooth" });
           },
           !from || to.path !== from.path ? 500 : 1
         );
@@ -21,7 +21,7 @@ export default {
           //   });
           setTimeout(() => {
             // resolve({ ...savedPosition, behavior: 'smooth' })
-            resolve({ top: 0, behavior: "smooth" });
+            resolve({ top: 0, left: 0, behavior: "smooth" });
           }, 500);
         });
       } else {
@@ -29,7 +29,7 @@ export default {
           await nextTick();
           // console.log("router.config.ts: default -- no saved position");
           setTimeout(() => {
-            resolve({ top: 0, behavior: "smooth" });
+            resolve({ top: 0, left: 0, behavior: "smooth" });
           }, 230);
         });
       }

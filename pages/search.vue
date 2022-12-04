@@ -5,7 +5,9 @@
         ><v-col>
           <h1>This is the search page</h1>
           <h4>Search query</h4>
-          <div v-if="query && query.length">{{ query }}</div>
+          <div v-if="query && query.length">
+            {{ query }}
+          </div>
           <pre v-else><strong>Please enter search query</strong></pre>
 
           <v-form class="pl-2 mt-4" style="margin-top: -15px">
