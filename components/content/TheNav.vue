@@ -138,19 +138,11 @@
 const isMounted = ref(false);
 const nav = useNavToggle();
 const toggleNav = () => {
-  console.log("click menu icon");
   nav.value = !nav.value;
 };
 
 const appConfig = useAppConfig();
 const navMenu = JSON.parse(JSON.stringify(appConfig.navMenu));
-
-const items = ref([
-  { title: "Item 1" },
-  { title: "Item 2" },
-  { title: "Item 3" },
-  { title: "Item 4" },
-]);
 
 const isExternalUrl = (url) => {
   return true;
@@ -162,7 +154,6 @@ onMounted(() => {
 
 const router = useRouter();
 const goToSearch = () => {
-  console.log("go to search");
   router.push({ path: "/search" });
 };
 </script>
