@@ -5,7 +5,7 @@
         ><v-col>
           <h1>This is the search page</h1>
           <h4>Search query</h4>
-          <pre v-if="query && query.length">    {{ query }}</pre>
+          <div v-if="query && query.length">{{ query }}</div>
           <pre v-else><strong>Please enter search query</strong></pre>
 
           <v-form class="pl-2 mt-4" style="margin-top: -15px">
@@ -27,10 +27,26 @@
               <v-card
                 v-for="(result, index) in result"
                 :key="`fuse-${index}`"
-                class="px-5 py-5 mx-5 my-10"
+                class="px-5 py-5 mx-5 my-10 hover"
                 elevation="5"
+                @click="navigateTo(result.item)"
               >
                 <p>{{ result.item }}</p>
+                <p
+                  style="
+                    font-size: 11px;
+                    font-weight: 900;
+                    border: 1px solid #ccc;
+                    display: inline-block;
+                    float: right;
+                    padding: 5px;
+                    background: #ddd;
+                    color: #000;
+                  "
+                  class="mt-2"
+                >
+                  Search score: {{ result.score }}
+                </p>
               </v-card>
             </div>
           </div>
@@ -66,20 +82,22 @@ const options = {
   useExtendedSearch: false,
   ignoreLocation: false,
   ignoreFieldNorm: false,
-  keys: ["title", "summary", "searchMeta", "rawText"],
+  keys: ["title", "slug", "searchMeta", "rawText"],
 };
 const query = ref("Institute 2 Innovate");
 
-// console.log(searchIndex);
-
 const fuse = new Fuse(searchIndex, options);
-// console.log(fuse);
+
 let result = ref(fuse.search(query.value));
 
 const instantSearch = () => {
-  // console.log("query: ", query.value);
   result = fuse.search(query.value);
-  // console.log("result: ", result);
+};
+
+const router = useRouter();
+const navigateTo = (item) => {
+  console.log("navigateTo: ", item?.path);
+  router.push({ path: item.path });
 };
 </script>
 
