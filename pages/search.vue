@@ -29,7 +29,8 @@
       </div>
     </div>
     <h4>Search query</h4>
-    <pre>    {{ query }}</pre>
+    <pre v-if="query && query.length">    {{ query }}</pre>
+    <pre v-else><strong>Please enter search query</strong></pre>
     <h4>Search options</h4>
     <pre>    {{ options }}</pre>
     <h4>Search index</h4>
