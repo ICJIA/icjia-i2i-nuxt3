@@ -67,6 +67,14 @@
               </div></v-col
             >
           </v-row>
+          <v-row
+            ><v-col class="text-center" style="" @click="scrollTop"
+              ><span class="goToTop"> BACK TO TOP </span
+              ><v-icon small right style="color: #fff; font-size: 10px"
+                >mdi-chevron-up</v-icon
+              ></v-col
+            ></v-row
+          >
         </v-container>
       </v-card>
     </v-footer>
@@ -76,13 +84,31 @@
 <script>
 export default {
   setup() {
+    const scrollTop = () => {
+      window.scrollTo(0, 0);
+    };
+
     const routeToSite = () => {
       // open new site in new tab
       window.open("https://icjia.illinois.gov", "_blank");
     };
-    return { routeToSite };
+    return { routeToSite, scrollTop };
   },
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.goToTop {
+  margin: 0;
+  font-size: 10px;
+  color: #fff;
+  text-decoration: none;
+  background: none;
+  cursor: pointer;
+}
+
+.goToTop:hover {
+  text-decoration: underline;
+  color: #aaa;
+}
+</style>
