@@ -82,7 +82,7 @@ const options = {
   useExtendedSearch: false,
   ignoreLocation: false,
   ignoreFieldNorm: false,
-  keys: ["title", "slug", "searchMeta", "rawText"],
+  keys: ["title", "slug", "summary", "searchMeta", "rawText"],
 };
 const query = ref("Institute 2 Innovate");
 

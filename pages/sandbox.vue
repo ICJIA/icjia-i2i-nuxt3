@@ -1,17 +1,18 @@
 <template>
   <div style="">
-    <h2 id="nuxt-image">Nuxt Image (optimized)</h2>
-    <div class="text-center">
-      <nuxt-img
-        src="https://agency.icjia-api.cloud/uploads/i2i_small_transparent_a6cfd95a04.png"
-        quality="10"
-        width="175"
-      />
-    </div>
     <v-container
       ><v-row
         ><v-col>
           <h1>Sandbox</h1>
+
+          <h2 id="nuxt-image">Nuxt Image (optimized)</h2>
+          <div class="text-center">
+            <nuxt-img
+              src="https://agency.icjia-api.cloud/uploads/i2i_small_transparent_a6cfd95a04.png"
+              quality="10"
+              width="175"
+            />
+          </div>
 
           <h2>Global state</h2>
           {{ altState }}

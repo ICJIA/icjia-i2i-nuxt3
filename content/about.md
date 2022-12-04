@@ -4,10 +4,10 @@ slug: about
 summary: This is the summary for the about page
 section: root
 createdAt: 2022-11-28T19:34:21.908Z
-updatedAt: 2022-12-04T19:17:52.725Z
+updatedAt: 2022-12-04T20:19:18.482Z
 publishedAt: 2022-11-28T19:34:35.699Z
 searchMeta: "icjia voca vawa "
-rawText: ThisisthebodyfortheaboutpageStrapiMarkdownVueMDCTestTestTestTestGraphQLqueryqueryVuecomponenttestHTMLinmarkdowndivstylefontsize26pxfontweightboldTestHTMLdiv
+rawText: AboutTestTestTestTestGraphQLqueryqueryVuecomponenttestHTMLinmarkdowndivstylefontsize26pxfontweightboldTestHTMLdiv
 draft: false
 description: This is the summary for the about page
 navigation: true
@@ -15,7 +15,7 @@ path: /about
 url: https://i2i.icjia.dev/about
 ---
 
-This is the body for the about page (Strapi --> Markdown  --> Vue MDC ).
+# About
 
 Test Test Test
 
