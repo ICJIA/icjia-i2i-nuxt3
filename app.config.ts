@@ -15,6 +15,10 @@ export default defineAppConfig({
       main: "Contact",
       link: "/contact",
     },
+    {
+      main: "Sandbox",
+      link: "/sandbox",
+    },
 
     {
       main: "Search",
@@ -82,12 +86,6 @@ export default defineAppConfig({
           link: "/page/test-page-3",
         },
       ],
-    },
-    {
-      main: "Sitemap",
-      link: "/sitemap.xml",
-      external: true,
-      icon: "mdi-open-in-new",
     },
   ],
 });

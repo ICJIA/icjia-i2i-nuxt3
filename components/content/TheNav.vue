@@ -6,7 +6,7 @@
       color="white"
       style="z-index: 50"
       size="90"
-      class="pl-5 pr-10"
+      class="pl-5 pr-5"
     >
       <div
         v-if="!nav"
@@ -115,7 +115,20 @@
             </v-btn>
           </span>
         </span>
+        <v-btn
+          variant="text"
+          size="default"
+          class="hidden-sm-and-down navItem"
+          style="font-weight: 900 !important; font-size: 16px"
+          @click="goToSearch"
+          >Search&nbsp;&nbsp;</v-btn
+        >
+        <span class="hover text-right hidden-md-and-up" @click="goToSearch">
+          <v-icon icon="mdi-magnify" size="large"></v-icon>
+          <div style="font-size: 10px; font-weight: 900">Search</div>
+        </span>
       </span>
+
       <span v-else class="text center pl-5"><TheLoader></TheLoader></span>
     </v-app-bar>
   </div>
@@ -146,6 +159,12 @@ const isExternalUrl = (url) => {
 onMounted(() => {
   isMounted.value = true;
 });
+
+const router = useRouter();
+const goToSearch = () => {
+  console.log("go to search");
+  router.push({ path: "/search" });
+};
 </script>
 
 <style lang="scss" scoped>
