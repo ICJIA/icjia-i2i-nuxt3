@@ -56,7 +56,6 @@ axios
     let section;
     const site = pages.map((page) => {
       const obj = { ...page };
-      let raw = 
       const rawText = obj?.attributes?.body?.replace(/[^a-z0-9]/gi, " ");
       obj.attributes.rawText = rawText;
       obj.attributes.draft = false;
