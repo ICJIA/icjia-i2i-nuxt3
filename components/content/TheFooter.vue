@@ -29,18 +29,8 @@
               </div>
 
               <div style="font-size: 12px; font-weight: 400">
-                <!-- <router-link to="/about" style="color: #fff; background: none"
-                  >About</router-link
-                >
-
-                |
-                <router-link to="/contact" style="color: #fff; background: none"
-                  >Contact</router-link
-                >
-                | -->
-
-                <router-link to="/contact" style="color: #fff; background: none"
-                  >Contact Us</router-link
+                <nuxt-link to="/contact" style="color: #fff; background: none"
+                  >Contact Us</nuxt-link
                 >
                 |
                 <a
