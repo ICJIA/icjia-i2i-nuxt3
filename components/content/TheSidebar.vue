@@ -6,40 +6,54 @@
       temporary
       style="background: #fff"
     >
-      <!-- <v-list>
-        <v-list-item prepend-icon="mdi-view-dashboard" to="/">Home</v-list-item>
-        <v-list-item prepend-icon="mdi-view-dashboard" to="/about"
-          >About</v-list-item
+      <v-list v-model:opened="open" density="compact">
+        <div
+          v-for="(menu, index) in navMenu"
+          :key="`sidebar-accordion-${index}`"
         >
-        <v-list-item prepend-icon="mdi-view-dashboard" to="/page"
-          >Page</v-list-item
-        >
-      </v-list>
+          <div v-if="menu && menu.children">
+            <v-list-group>
+              <template #activator="{ props }">
+                <v-list-item
+                  v-bind="props"
+                  style="font-weight: 900 !important"
+                  >{{ menu.main }}</v-list-item
+                >
+              </template>
 
-      <template #append>
-        <div class="pa-2">
-          <v-btn block>LOGOUT </v-btn>
-        </div>
-      </template> -->
-      <v-list v-model:opened="open">
-        <!-- <v-list-item prepend-icon="mdi-home" title="Home"></v-list-item> -->
-        <v-list-item class="hover">Home</v-list-item>
-        <div>
-          <v-list-group>
-            <template #activator="{ props }">
-              <v-list-item v-bind="props" title="Test"></v-list-item>
-            </template>
-
+              <div v-for="(child, i) in menu.children" :key="`main-${i}`">
+                <v-list-item
+                  v-if="child.section"
+                  style="margin-top: 0px; font-weight: 900; color: #555"
+                >
+                  {{ child.section }}
+                </v-list-item>
+                <div
+                  v-if="child.divider"
+                  style="margin-top: 0px; font-weight: 900; color: #555"
+                >
+                  <v-divider></v-divider>
+                </div>
+                <v-list-item
+                  v-if="child.title"
+                  style="margin-top: 0px; font-weight: 400; color: #555"
+                  :to="child.link"
+                >
+                  <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ child.title }}</span>
+                </v-list-item>
+              </div>
+            </v-list-group>
+          </div>
+          <div v-else>
             <v-list-item
-              v-for="(menu, i) in navMenu"
-              :key="`main-${i}`"
-              style="margin-left: -35px"
-              >Test</v-list-item
+              style="font-weight: 900 !important"
+              :to="menu.link"
+              class="hover"
+              >{{ menu.main }}</v-list-item
             >
-          </v-list-group>
-          <!-- <v-divider></v-divider> -->
-          <v-list-item @click.prevent="routeTo('/search')">Search</v-list-item>
+          </div>
         </div>
+        <v-list-item to="/search">Search</v-list-item>
       </v-list>
     </v-navigation-drawer>
   </div>
@@ -66,7 +80,7 @@ onMounted(() => {
   isMounted.value = true;
 });
 
-const open = ref(["Users"]);
+const open = ref();
 const router = useRouter();
 const routeTo = (url) => {
   altState.value = false;

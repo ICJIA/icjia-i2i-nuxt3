@@ -37,13 +37,7 @@ export default defineAppConfig({
       link: "/sandbox",
       nudgeLeft: "78px",
     },
-    // {
-    //   main: "External",
-    //   link: "https://www.google.com",
-    //   nudgeLeft: "78px",
-    //   icon: "open_in_new",
-    //   external: true,
-    // },
+
     {
       main: "Dropdown",
       nudgeLeft: "57px",
