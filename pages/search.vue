@@ -89,7 +89,7 @@ const options = {
   findAllMatches: true,
   minMatchCharLength: 2,
   location: 0,
-  threshold: 0.25,
+  threshold: 0.4,
   distance: 200,
   useExtendedSearch: false,
   ignoreLocation: false,
