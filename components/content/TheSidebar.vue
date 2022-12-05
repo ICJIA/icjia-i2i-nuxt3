@@ -22,22 +22,23 @@
         </div>
       </template> -->
       <v-list v-model:opened="open">
-        <v-list-item prepend-icon="mdi-home" title="Home"></v-list-item>
+        <!-- <v-list-item prepend-icon="mdi-home" title="Home"></v-list-item> -->
+        <v-list-item class="hover">Home</v-list-item>
         <div>
-          <v-list-group value="Test">
+          <v-list-group>
             <template #activator="{ props }">
               <v-list-item v-bind="props" title="Test"></v-list-item>
             </template>
 
             <v-list-item
-              v-for="([title, icon], i) in admins"
-              :key="i"
-              :title="title"
-              :prepend-icon="icon"
-              :value="title"
+              v-for="(menu, i) in navMenu"
+              :key="`main-${i}`"
               style="margin-left: -35px"
-            ></v-list-item>
+              >Test</v-list-item
+            >
           </v-list-group>
+          <!-- <v-divider></v-divider> -->
+          <v-list-item @click.prevent="routeTo('/search')">Search</v-list-item>
         </div>
       </v-list>
     </v-navigation-drawer>
@@ -66,16 +67,11 @@ onMounted(() => {
 });
 
 const open = ref(["Users"]);
-const admins = ref([
-  ["Management", "mdi-account-multiple-outline"],
-  ["Settings", "mdi-cog-outline"],
-]);
-const cruds = ref([
-  ["Create", "mdi-plus-outline"],
-  ["Read", "mdi-file-outline"],
-  ["Update", "mdi-update"],
-  ["Delete", "mdi-delete"],
-]);
+const router = useRouter();
+const routeTo = (url) => {
+  altState.value = false;
+  router.push({ path: url });
+};
 </script>
 
 <style lang="scss" scoped></style>
