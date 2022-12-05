@@ -17,7 +17,7 @@
           <h2>Global state</h2>
           {{ altState }}
           <br />
-          <v-btn id="nav" @click="altToggle">Toggle nav state</v-btn>
+          <v-btn id="nav" @click="altToggle">Toggle mobile nav</v-btn>
         </v-col></v-row
       ></v-container
     >
