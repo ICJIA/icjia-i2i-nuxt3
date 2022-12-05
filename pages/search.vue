@@ -70,9 +70,9 @@
 
               <div v-if="showIndex" class="text-left">
                 <h4>Search index</h4>
-                <pre style="text-left">    {{ searchIndex }}</pre>
+                <pre style="text-left">{{ searchIndex }}</pre>
                 <h4>Search options</h4>
-                <pre>    {{ options }}</pre>
+                <pre>{{ options }}</pre>
               </div>
             </div>
           </v-col></v-row
