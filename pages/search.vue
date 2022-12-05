@@ -1,82 +1,84 @@
 <template>
   <div>
-    <v-container class="mb-12"
-      ><v-row
-        ><v-col>
-          <h1>This is the search page</h1>
+    <keep-alive>
+      <v-container class="mb-12"
+        ><v-row
+          ><v-col>
+            <h1>This is the search page</h1>
 
-          <v-form class="pl-2 mt-4" style="margin-top: -15px">
-            <v-text-field
-              id="textfield"
-              ref="textfield"
-              v-model="query"
-              clearable
-              label="Search"
-              placeholder="Enter search term"
-              style="font-weight: 900"
-              @input="instantSearch"
-            />
-          </v-form>
+            <v-form class="pl-2 mt-4" style="margin-top: -15px">
+              <v-text-field
+                id="textfield"
+                ref="textfield"
+                v-model="query"
+                clearable
+                label="Search"
+                placeholder="Enter search term"
+                style="font-weight: 900"
+                @input="instantSearch"
+              />
+            </v-form>
 
-          <div class="text-center">
-            <v-btn class="mr-3" color="blue" @click.prevent="clearAll"
-              >Clear</v-btn
-            >
+            <div class="text-center">
+              <v-btn class="mr-3" color="blue" @click.prevent="clearAll"
+                >Clear</v-btn
+              >
 
-            <div v-if="result && query?.length">
-              <div class="text-center">
-                <h2>Search results:</h2>
-                Found: {{ result.length }}
-              </div>
-              <div v-if="result.length">
-                <v-card
-                  v-for="(result, index) in result"
-                  :key="`fuse-${index}`"
-                  class="px-5 py-5 mx-5 my-10 hover"
-                  elevation="5"
-                  @click="navigateTo(result.item)"
-                >
-                  <p>{{ result.item }}</p>
-                  <p
-                    style="
-                      font-size: 11px;
-                      font-weight: 900;
-                      border: 1px solid #ccc;
-                      display: inline-block;
-                      float: right;
-                      padding: 5px;
-                      background: #ddd;
-                      color: #000;
-                    "
-                    class="mt-2"
+              <div v-if="result && query?.length">
+                <div class="text-center">
+                  <h2>Search results:</h2>
+                  Found: {{ result.length }}
+                </div>
+                <div v-if="result.length">
+                  <v-card
+                    v-for="(result, index) in result"
+                    :key="`fuse-${index}`"
+                    class="px-5 py-5 mx-5 my-10 hover text-left"
+                    elevation="5"
+                    @click="navigateTo(result.item)"
                   >
-                    Search score: {{ result.score }}
-                  </p>
-                </v-card>
+                    <p>{{ result.item }}</p>
+                    <p
+                      style="
+                        font-size: 11px;
+                        font-weight: 900;
+                        border: 1px solid #ccc;
+                        display: inline-block;
+                        float: right;
+                        padding: 5px;
+                        background: #ddd;
+                        color: #000;
+                      "
+                      class="mt-2"
+                    >
+                      Search score: {{ result.score }}
+                    </p>
+                  </v-card>
+                </div>
+              </div>
+
+              <v-btn v-if="!showIndex" @click.prevent="toggleIndex"
+                >DEBUG: Show search index<v-icon right
+                  >mdi-chevron-down</v-icon
+                ></v-btn
+              >
+              <v-btn v-if="showIndex" @click.prevent="toggleIndex"
+                >DEBUG: Hide search index<v-icon right
+                  >mdi-chevron-up</v-icon
+                ></v-btn
+              >
+
+              <div v-if="showIndex" class="text-left">
+                <h4>Search index</h4>
+                <pre style="text-left">    {{ searchIndex }}</pre>
+                <h4>Search options</h4>
+                <pre>    {{ options }}</pre>
               </div>
             </div>
-
-            <v-btn v-if="!showIndex" @click.prevent="toggleIndex"
-              >DEBUG: Show search index<v-icon right
-                >mdi-chevron-down</v-icon
-              ></v-btn
-            >
-            <v-btn v-if="showIndex" @click.prevent="toggleIndex"
-              >DEBUG: Hide search index<v-icon right
-                >mdi-chevron-up</v-icon
-              ></v-btn
-            >
-
-            <div v-if="showIndex" class="text-left">
-              <h4>Search index</h4>
-              <pre style="text-left">    {{ searchIndex }}</pre>
-              <h4>Search options</h4>
-              <pre>    {{ options }}</pre>
-            </div>
-          </div>
-        </v-col></v-row
-      ></v-container
-    >
+          </v-col></v-row
+        ></v-container
+      >
+    </keep-alive>
   </div>
 </template>
 
