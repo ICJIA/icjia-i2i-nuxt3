@@ -12,7 +12,7 @@
           :key="`sidebar-accordion-${index}`"
         >
           <div v-if="menu && menu.children">
-            <v-list-group>
+            <v-list-group :value="menu.children.title">
               <template #activator="{ props }">
                 <v-list-item
                   v-bind="props"
@@ -64,6 +64,7 @@ const appConfig = useAppConfig();
 const navMenu = JSON.parse(JSON.stringify(appConfig.navMenu));
 const isMounted = ref(false);
 const drawer = ref(false);
+const open = ref([]);
 const altState = useNavToggle();
 watch(drawer, (val) => {
   altState.value = drawer.value;
@@ -80,10 +81,10 @@ onMounted(() => {
   isMounted.value = true;
 });
 
-const open = ref();
 const router = useRouter();
 const routeTo = (url) => {
   altState.value = false;
+
   router.push({ path: url });
 };
 </script>
