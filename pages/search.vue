@@ -84,7 +84,7 @@
 
 <script setup>
 import Fuse from "fuse.js";
-import searchIndex from "~~/assets/json/searchIndex.json";
+import searchIndex from "~/assets/json/searchIndex.json";
 
 useHead({
   title: "Search",

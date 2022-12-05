@@ -56,7 +56,8 @@ axios
     let section;
     const site = pages.map((page) => {
       const obj = { ...page };
-      const rawText = obj?.attributes?.body?.replace(/[^a-z0-9]/gi, "");
+      let raw = 
+      const rawText = obj?.attributes?.body?.replace(/[^a-z0-9]/gi, " ");
       obj.attributes.rawText = rawText;
       obj.attributes.draft = false;
       obj.attributes.description = page.attributes.summary;
@@ -93,15 +94,16 @@ axios
     });
 
     jsonfile.writeFileSync(
-      `./assets/searchIndex.json`,
+      `./assets/json/searchIndex.json`,
       searchIndex,
       function (err) {
         if (err) {
           console.error(err);
         }
-        console.log("site.json created in /public/");
       }
     );
+
+    console.log("site.json created in /public/");
 
     site.forEach((page) => {
       if (page.attributes.section === "root") {
