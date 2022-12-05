@@ -103,23 +103,12 @@ ul.cohort-list li {
 </template>
 
 <script setup>
-import { useGlobalState } from "~/global.js";
-
 useHead({
   title: "Sandbox",
 });
-const state = useGlobalState();
 
-const toggle = () => {
-  state.navToggle.value = !state.navToggle.value;
-};
 const altState = useNavToggle();
 const altToggle = () => {
   altState.value = !altState.value;
 };
-const counter = useSimpleCounter(15);
-const counterUpdate = () => {
-  counter.value = counter.value + 1;
-};
-console.log("counter: ", counter.value);
 </script>
