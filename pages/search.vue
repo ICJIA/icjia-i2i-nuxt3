@@ -33,7 +33,7 @@
                   <v-card
                     v-for="(result, index) in result"
                     :key="`fuse-${index}`"
-                    class="px-5 py-5 mx-5 my-10 hover text-left"
+                    class="px-5 py-5 mx-5 my-10 hover text-left info-card"
                     elevation="5"
                     @click="navigateTo(result.item)"
                   >
