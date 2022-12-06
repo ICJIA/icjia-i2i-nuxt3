@@ -5,6 +5,7 @@
         ><v-row
           ><v-col>
             <h1>This is the search page</h1>
+            <div class="text-right">Found: {{ result.length }}</div>
 
             <v-form class="pl-2 mt-4" style="margin-top: -15px">
               <v-text-field
@@ -19,44 +20,44 @@
               />
             </v-form>
 
-            <div class="text-center">
+            <div class="text-right">
               <v-btn class="mr-3" color="blue" @click.prevent="clearAll"
                 >Clear</v-btn
               >
-
-              <div v-if="result && query?.length">
-                <div class="text-center">
-                  <h2>Search results:</h2>
-                  Found: {{ result.length }}
-                </div>
-                <div v-if="result.length">
-                  <v-card
-                    v-for="(result, index) in result"
-                    :key="`fuse-${index}`"
-                    class="px-5 py-5 mx-5 my-10 hover text-left info-card"
-                    elevation="5"
-                    @click="navigateTo(result.item)"
-                  >
-                    <p>{{ result.item }}</p>
-                    <p
-                      style="
-                        font-size: 11px;
-                        font-weight: 900;
-                        border: 1px solid #ccc;
-                        display: inline-block;
-                        float: right;
-                        padding: 5px;
-                        background: #ddd;
-                        color: #000;
-                      "
-                      class="mt-2"
-                    >
-                      Search score: {{ result.score }}
-                    </p>
-                  </v-card>
-                </div>
+            </div>
+            <div v-if="result && query?.length">
+              <div class="text-center">
+                <h2>Search results:</h2>
               </div>
+              <div v-if="result.length">
+                <v-card
+                  v-for="(result, index) in result"
+                  :key="`fuse-${index}`"
+                  class="px-5 py-5 mx-5 my-10 hover text-left info-card"
+                  elevation="5"
+                  @click="navigateTo(result.item)"
+                >
+                  <p>{{ result.item }}</p>
+                  <p
+                    style="
+                      font-size: 11px;
+                      font-weight: 900;
+                      border: 1px solid #ccc;
+                      display: inline-block;
+                      float: right;
+                      padding: 5px;
+                      background: #ddd;
+                      color: #000;
+                    "
+                    class="mt-2"
+                  >
+                    Search score: {{ result.score }}
+                  </p>
+                </v-card>
+              </div>
+            </div>
 
+            <div class="text-center">
               <v-btn v-if="!showIndex" @click.prevent="toggleIndex"
                 >DEBUG: Show search index<v-icon right
                   >mdi-chevron-down</v-icon
