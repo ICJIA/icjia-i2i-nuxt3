@@ -7,7 +7,6 @@ createdAt: 2022-11-28T16:48:37.860Z
 updatedAt: 2022-11-28T17:31:35.954Z
 publishedAt: 2022-11-28T16:48:40.078Z
 searchMeta: null
-rawText: This is the body for test page 3
 draft: false
 description: This is the summary for test Page 3
 navigation: true
