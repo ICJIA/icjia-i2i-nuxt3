@@ -1,7 +1,7 @@
 export default defineAppConfig({
   title: "Institute to Innovate (i2i)",
   description: "Investing in Public Safety by Investing in You",
-  api: "https://r3.icjia-api.cloud",
+  api: "https://i2i.icjia-api.cloud",
   footerMenu: [
     {
       main: "Home",

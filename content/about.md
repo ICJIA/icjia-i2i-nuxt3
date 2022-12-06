@@ -3,9 +3,9 @@ title: About
 slug: about
 summary: This is the summary for the about page
 section: root
-createdAt: 2022-11-28T19:34:21.908Z
-updatedAt: 2022-12-04T20:19:18.482Z
-publishedAt: 2022-11-28T19:34:35.699Z
+createdAt: 2022-12-06T17:39:17.825Z
+updatedAt: 2022-12-06T17:41:59.065Z
+publishedAt: 2022-12-06T17:39:21.149Z
 searchMeta: "icjia voca vawa "
 draft: false
 description: This is the summary for the about page

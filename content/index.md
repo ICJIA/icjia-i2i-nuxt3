@@ -1,14 +1,14 @@
 ---
 title: Institute 2 Innovate
 slug: index
-summary: This is the summary
+summary: null
 section: root
-createdAt: 2022-11-30T18:49:02.692Z
-updatedAt: 2022-12-01T12:58:32.951Z
-publishedAt: 2022-11-30T18:49:04.434Z
+createdAt: 2022-12-06T17:40:55.485Z
+updatedAt: 2022-12-06T17:42:48.440Z
+publishedAt: 2022-12-06T17:42:48.426Z
 searchMeta: null
 draft: false
-description: This is the summary
+description: null
 navigation: true
 path: /
 url: https://i2i.icjia.dev
@@ -26,11 +26,14 @@ i2i supports “grassroots” organizations and community groups committed to ch
 
 </div>
 
+
 <div style="background: #3C5984" class="text-center">
 
 :home-boxes
 
 </div>
+
+
 
 <div  style="margin-top: -15px; background: #f4f4f4 !important; color: #000!important; border-top: 1px solid #ddd;" class="py-3" id="services">
 

@@ -108,7 +108,7 @@ export default defineNuxtConfig({
   apollo: {
     clients: {
       default: {
-        httpEndpoint: "https://r3.icjia-api.cloud/graphql",
+        httpEndpoint: "https://i2i.icjia-api.cloud/graphql",
       },
     },
   },

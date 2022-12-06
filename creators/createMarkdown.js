@@ -4,7 +4,7 @@ const path = require("path");
 const axios = require("axios");
 const jsonfile = require("jsonfile");
 const _ = require("lodash");
-const API = "https://r3.icjia-api.cloud";
+const API = "https://i2i.icjia-api.cloud";
 const yaml = require("yaml");
 const fsExtra = require("fs-extra");
 
