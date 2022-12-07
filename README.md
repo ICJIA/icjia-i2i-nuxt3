@@ -4,12 +4,11 @@
 
 Test site for the i2i project
 
-## Setup
-
-Install the dependencies:
+## Install
 
 ```bash
-# yarn
+git clone https://github.com/ICJIA/icjia-i2i-nuxt3.git
+cd icjia-i2i-nuxt3
 yarn install
 
 ```
