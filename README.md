@@ -1,6 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/19d6ca7f-4313-4a1b-8ea5-f4400377634f/deploy-status)](https://app.netlify.com/sites/i2i/deploys)
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/19d6ca7f-4313-4a1b-8ea5-f4400377634f/deploy-status)](https://app.netlify.com/sites/i2i/deploys) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 # ICJIA i2i NUXT 3
 
