@@ -36,6 +36,7 @@
                 </div>
                 <v-list-item
                   v-if="child.title"
+                  exact
                   style="margin-top: 0px; font-weight: 400; color: #555"
                   :to="child.link"
                 >
@@ -54,11 +55,11 @@
           </div>
         </div>
         <v-divider class="my-3"></v-divider>
-        <v-list-item to="/search">
+        <v-list-item exact to="/search">
           <v-icon left icon="mdi-magnify" size="x-small"></v-icon
           >&nbsp;&nbsp;&nbsp;Search</v-list-item
         >
-        <v-list-item exact to="/" @click.prevent="translationToggle">
+        <v-list-item class="sidebar-item" @click.prevent="translationToggle">
           <v-icon left icon="mdi-web" size="x-small"></v-icon
           >&nbsp;&nbsp;&nbsp;Translate</v-list-item
         >
@@ -102,4 +103,9 @@ const translationToggle = () => {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.sidebar-item {
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+}
+</style>
