@@ -3,7 +3,9 @@
     <div class="text-center">
       <v-dialog v-model="dialog" scroll-strategy="none">
         <v-card>
-          <v-card-text> Google Translate options here </v-card-text>
+          <v-card-text
+            ><strong>Google Translate options here</strong>
+          </v-card-text>
           <v-card-actions class="text-center">
             <v-spacer></v-spacer>
             <v-btn color="primary" @click.prevent.stop="closeDialog"
