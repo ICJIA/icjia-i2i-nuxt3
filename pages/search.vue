@@ -21,7 +21,10 @@
             </v-form>
 
             <div class="text-center">
-              <v-btn class="mr-3" color="blue" @click.prevent="clearAll"
+              <v-btn
+                class="mr-3"
+                color="blue-darken-4"
+                @click.prevent="clearAll"
                 >Clear</v-btn
               >
             </div>
@@ -111,10 +114,10 @@ const query = ref("");
 
 const fuse = new Fuse(searchIndex, options);
 
-let result = ref(fuse.search(query.value));
+const result = ref(fuse.search(query.value));
 
 const instantSearch = () => {
-  result = fuse.search(query.value);
+  result.value = fuse.search(query.value);
 };
 
 const showIndex = ref(false);
@@ -130,7 +133,7 @@ const navigateTo = (item) => {
 
 const clearAll = () => {
   query.value = "";
-  result.value = [];
+  result.value = "";
   showIndex.value = false;
   const el = document.getElementById("textfield");
   el.focus();
