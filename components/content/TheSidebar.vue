@@ -58,7 +58,7 @@
           <v-icon left icon="mdi-magnify" size="x-small"></v-icon
           >&nbsp;&nbsp;&nbsp;Search</v-list-item
         >
-        <v-list-item to="/" @click.prevent="translationToggle">
+        <v-list-item exact to="/" @click.prevent="translationToggle">
           <v-icon left icon="mdi-web" size="x-small"></v-icon
           >&nbsp;&nbsp;&nbsp;Translate</v-list-item
         >
