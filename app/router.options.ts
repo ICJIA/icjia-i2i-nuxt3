@@ -10,7 +10,7 @@ export default {
           () => {
             resolve({ top: 0, left: 0, behavior: "smooth" });
           },
-          !from || to.path !== from.path ? 500 : 1
+          !from || to.path !== from.path ? 10 : 1
         );
       } else if (savedPosition) {
         nuxtApp.hooks.hook("page:finish", async () => {

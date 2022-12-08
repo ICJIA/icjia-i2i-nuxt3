@@ -21,6 +21,16 @@ a {
     font-weight: 700;
 }
 
+.hover-anchor {
+    font-family: 'Roboto' !important;
+        font-weight: 700;
+        text-decoration: none;
+}
+
+.hover-anchor:hover {
+   text-decoration: underline !important;
+}
+
 .hover {
     cursor: pointer
 }

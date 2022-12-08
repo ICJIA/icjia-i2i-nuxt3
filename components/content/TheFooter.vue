@@ -40,12 +40,13 @@
                   >Subscribe to the CJ Dispatch</a
                 >
                 |
-                <span
+                <a
                   style="color: #fff; background: none; cursor: pointer"
+                  class="hover-anchor"
                   @click.prevent="translate"
                 >
                   Translate this site
-                </span>
+                </a>
               </div>
 
               <div
