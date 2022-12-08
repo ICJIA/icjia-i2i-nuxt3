@@ -20,7 +20,7 @@
               />
             </v-form>
 
-            <div class="text-right">
+            <div class="text-center">
               <v-btn class="mr-3" color="blue" @click.prevent="clearAll"
                 >Clear</v-btn
               >
@@ -58,6 +58,7 @@
             </div>
 
             <div class="text-center">
+              <br /><br />
               <v-btn v-if="!showIndex" @click.prevent="toggleIndex"
                 >DEBUG: Show search index<v-icon right
                   >mdi-chevron-down</v-icon

@@ -122,8 +122,9 @@
           style="font-weight: 900 !important; font-size: 16px"
           @click="goToSearch"
         >
-          Search&nbsp;&nbsp;</v-btn
-        >
+          <v-tooltip activator="parent" location="bottom"> Search </v-tooltip>
+          <v-icon icon="mdi-magnify" size="large"></v-icon>
+        </v-btn>
 
         <v-btn
           size="default"
