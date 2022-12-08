@@ -39,6 +39,13 @@
                   target="_blank"
                   >Subscribe to the CJ Dispatch</a
                 >
+                |
+                <span
+                  style="color: #fff; background: none; cursor: pointer"
+                  @click.prevent="translate"
+                >
+                  Translate this site
+                </span>
               </div>
 
               <div
@@ -81,11 +88,16 @@ export default {
       window.scrollTo(0, 0);
     };
 
+    const translate = () => {
+      const toggleState = useTranslateToggle();
+      toggleState.value = true;
+    };
+
     const routeToSite = () => {
       // open new site in new tab
       window.open("https://icjia.illinois.gov", "_blank");
     };
-    return { routeToSite, scrollTop };
+    return { routeToSite, scrollTop, translate };
   },
 };
 </script>

@@ -6,7 +6,9 @@
           <v-card-text> Translation options here </v-card-text>
           <v-card-actions class="text-center">
             <v-spacer></v-spacer>
-            <v-btn color="primary" @click="closeDialog">Close</v-btn>
+            <v-btn color="primary" @click.prevent.stop="closeDialog"
+              >Close</v-btn
+            >
           </v-card-actions>
         </v-card>
       </v-dialog>
@@ -22,7 +24,7 @@ const closeDialog = () => {
   toggleState.value = false;
 };
 
-watch(dialog, (val) => {
+watch(dialog, () => {
   toggleState.value = dialog.value;
 });
 watchEffect(() => {

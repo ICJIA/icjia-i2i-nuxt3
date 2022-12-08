@@ -14,7 +14,7 @@
             />
           </div>
 
-          <h2>Global state</h2>
+          <h2>Application state</h2>
           {{ altState }}
           <br />
           <v-btn id="nav" @click="altToggle">Toggle mobile nav</v-btn>

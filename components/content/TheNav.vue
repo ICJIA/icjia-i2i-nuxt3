@@ -123,6 +123,13 @@
           @click="goToSearch"
           >Search&nbsp;&nbsp;</v-btn
         >
+        <v-btn
+          size="default"
+          class="hidden-sm-and-down navItem"
+          style="font-weight: 900 !important; font-size: 16px"
+          @click="openTranslationModal"
+          ><v-icon icon="mdi-web" size="large"></v-icon
+        ></v-btn>
         <span class="hover text-right hidden-md-and-up" @click="goToSearch">
           <v-icon icon="mdi-magnify" size="large"></v-icon>
           <div style="font-size: 10px; font-weight: 900">Search</div>
@@ -155,6 +162,11 @@ onMounted(() => {
 const router = useRouter();
 const goToSearch = () => {
   router.push({ path: "/search" });
+};
+
+const openTranslationModal = () => {
+  const toggleState = useTranslateToggle();
+  toggleState.value = true;
 };
 </script>
 
