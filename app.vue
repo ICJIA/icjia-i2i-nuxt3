@@ -2,6 +2,7 @@
   <v-app id="appTop">
     <TheNav></TheNav>
     <TheSidebar></TheSidebar>
+    <TheTranslationModal></TheTranslationModal>
 
     <NuxtLoadingIndicator color="blue" />
     <v-main class="markdown-body" style="min-height: 90vh !important">

@@ -1,0 +1,31 @@
+<template>
+  <v-no-ssr>
+    <div class="text-center">
+      <v-dialog v-model="dialog">
+        <v-card>
+          <v-card-text> Translation options here </v-card-text>
+          <v-card-actions class="text-center">
+            <v-spacer></v-spacer>
+            <v-btn color="primary" @click="closeDialog">Close</v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-dialog>
+    </div>
+  </v-no-ssr>
+</template>
+
+<script setup>
+const dialog = ref(false);
+const toggleState = useTranslateToggle();
+const closeDialog = () => {
+  dialog.value = false;
+  toggleState.value = false;
+};
+
+watch(dialog, (val) => {
+  toggleState.value = dialog.value;
+});
+watchEffect(() => {
+  dialog.value = toggleState.value;
+});
+</script>

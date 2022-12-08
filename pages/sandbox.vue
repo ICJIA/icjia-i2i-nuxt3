@@ -18,6 +18,11 @@
           {{ altState }}
           <br />
           <v-btn id="nav" @click="altToggle">Toggle mobile nav</v-btn>
+          <br /><br />
+          {{ translationState }}<br />
+          <v-btn id="nav" @click="translationToggle"
+            >Toggle translation modal</v-btn
+          >
         </v-col></v-row
       ></v-container
     >
@@ -110,5 +115,10 @@ useHead({
 const altState = useNavToggle();
 const altToggle = () => {
   altState.value = !altState.value;
+};
+
+const translationState = useTranslateToggle();
+const translationToggle = () => {
+  translationState.value = !translationState.value;
 };
 </script>
