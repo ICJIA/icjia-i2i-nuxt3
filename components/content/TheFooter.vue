@@ -45,7 +45,7 @@
                   class="hover-anchor"
                   @click.prevent="translate"
                 >
-                  Translate this site
+                  Translate
                 </a>
               </div>
 

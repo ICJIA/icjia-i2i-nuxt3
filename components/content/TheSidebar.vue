@@ -53,7 +53,11 @@
             >
           </div>
         </div>
+        <v-divider class="my-3"></v-divider>
         <v-list-item to="/search">Search</v-list-item>
+        <v-list-item to="/" @click.prevent="translationToggle"
+          >Translate</v-list-item
+        >
       </v-list>
     </v-navigation-drawer>
   </div>
@@ -86,6 +90,11 @@ const routeTo = (url) => {
   altState.value = false;
 
   router.push({ path: url });
+};
+
+const translationState = useTranslateToggle();
+const translationToggle = () => {
+  translationState.value = !translationState.value;
 };
 </script>
 
