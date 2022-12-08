@@ -125,6 +125,12 @@ const toggleIndex = () => {
   showIndex.value = !showIndex.value;
 };
 
+watch(query, (val) => {
+  if (!val) {
+    result.value = [];
+  }
+});
+
 const router = useRouter();
 const navigateTo = (item) => {
   console.log("navigateTo: ", item?.path);
