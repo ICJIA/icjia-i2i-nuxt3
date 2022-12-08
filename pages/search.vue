@@ -133,7 +133,7 @@ const navigateTo = (item) => {
 
 const clearAll = () => {
   query.value = "";
-  result.value = "";
+  result.value = [];
   showIndex.value = false;
   const el = document.getElementById("textfield");
   el.focus();
