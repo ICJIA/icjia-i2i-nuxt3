@@ -3,7 +3,7 @@ export default defineAppConfig({
   description: "Investing in Public Safety by Investing in You",
   api: "https://i2i.icjia-api.cloud",
   root: "https://i2i.icjia.dev",
-  isTranslationEnabled: false,
+  isTranslationEnabled: true,
   footerMenu: [
     {
       main: "Home",
