@@ -2,7 +2,7 @@
   <v-app id="appTop">
     <TheNav></TheNav>
     <TheSidebar></TheSidebar>
-    <TheTranslationModal></TheTranslationModal>
+    <TheTranslationModal v-if="isTranslationEnabled"></TheTranslationModal>
 
     <NuxtLoadingIndicator color="blue" />
     <v-main class="markdown-body" style="min-height: 90vh !important">
@@ -19,7 +19,7 @@
 
 // const thumbor = new Thumbor("TEST", "https://image.icjia.cloud");
 // console.log(thumbor.setImagePath().buildUrl());
-
+const { isTranslationEnabled } = useAppConfig();
 useHead({
   htmlAttrs: {
     lang: "en",

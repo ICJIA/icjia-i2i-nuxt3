@@ -127,6 +127,7 @@
         </v-btn>
 
         <v-btn
+          v-if="isTranslationEnabled"
           size="default"
           class="hidden-sm-and-down navItem"
           style="font-weight: 900 !important; font-size: 16px"
@@ -163,6 +164,7 @@
 </template>
 
 <script setup>
+const { isTranslationEnabled } = useAppConfig();
 const isMounted = ref(false);
 const nav = useNavToggle();
 const toggleNav = () => {

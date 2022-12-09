@@ -39,14 +39,16 @@
                   target="_blank"
                   >Subscribe to the CJ Dispatch</a
                 >
-                |
-                <a
-                  style="color: #fff; background: none; cursor: pointer"
-                  class="hover-anchor"
-                  @click.prevent="translate"
-                >
-                  Translate
-                </a>
+                <span v-if="isTranslationEnabled"
+                  >|
+                  <a
+                    style="color: #fff; background: none; cursor: pointer"
+                    class="hover-anchor"
+                    @click.prevent="translate"
+                  >
+                    Translate
+                  </a>
+                </span>
               </div>
 
               <div
@@ -85,6 +87,7 @@
 <script>
 export default {
   setup() {
+    const { isTranslationEnabled } = useAppConfig();
     const scrollTop = () => {
       window.scrollTo(0, 0);
     };
@@ -98,7 +101,7 @@ export default {
       // open new site in new tab
       window.open("https://icjia.illinois.gov", "_blank");
     };
-    return { routeToSite, scrollTop, translate };
+    return { routeToSite, scrollTop, translate, isTranslationEnabled };
   },
 };
 </script>

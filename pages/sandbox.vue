@@ -19,9 +19,11 @@
           <br />
           <v-btn id="nav" @click="altToggle">Toggle mobile nav</v-btn>
           <br /><br />
-          {{ translationState }}<br />
-          <v-btn id="nav" @click="translationToggle"
-            >Toggle translation modal</v-btn
+          <span v-if="isTranslationEnabled">
+            {{ translationState }}<br />
+            <v-btn id="nav" @click="translationToggle"
+              >Toggle translation modal</v-btn
+            ></span
           >
         </v-col></v-row
       ></v-container
@@ -111,7 +113,7 @@ ul.cohort-list li {
 useHead({
   title: "Sandbox",
 });
-
+const { isTranslationEnabled } = useAppConfig();
 const altState = useNavToggle();
 const altToggle = () => {
   altState.value = !altState.value;
