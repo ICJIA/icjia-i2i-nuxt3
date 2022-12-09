@@ -1,5 +1,7 @@
 {
   "private": true,
+  "version": "0.1.0",
+  "license": "MIT",
   "author": {
     "name": "Illinois Criminal Justice Information Authority",
     "email": "cja.info@illinois.gov"

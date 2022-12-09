@@ -4,7 +4,7 @@ slug: about
 summary: This is the summary for the about page
 section: root
 createdAt: 2022-12-06T17:39:17.825Z
-updatedAt: 2022-12-06T17:41:59.065Z
+updatedAt: 2022-12-09T17:24:36.457Z
 publishedAt: 2022-12-06T17:39:21.149Z
 searchMeta: "icjia voca vawa "
 draft: false
@@ -16,21 +16,25 @@ url: https://i2i.icjia.dev/about
 
 # About
 
-Test Test Test
+- Program overview 
 
-## Test GraphQL query
+    - SERVICES Provided 
+    
+- Program partners
 
-:query
+    - Brief description of each partner and role (include web links) 
 
-## Vue component
+- Program Approach 
 
-:test
+    - PARLOR PROCESS 
 
-## HTML in markdown
+- Program COHORTS 
 
-<div style="font-size: 26px; font-weight: bold">
+    - TIER 1 
 
-Test HTML
+    - TIER 2 
 
-</div>
+    - TIER 3 
+
+- History of program  
 

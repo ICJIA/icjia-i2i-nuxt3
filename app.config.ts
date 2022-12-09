@@ -3,7 +3,7 @@ export default defineAppConfig({
   description: "Investing in Public Safety by Investing in You",
   api: "https://i2i.icjia-api.cloud",
   root: "https://i2i.icjia.dev",
-  isTranslationEnabled: true,
+  isTranslationEnabled: false,
   footerMenu: [
     {
       main: "Home",
@@ -18,8 +18,8 @@ export default defineAppConfig({
       link: "/contact",
     },
     {
-      main: "Sandbox",
-      link: "/sandbox",
+      main: "Information & Resources",
+      link: "/information-and-resources",
     },
 
     {
@@ -35,53 +35,16 @@ export default defineAppConfig({
       nudgeLeft: "78px",
     },
     {
-      main: "Sandbox",
-      link: "/sandbox",
-      nudgeLeft: "78px",
+      main: "About",
+      link: "/about",
     },
-
     {
-      main: "Dropdown",
-      nudgeLeft: "57px",
-      children: [
-        {
-          section: "Section 1",
-        },
-        {
-          title: "About",
-          link: "/about",
-        },
-        {
-          title: "Contact",
-          link: "/contact",
-        },
-        {
-          title: "All Pages",
-          link: "/page",
-        },
-        {
-          title: "Sandbox",
-          link: "/sandbox",
-        },
-        {
-          divider: true,
-        },
-        {
-          section: "Section 2",
-        },
-        {
-          title: "Page 1",
-          link: "/page/test-page-1",
-        },
-        {
-          title: "Page 2",
-          link: "/page/test-page-2",
-        },
-        {
-          title: "Page 3",
-          link: "/page/test-page-3",
-        },
-      ],
+      main: "Information & Resources",
+      link: "/information-and-resources",
+    },
+    {
+      main: "Contact",
+      link: "/contact",
     },
   ],
 });
