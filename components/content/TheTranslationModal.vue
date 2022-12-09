@@ -234,12 +234,21 @@ watchEffect(() => {
 });
 
 const googleTranslate = (lang) => {
+  const { api } = useAppConfig();
+  const { fullPath, href } = useRoute();
   console.log("language target: ", lang);
-  const route = `test`;
+  console.log("full path: ", fullPath);
+  console.log("href: ", href);
+  const route = `https://i2i.icjia.dev${fullPath}`;
   const url =
     `https://translate.google.com/translate?hl=en&sl=en&u=${route}&tl=` + lang;
+
+  window.open(url);
+  // const url =
+  //   `https://translate.google.com/translate?hl=en&sl=en&u=${api}${path}&tl=` +
+  //   lang;
   show.value = false;
-  console.log("translate url: ", url);
+  // console.log("translate url: ", url);
   // window.open(url);
 };
 </script>
