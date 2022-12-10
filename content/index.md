@@ -4,7 +4,7 @@ slug: index
 summary: null
 section: root
 createdAt: 2022-12-06T17:40:55.485Z
-updatedAt: 2022-12-06T17:42:48.440Z
+updatedAt: 2022-12-09T17:53:43.545Z
 publishedAt: 2022-12-06T17:42:48.426Z
 searchMeta: null
 draft: false

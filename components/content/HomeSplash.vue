@@ -27,11 +27,6 @@
               src="https://r3.icjia-api.cloud/uploads/thumbnail_i2i_Small_eeb3f8b872.png"
               lazy-src="https://r3.icjia-api.cloud/uploads/thumbnail_i2i_Small_eeb3f8b872.png"
             />
-            <!-- <nuxt-img
-              src="https://agency.icjia-api.cloud/uploads/i2i_small_transparent_a6cfd95a04.png"
-              quality="10"
-              width="75"
-            /> -->
           </div>
           <h1
             style="color: #fff; font-size: 55px !important; margin-top: 0px"
