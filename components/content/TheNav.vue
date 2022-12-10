@@ -138,9 +138,6 @@
           ><v-icon icon="mdi-web" size="large"></v-icon
         ></v-btn>
 
-        <!-- <v-btn icon class="hidden-lg-and-up hidden-sm-and-down">
-          <v-icon>mdi-dots-vertical</v-icon>
-        </v-btn> -->
         <span class="hidden-lg-and-up hidden-sm-and-down">
           <v-menu transition="scale-transition">
             <template #activator="{ props }">
@@ -151,7 +148,7 @@
 
             <v-list>
               <v-list-item exact to="/search">
-                <v-list-item-title
+                <v-list-item-title style="font-size: 16px; font-weight: 700"
                   ><v-icon size="x-small" icon="mdi-magnify" left></v-icon
                   >&nbsp;&nbsp;Search</v-list-item-title
                 >
@@ -162,7 +159,7 @@
                 style="cursor: pointer"
                 @click="openTranslationModal"
               >
-                <v-list-item-title
+                <v-list-item-title style="font-size: 16px; font-weight: 700"
                   ><v-icon size="x-small" icon="mdi-web" left></v-icon
                   >&nbsp;&nbsp;Translate</v-list-item-title
                 >

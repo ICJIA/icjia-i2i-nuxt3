@@ -23,8 +23,8 @@
                   target="_blank"
                   style="text-decoration: none"
                 >
-                  <nuxt-img
-                    src="/icjia-logo.png"
+                  <img
+                    src="https://i2i.icjia-api.cloud/uploads/icjia_logo_6e30b0adb5.png"
                     alt="Footer logo"
                     width="100"
                     style="border: 0px solid #ddd; display: inline"
