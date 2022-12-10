@@ -25,6 +25,16 @@
               >Toggle translation modal</v-btn
             ></span
           >
+
+          <!-- <v-menu bottom left>
+            <template #activator="{ on, attrs }">
+              <v-btn dark icon v-bind="attrs" v-on="on">
+                <v-icon>mdi-dots-vertical</v-icon>
+              </v-btn>
+            </template> -->
+          <br />
+
+          <!-- </v-menu> -->
         </v-col></v-row
       ></v-container
     >
@@ -123,4 +133,11 @@ const translationState = useTranslateToggle();
 const translationToggle = () => {
   translationState.value = !translationState.value;
 };
+
+const items = ref([
+  { title: "Click Me" },
+  { title: "Click Me" },
+  { title: "Click Me" },
+  { title: "Click Me 2" },
+]);
 </script>
