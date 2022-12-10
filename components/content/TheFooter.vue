@@ -18,14 +18,19 @@
               style="color: white"
             >
               <div>
-                <img
-                  src="/icjia-logo.png"
-                  alt="Footer logo"
-                  width="100"
-                  style="border: 0px solid #ddd; display: inline"
-                  class="hover"
-                  @click.prevent="routeToSite"
-                />
+                <a
+                  href="https://icjia.illinois.gov"
+                  target="_blank"
+                  style="text-decoration: none"
+                >
+                  <nuxt-img
+                    src="/icjia-logo.png"
+                    alt="Footer logo"
+                    width="100"
+                    style="border: 0px solid #ddd; display: inline"
+                    class="hover"
+                  />
+                </a>
               </div>
 
               <div style="font-size: 12px; font-weight: 400">
