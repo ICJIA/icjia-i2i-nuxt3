@@ -4,7 +4,7 @@
     :height="650"
     aspect-ratio="1"
     cover
-    src="https://agency.icjia-api.cloud/uploads/medium_markus_winkler_a_Y_Pt_Ekn_Qm_XE_unsplash_0f61baccac.jpg"
+    src="/home-splash-01.jpg"
     lazy-src="https://agency.icjia-api.cloud/uploads/thumbnail_markus_winkler_a_Y_Pt_Ekn_Qm_XE_unsplash_0f61baccac.jpg"
   >
     <template #placeholder>

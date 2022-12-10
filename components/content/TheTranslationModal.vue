@@ -235,6 +235,7 @@ watchEffect(() => {
 
 const googleTranslate = (lang) => {
   show.value = false;
+  dialog.value = false;
   const { root } = useAppConfig();
   const { fullPath, href } = useRoute();
   console.log("site root: ", root);
