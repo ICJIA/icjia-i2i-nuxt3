@@ -138,9 +138,37 @@
           ><v-icon icon="mdi-web" size="large"></v-icon
         ></v-btn>
 
-        <v-btn icon class="hidden-lg-and-up hidden-sm-and-down">
+        <!-- <v-btn icon class="hidden-lg-and-up hidden-sm-and-down">
           <v-icon>mdi-dots-vertical</v-icon>
-        </v-btn>
+        </v-btn> -->
+        <span class="hidden-lg-and-up hidden-sm-and-down">
+          <v-menu transition="scale-transition">
+            <template #activator="{ props }">
+              <v-btn v-bind="props">
+                <v-icon>mdi-dots-vertical</v-icon>
+              </v-btn>
+            </template>
+
+            <v-list>
+              <v-list-item to="/search">
+                <v-list-item-title
+                  ><v-icon size="x-small" icon="mdi-magnify" left></v-icon
+                  >&nbsp;&nbsp;Search</v-list-item-title
+                >
+              </v-list-item>
+              <v-list-item
+                v-if="isTranslationEnabled"
+                style="cursor: pointer"
+                @click="openTranslationModal"
+              >
+                <v-list-item-title
+                  ><v-icon size="x-small" icon="mdi-web" left></v-icon
+                  >&nbsp;&nbsp;Translate</v-list-item-title
+                >
+              </v-list-item>
+            </v-list>
+          </v-menu>
+        </span>
         <span
           class="hover hamburger text-center hidden-md-and-up"
           @click="goToSearch"
@@ -183,6 +211,13 @@ const openTranslationModal = () => {
   const toggleState = useTranslateToggle();
   toggleState.value = true;
 };
+
+const items = ref([
+  { title: "Click Me" },
+  { title: "Click Me" },
+  { title: "Click Me" },
+  { title: "Click Me 2" },
+]);
 </script>
 
 <style lang="scss" scoped>

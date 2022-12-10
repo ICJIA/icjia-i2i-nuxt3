@@ -33,11 +33,29 @@
               </v-btn>
             </template> -->
           <br />
+          <br />
+          <div v-if="isMounted">
+            <div>Menu dropdown</div>
+            <v-menu transition="scale-transition">
+              <template #activator="{ props }">
+                <v-btn v-bind="props">
+                  <v-icon>mdi-dots-vertical</v-icon>
+                </v-btn>
+              </template>
 
-          <!-- </v-menu> -->
-        </v-col></v-row
-      ></v-container
-    >
+              <v-list>
+                <v-list-item v-for="(item, i) in items" :key="i">
+                  <v-list-item-title>{{ item.title }}</v-list-item-title>
+                </v-list-item>
+              </v-list>
+            </v-menu>
+          </div>
+          <div v-else>
+            <span class="flex d-flex text-left">
+              <TheLoader></TheLoader>
+            </span>
+          </div> </v-col></v-row
+    ></v-container>
     <v-container
       ><v-row
         ><v-col>
@@ -133,6 +151,11 @@ const translationState = useTranslateToggle();
 const translationToggle = () => {
   translationState.value = !translationState.value;
 };
+
+const isMounted = ref(false);
+onMounted(() => {
+  isMounted.value = true;
+});
 
 const items = ref([
   { title: "Click Me" },
