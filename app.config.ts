@@ -3,7 +3,7 @@ export default defineAppConfig({
   description: "Investing in Public Safety by Investing in You",
   api: "https://i2i.icjia-api.cloud",
   root: "https://i2i.icjia.dev",
-  isTranslationEnabled: false,
+  isTranslationEnabled: true,
   footerMenu: [
     {
       main: "Home",
@@ -14,12 +14,13 @@ export default defineAppConfig({
       link: "/about",
     },
     {
-      main: "Contact",
-      link: "/contact",
-    },
-    {
       main: "Information & Resources",
       link: "/information-and-resources",
+    },
+
+    {
+      main: "Contact",
+      link: "/contact",
     },
 
     {
@@ -41,10 +42,6 @@ export default defineAppConfig({
     {
       main: "Information & Resources",
       link: "/information-and-resources",
-    },
-    {
-      main: "Contact",
-      link: "/contact",
     },
   ],
 });
