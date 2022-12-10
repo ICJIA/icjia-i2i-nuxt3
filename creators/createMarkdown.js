@@ -102,6 +102,16 @@ axios
       }
     );
 
+    jsonfile.writeFileSync(
+      `./public/siteMeta.json`,
+      searchIndex,
+      function (err) {
+        if (err) {
+          console.error(err);
+        }
+      }
+    );
+
     console.log("site.json created in /public/");
 
     site.forEach((page) => {
