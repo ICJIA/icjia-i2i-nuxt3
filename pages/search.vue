@@ -4,7 +4,7 @@
       <v-container class="mb-12"
         ><v-row
           ><v-col>
-            <h1>This is the search page</h1>
+            <h1>Search</h1>
             <div class="text-right">Found: {{ result.length }}</div>
 
             <v-form class="pl-2 mt-4" style="margin-top: -15px">
@@ -13,7 +13,7 @@
                 ref="textfield"
                 v-model="query"
                 clearable
-                label="Search"
+                label="Search i2i"
                 placeholder="Enter search term"
                 style="font-weight: 900"
                 @input="instantSearch"
