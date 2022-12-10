@@ -4,8 +4,8 @@
     :height="650"
     aspect-ratio="1"
     cover
-    src="/home-splash-01.jpg"
-    lazy-src="https://agency.icjia-api.cloud/uploads/thumbnail_markus_winkler_a_Y_Pt_Ekn_Qm_XE_unsplash_0f61baccac.jpg"
+    src="https://i2i.icjia-api.cloud/uploads/home_splash_01_min_00ad8df985.jpg?updated_at=2022-12-10T20:09:17.582Z"
+    lazy-src="https://i2i.icjia-api.cloud/uploads/thumbnail_home_splash_01_min_00ad8df985.jpg?updated_at=2022-12-10T20:09:17.582Z"
   >
     <template #placeholder>
       <v-row class="fill-height ma-0" align="center" justify="center">
@@ -24,8 +24,8 @@
             <v-img
               width="100"
               class="mx-auto"
-              src="https://r3.icjia-api.cloud/uploads/thumbnail_i2i_Small_eeb3f8b872.png"
-              lazy-src="https://r3.icjia-api.cloud/uploads/thumbnail_i2i_Small_eeb3f8b872.png"
+              src="https://i2i.icjia-api.cloud/uploads/small_i2i_Small_5fb05c84d5.png?updated_at=2022-12-10T20:08:14.156Z"
+              lazy-src="https://i2i.icjia-api.cloud/uploads/thumbnail_i2i_Small_5fb05c84d5.png?updated_at=2022-12-10T20:08:14.156Z"
             />
           </div>
           <h1
