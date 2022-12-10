@@ -43,5 +43,9 @@ export default defineAppConfig({
       main: "Information & Resources",
       link: "/information-and-resources",
     },
+    {
+      main: "Contact",
+      link: "/contact",
+    },
   ],
 });
