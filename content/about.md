@@ -7,6 +7,9 @@ createdAt: 2022-12-06T17:39:17.825Z
 updatedAt: 2022-12-09T17:54:02.665Z
 publishedAt: 2022-12-06T17:39:21.149Z
 searchMeta: "icjia voca vawa "
+rawText: " about program overview services provided program partners brief
+  description of each partner and role include web links program approach parlor
+  process program cohorts tier 1 tier 2 tier 3 history of program "
 draft: false
 description: This is the summary for the about page
 navigation: true

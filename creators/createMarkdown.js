@@ -56,8 +56,9 @@ axios
     let section;
     const site = pages.map((page) => {
       const obj = { ...page };
-      // const rawText = obj?.attributes?.body?.replace(/[^a-z0-9]/gi, " ");
-      // obj.attributes.rawText = rawText;
+      let rawText = obj?.attributes?.body?.replace(/[^a-z0-9]/gi, " ");
+      rawText = rawText.replace(/\s\s+/g, " ");
+      obj.attributes.rawText = rawText.toLowerCase();
       obj.attributes.draft = false;
       obj.attributes.description = page.attributes.summary;
       obj.attributes.navigation = true;

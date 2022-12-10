@@ -103,12 +103,12 @@ const options = {
   findAllMatches: true,
   minMatchCharLength: 2,
   location: 0,
-  threshold: 0.4,
+  threshold: 0.5,
   distance: 200,
   useExtendedSearch: false,
   ignoreLocation: false,
   ignoreFieldNorm: false,
-  keys: ["title", "slug", "summary", "searchMeta", "body"],
+  keys: ["title", "slug", "summary", "searchMeta", "rawText"],
 };
 const query = ref("");
 

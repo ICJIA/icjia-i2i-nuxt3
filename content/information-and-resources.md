@@ -7,6 +7,8 @@ createdAt: 2022-12-09T17:21:24.735Z
 updatedAt: 2022-12-09T17:53:33.205Z
 publishedAt: 2022-12-09T17:21:28.350Z
 searchMeta: null
+rawText: " information resources program benefits services provided faqs
+  workshops topics description "
 draft: false
 description: Information & Resources page
 navigation: true

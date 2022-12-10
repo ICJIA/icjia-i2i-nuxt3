@@ -7,6 +7,56 @@ createdAt: 2022-12-06T17:40:55.485Z
 updatedAt: 2022-12-09T17:53:43.545Z
 publishedAt: 2022-12-06T17:42:48.426Z
 searchMeta: null
+rawText: " div style background fff class mt 12 mb 12 px 12 id about img src
+  https agency icjia api cloud uploads i2i logo text small 6ff6ea89a9 png style
+  float left padding right 20px padding bottom 10px width 120 the illinois
+  criminal justice information authority icjia is launching a new capacity
+  building hub for statewide community based organizations entitled institute 2
+  innovate i2i the i2i team will help organizations strengthen infrastructure
+  increase sustainability and address capacity needs cohort members will include
+  local organizations that have yet to receive funding from the state of
+  illinois and icjia grantees with capacity constraints throughout the state of
+  illinois thousands of organizations work directly with communities and
+  individuals while struggling with capacity historical disinvestment continues
+  to plague grassroots organizations leaving them vulnerable and at risk of
+  dissolving these groups will benefit from additional support to address their
+  fundamental challenges and organizational needs i2i supports grassroots
+  organizations and community groups committed to changing the circumstance of
+  violence in their communities i2i will be a resource for these partners to
+  ensure that their capacity is increased and assist them on a path to
+  sustainability div div style background 3c5984 class text center home boxes
+  div div style margin top 15px background f4f4f4 important color 000 important
+  border top 1px solid ddd class py 3 id services div class v container v
+  container fluid div class v row div class v col md 6 v col 12 capacity
+  building services capacity building services include organizational
+  development board development program assessment evaluation refinement of
+  program models and development of logic models personnel staffing support
+  fiscal management oversight grant administration skills network building div
+  div class v col md 6 v col 12 parlor an evidence informed approach the parlor
+  process is an evidenced informed approach designed to address the
+  comprehensive needs of organizations therefore each parlor step will address
+  specific needs planning develop a mission vision and strategic plan
+  administration establish board and executive staff resources create proven
+  fiscal management and financial standards learning assess human capital staff
+  needs optimization develop protocols that assess effectiveness and program
+  outcomes relationships expand external networks and connect with new partners
+  div div div div div style background 3c5984 class text left div class v
+  container v container fluid div class v row div class v col 12 h2 style color
+  fff id cohorts cohorts h2 p style color fff the participating organizations
+  will receive training i e webinars workshops in person consultation etc on
+  various topics to strengthen their organization s infrastructure p p style
+  color fff font weight 900 cohorts will be announced in january 2023 p div div
+  div div div style background f1f1f1 important color 000 important border top
+  1px solid ddd class py 12 id contact info div class v container v container
+  fluid div class v row div class v col 12 contact for more information about
+  i2i please contact cja i2i illinois gov subscribe to the cj dispatch https
+  visitor r20 constantcontact com manage optin v
+  001mqucqqvjwlcjxllmswbte3zhhmeqgfebuhvbcjwtbwgrxfbdsgx4hsuppi6djwmupgbljtlxff\
+  qicgftgcnr auak88ybvrxpojltmgptzs 3d for the latest icjia and i2i information
+  find us on twitter https twitter com icjia illinois facebook https www
+  facebook com icjia youtube https www youtube com c
+  illinoiscriminaljusticeinformationauthority and linkedin https www linkedin
+  com company icjia div div div "
 draft: false
 description: null
 navigation: true
