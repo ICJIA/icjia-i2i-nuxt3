@@ -4,7 +4,7 @@
       fixed
       app
       color="white"
-      style="z-index: 50"
+      style="z-index: 50; width: 100%"
       size="90"
       class="pl-5 pr-5"
     >
@@ -158,7 +158,7 @@
         </span> -->
       </span>
 
-      <span v-else class="text center pl-5"><TheLoader></TheLoader></span>
+      <span v-else class="text center ml-12"><TheLoader></TheLoader></span>
     </v-app-bar>
   </div>
 </template>
