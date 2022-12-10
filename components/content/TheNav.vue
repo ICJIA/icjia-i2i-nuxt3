@@ -138,6 +138,9 @@
           ><v-icon icon="mdi-web" size="large"></v-icon
         ></v-btn>
 
+        <!-- <v-btn icon class="hidden-lg-and-up hidden-sm-and-down">
+          <v-icon>mdi-dots-vertical</v-icon>
+        </v-btn> -->
         <span class="hidden-lg-and-up hidden-sm-and-down">
           <v-menu transition="scale-transition">
             <template #activator="{ props }">
