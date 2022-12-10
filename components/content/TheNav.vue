@@ -119,7 +119,7 @@
         <v-btn
           variant="text"
           size="default"
-          class="hidden-sm-and-down navItem"
+          class="hidden-md-and-down navItem"
           style="font-weight: 900 !important; font-size: 16px"
           @click="goToSearch"
         >
@@ -130,17 +130,17 @@
         <v-btn
           v-if="isTranslationEnabled"
           size="default"
-          class="hidden-sm-and-down navItem"
+          class="hidden-md-and-down navItem"
           style="font-weight: 900 !important; font-size: 16px"
           @click="openTranslationModal"
         >
           <v-tooltip activator="parent" location="bottom"> Translate </v-tooltip
           ><v-icon icon="mdi-web" size="large"></v-icon
         ></v-btn>
-        <!-- <span class="hover text-right hidden-md-and-up" @click="goToSearch">
-          <v-icon icon="mdi-magnify" size="large"></v-icon>
-          <v-tooltip activator="parent" location="bottom"> Search </v-tooltip>
-        </span> -->
+
+        <v-btn icon class="hidden-lg-and-up hidden-sm-and-down">
+          <v-icon>mdi-dots-vertical</v-icon>
+        </v-btn>
         <span
           class="hover hamburger text-center hidden-md-and-up"
           @click="goToSearch"
@@ -148,15 +148,6 @@
           <v-icon icon="mdi-magnify" size="large"></v-icon>
           <div style="font-size: 10px; font-weight: 900">SEARCH</div>
         </span>
-        <!-- <span
-          class="hover text-right hidden-md-and-up pl-5 pr-1"
-          @click="openTranslationModal"
-        >
-          <v-tooltip activator="parent" location="bottom">
-            Translate
-          </v-tooltip>
-          <v-icon icon="mdi-web" size="large"></v-icon>
-        </span> -->
       </span>
 
       <span v-else class="text center ml-12"><TheLoader></TheLoader></span>
