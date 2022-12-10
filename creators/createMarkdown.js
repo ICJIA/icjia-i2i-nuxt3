@@ -56,7 +56,11 @@ axios
     let section;
     const site = pages.map((page) => {
       const obj = { ...page };
-      let rawText = obj?.attributes?.body?.replace(/[^a-z0-9]/gi, " ");
+      let rawText;
+
+      rawText = obj.attributes?.body
+        ?.replace(/<[^>]*>?/gm, "")
+        .replace(/[^a-z0-9]/gi, " ");
       rawText = rawText.replace(/\s\s+/g, " ");
       obj.attributes.rawText = rawText.toLowerCase();
       obj.attributes.draft = false;

@@ -103,8 +103,8 @@ const options = {
   findAllMatches: true,
   minMatchCharLength: 2,
   location: 0,
-  threshold: 0.5,
-  distance: 200,
+  threshold: 0.4,
+  distance: 500,
   useExtendedSearch: false,
   ignoreLocation: false,
   ignoreFieldNorm: false,
@@ -114,7 +114,7 @@ const query = ref("");
 
 const fuse = new Fuse(searchIndex, options);
 
-const result = ref(fuse.search(query.value));
+const result = ref(fuse.search(query.value.toLowerCase));
 
 const instantSearch = () => {
   result.value = fuse.search(query.value);
