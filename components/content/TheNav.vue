@@ -37,13 +37,14 @@
         <span
           style="
             font-weight: 900 !important;
-            font-size: 26px;
+            font-size: 22px;
             letter-spacing: 0.004em;
           "
           class="agency app-title"
           @click="$router.push('/')"
-          >INSTITUTE 2 INNOVATE |
-          <span style="color: #fea30b; font-size: 30px">i2i</span></span
+          >INSTITUTE 2 INNOVATE<span class="hidden-md-and-down">
+            | <span style="color: #fea30b; font-size: 30px">i2i</span></span
+          ></span
         >
       </div>
 
