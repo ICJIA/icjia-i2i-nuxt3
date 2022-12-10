@@ -150,7 +150,7 @@
             </template>
 
             <v-list>
-              <v-list-item to="/search">
+              <v-list-item exact to="/search">
                 <v-list-item-title
                   ><v-icon size="x-small" icon="mdi-magnify" left></v-icon
                   >&nbsp;&nbsp;Search</v-list-item-title
@@ -158,6 +158,7 @@
               </v-list-item>
               <v-list-item
                 v-if="isTranslationEnabled"
+                exact
                 style="cursor: pointer"
                 @click="openTranslationModal"
               >
