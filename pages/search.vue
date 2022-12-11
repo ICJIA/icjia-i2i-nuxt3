@@ -29,15 +29,16 @@
               >
             </div>
             <div v-if="result && query?.length">
-              <div class="text-center">
+              <!-- <div class="text-center">
                 <h2>Search results:</h2>
-              </div>
+              </div> -->
               <div v-if="result.length">
                 <v-card
                   v-for="(result, index) in result"
                   :key="`fuse-${index}`"
                   class="px-5 py-5 mx-5 my-10 hover text-left info-card"
                   elevation="5"
+                  color="grey-lighten-4"
                   @click="navigateTo(result.item)"
                 >
                   <p>{{ result.item }}</p>
@@ -54,30 +55,9 @@
                     "
                     class="mt-2"
                   >
-                    Search score: {{ result.score }}
+                    Score: {{ result.score }}
                   </p>
                 </v-card>
-              </div>
-            </div>
-
-            <div class="text-center">
-              <br /><br />
-              <v-btn v-if="!showIndex" @click.prevent="toggleIndex"
-                >DEBUG: Show search index<v-icon right
-                  >mdi-chevron-down</v-icon
-                ></v-btn
-              >
-              <v-btn v-if="showIndex" @click.prevent="toggleIndex"
-                >DEBUG: Hide search index<v-icon right
-                  >mdi-chevron-up</v-icon
-                ></v-btn
-              >
-
-              <div v-if="showIndex" class="text-left">
-                <h4>Search index</h4>
-                <pre style="text-left">{{ searchIndex }}</pre>
-                <h4>Search options</h4>
-                <pre>{{ options }}</pre>
               </div>
             </div>
           </v-col></v-row
