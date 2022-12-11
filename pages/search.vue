@@ -28,7 +28,7 @@
                 >Clear</v-btn
               >
             </div>
-            <div v-if="result && query?.length">
+            <div v-if="result && query?.length" class="mt-10">
               <!-- <div class="text-center">
                 <h2>Search results:</h2>
               </div> -->
@@ -37,12 +37,14 @@
                   v-for="(result, index) in result"
                   :key="`fuse-${index}`"
                   class="px-5 py-5 mx-5 my-10 hover text-left info-card"
-                  elevation="5"
+                  elevation="2"
                   color="grey-lighten-4"
                   @click="navigateTo(result.item)"
                 >
-                  <p>{{ result.item }}</p>
-                  <p
+                  <h2 style="border-bottom: 0px">{{ result.item.title }}</h2>
+                  <p class="mt-2">{{ result.item.summary }}</p>
+                  <!-- <p>{{ result.item }}</p> -->
+                  <!-- <p
                     style="
                       font-size: 11px;
                       font-weight: 900;
@@ -56,7 +58,7 @@
                     class="mt-2"
                   >
                     Score: {{ result.score }}
-                  </p>
+                  </p> -->
                 </v-card>
               </div>
             </div>
