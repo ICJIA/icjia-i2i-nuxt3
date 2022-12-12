@@ -7,13 +7,15 @@
     "email": "cja.info@illinois.gov"
   },
   "scripts": {
-    "build": "npm run create:markdown && nuxt build",
-    "build:serve": "npm run create:markdown && nuxt build && node .output/server/index.mjs ",
+    "build": "yarn scripts && nuxt build",
+    "build:serve": "npm run scripts && nuxt build && node .output/server/index.mjs ",
     "build:edge": "NITRO_PRESET=netlify-edge nuxt build",
     "create:markdown": "node ./creators/createMarkdown.js",
-    "dev": "yarn create:markdown && nuxt dev --port=8000 -o",
-    "generate": "nuxt generate",
+    "create:sitemap": "node ./creators/createSitemap.mjs",
+    "dev": "yarn scripts && nuxt dev --port=8000 -o",
+    "generate": "yarn scripts && nuxt generate",
     "preview": "nuxt preview",
+    "scripts": "yarn create:markdown && yarn create:sitemap",
     "postinstall": "nuxt prepare",
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore . --fix",
     "lint": "npm run lint:js"
