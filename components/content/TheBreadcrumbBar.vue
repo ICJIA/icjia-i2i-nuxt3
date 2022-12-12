@@ -1,17 +1,12 @@
 <template>
-  <div>
-    <!-- <div width="100%" style="border-top: 0px solid #0d4fc9"></div> -->
-    <div
-      style="
-        background: #7655e4;
-        color: #fff;
-        padding: 3px 15px;
-        font-size: 13px;
-      "
-      class="text-right mb-4"
+  <div
+    style="background: #11568e; color: #fff !important; font-size: 14px"
+    class="text-right pr-5 py-1"
+  >
+    <nuxt-link to="/" class="breadcrumb-link" style="color: #fff"
+      >Home</nuxt-link
     >
-      <nuxt-link to="/" class="breadcrumb-link">IFVCC Home</nuxt-link> |
-      <span style="font-weight: 300">test</span>
-    </div>
+    <span style="color: #fff; font-weight: 900">&nbsp;|&nbsp;</span>
+    <span style="color: #fff; font-weight: 400">Page Name Here</span>
   </div>
 </template>

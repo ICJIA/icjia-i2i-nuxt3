@@ -87,7 +87,7 @@ export default defineNuxtConfig({
         ital: [100],
       },
       Lato: {
-        wght: [100, 400, 700, 900],
+        wght: [100, 300, 400, 700, 900],
         ital: [100],
       },
       Raleway: {
