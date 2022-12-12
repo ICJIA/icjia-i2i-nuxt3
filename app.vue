@@ -34,4 +34,7 @@ useHead({
     lang: "en",
   },
 });
+
+const page = useCurrentPage({ slug: "slug-here" });
+console.log(page);
 </script>
