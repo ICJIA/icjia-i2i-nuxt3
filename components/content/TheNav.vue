@@ -4,8 +4,10 @@
       fixed
       app
       color="white"
+      density="default"
       style="z-index: 50; width: 100%"
       size="90"
+      elevation="3"
       class="pl-5 pr-5"
     >
       <div
@@ -142,6 +144,7 @@
           <v-icon>mdi-dots-vertical</v-icon>
         </v-btn> -->
         <span class="hidden-lg-and-up hidden-sm-and-down">
+          <v-tooltip activator="parent" location="bottom"> More </v-tooltip>
           <v-menu transition="scale-transition">
             <template #activator="{ props }">
               <v-btn v-bind="props">

@@ -4,12 +4,10 @@
       dark
       style="background: #10366b; color: #fff; font-weight: 700"
       class="mr-5"
-      @click="click({ id: 'about', type: 'scrollTo' })"
+      to="/about"
       >Learn More</v-btn
     >
-    <v-btn
-      style="background: #fff; color: #333; font-weight: 700"
-      @click="click({ id: 'contact', type: 'scrollIntoView' })"
+    <v-btn style="background: #fff; color: #333; font-weight: 700" to="/contact"
       >Contact</v-btn
     >
   </div>
