@@ -13,10 +13,6 @@ searchMeta: "icjia contact webster norman "
 rawText: " contact displays contact information phone address email and web site
   for icjia general and program support "
 draft: false
-description: This is the summary for the contact page. Lorem markdownum et neque
-  illuc Aesoniden bellaque Maenalon Athis sustulit, Promethides venturi quam
-  tanta ad. Forcipe solvere reperta relicto dubitate amores exstant hoc iram,
-  fatigat.
 navigation: true
 path: /contact
 url: https://i2i.icjia.dev/contact

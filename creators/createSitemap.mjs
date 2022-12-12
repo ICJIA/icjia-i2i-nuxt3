@@ -1,17 +1,22 @@
 import { createRequire } from "module";
 import { createWriteStream } from "fs";
-import { SitemapStream, streamToPromise } from "sitemap";
+import { SitemapStream } from "sitemap";
+
+import * as dotenv from "dotenv";
+dotenv.config();
 
 const require = createRequire(import.meta.url);
 const siteIndex = require("../public/siteMeta.json");
 
-const sitemap = new SitemapStream({ hostname: `https://i2i.icjia.dev` });
+const sitemap = new SitemapStream({
+  hostname: `${process.env.NUXT_PUBLIC_BASE_URL}`,
+});
 const writeStream = createWriteStream("./public/sitemap.xml");
 
 sitemap.pipe(writeStream);
 
 siteIndex.forEach((site) => {
-  const url = `https://i2i.icjia.dev${site.path}`;
+  const url = `${process.env.NUXT_PUBLIC_BASE_URL}${site.path}`;
   sitemap.write({ url, changefreq: "weekly", priority: 0.3 });
 });
 

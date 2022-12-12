@@ -1,10 +1,12 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
+require("dotenv").config();
+
 const fs = require("fs");
 const path = require("path");
 const axios = require("axios");
 const jsonfile = require("jsonfile");
 const _ = require("lodash");
-const API = "https://i2i.icjia-api.cloud";
+
 const yaml = require("yaml");
 const fsExtra = require("fs-extra");
 
@@ -12,7 +14,8 @@ const contentDir = path.join(__dirname, "../content");
 fsExtra.emptyDirSync(contentDir);
 console.log("Content directory cleared");
 
-const SITE_URL = "https://i2i.icjia.dev";
+const SITE_URL = process.env.NUXT_PUBLIC_BASE_URL;
+const API = process.env.NUXT_PUBLIC_API_BASE_URL;
 
 const siteContent = [];
 
@@ -64,7 +67,7 @@ axios
       rawText = rawText.replace(/\s\s+/g, " ");
       obj.attributes.rawText = rawText.toLowerCase();
       obj.attributes.draft = false;
-      obj.attributes.description = page.attributes.summary;
+      // obj.attributes.description = page.attributes.summary;
       obj.attributes.navigation = true;
       if (page.attributes.section !== "root") {
         section = page.attributes.section.toLowerCase();

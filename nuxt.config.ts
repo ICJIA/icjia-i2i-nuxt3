@@ -42,11 +42,15 @@ export default defineNuxtConfig({
     // apiSecret: "123",
     // Keys within public, will be also exposed to the client-side
     private: {
-      thumborKey: process.env.NUXT_THUMBOR_KEY || "thumbor key not specified",
+      thumborKey:
+        process.env.NUXT_THUMBOR_KEY || "ERROR: thumbor key not specified",
     },
     public: {
-      apiBase: process.env.NUXT_PUBLIC_API_BASE_URL || "default_api_url",
-      apiSecret: process.env.NUXT_API_SECRET || "default_other_url",
+      apiBase:
+        process.env.NUXT_PUBLIC_API_BASE_URL ||
+        "ERROR: no api base url specified",
+      siteBase:
+        process.env.NUXT_PUBLIC_BASE_URL || "ERROR: no site base url specified",
     },
   },
 
@@ -108,7 +112,7 @@ export default defineNuxtConfig({
   apollo: {
     clients: {
       default: {
-        httpEndpoint: "https://i2i.icjia-api.cloud/graphql",
+        httpEndpoint: `${process.env.NUXT_PUBLIC_API_BASE_URL}/graphql`,
       },
     },
   },
