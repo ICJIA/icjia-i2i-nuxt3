@@ -2,7 +2,13 @@
 //
 // https://v3.nuxtjs.org/api/configuration/nuxt.config\
 
+// import newsRoutes from "./public/routesNews.json";
 import vuetify from "vite-plugin-vuetify";
+import pageRoutes from "./public/routesPages.json";
+
+// const siteRoutes = [...newsRoutes, ...pageRoutes];
+const siteRoutes = [...pageRoutes];
+console.log("Generated routes:", siteRoutes);
 export default defineNuxtConfig({
   app: {
     // baseURL: "/i2i/",
@@ -19,10 +25,10 @@ export default defineNuxtConfig({
       ],
       link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
       script: [
-        // {
-        //   src: "https://code.jquery.com/jquery-3.6.1.slim.min.js",
-        //   type: "text/javascript",
-        // },
+        {
+          src: "https://code.jquery.com/jquery-3.6.1.slim.min.js",
+          type: "text/javascript",
+        },
       ],
     },
   },
@@ -108,6 +114,9 @@ export default defineNuxtConfig({
       xxl: 1536,
       "2xl": 1536,
     },
+  },
+  generate: {
+    routes: siteRoutes,
   },
   apollo: {
     clients: {

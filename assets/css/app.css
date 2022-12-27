@@ -10,7 +10,7 @@ h4,
 h5,
 h6,
 .app-title {
-    font-family: 'Raleway' !important;
+    font-family: 'Roboto' !important;
 
 }
 
@@ -23,12 +23,12 @@ a {
 
 .hover-anchor {
     font-family: 'Roboto' !important;
-        font-weight: 700;
-        text-decoration: none;
+    font-weight: 700;
+    text-decoration: none;
 }
 
 .hover-anchor:hover {
-   text-decoration: underline !important;
+    text-decoration: underline !important;
 }
 
 .hover {
@@ -71,7 +71,7 @@ ul.cohort-list li {
 .info-card:hover,
 .event-card:hover,
 .news-card:hover,
-.info-box:hover {
+.info-box:hover .tool-card:hover {
     box-shadow: 0px 0px 25px #000000;
     z-index: 2;
     -webkit-transition: all 100ms ease-in;
@@ -83,4 +83,8 @@ ul.cohort-list li {
     transition: all 100ms ease-in;
     transform: scale(1.04);
     cursor: pointer;
+}
+
+.pending {
+    color: red;
 }
