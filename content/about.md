@@ -1,6 +1,9 @@
 ---
 title: About
 slug: about
+hideFromSearch: false
+hideFromSitemap: false
+showTableOfContents: false
 summary: >
   This is the summary for the about page. Vias vaccae enim tendentem tibi
   nati redimitus tactusque nate remos, alumni. Ponti ne docuisse: sociorum
@@ -31,7 +34,7 @@ summary: >
   - History of program  
 section: root
 createdAt: 2022-12-06T17:39:17.825Z
-updatedAt: 2022-12-11T20:01:41.886Z
+updatedAt: 2022-12-27T13:59:15.550Z
 publishedAt: 2022-12-06T17:39:21.149Z
 searchMeta: "icjia grassroots i2i "
 rawText: " about program overview services provided program partners brief

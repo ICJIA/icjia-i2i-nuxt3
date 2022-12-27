@@ -1,6 +1,9 @@
 ---
 title: Information & Resources
 slug: information-and-resources
+hideFromSearch: false
+hideFromSitemap: false
+showTableOfContents: false
 summary: >-
   Information & Resources page Program Benefits (Services Provided)
 
@@ -14,7 +17,7 @@ summary: >-
   Esse senis infectaque torvos at contortum hoc, per qui. Quae labens procul somnique orbem.
 section: root
 createdAt: 2022-12-09T17:21:24.735Z
-updatedAt: 2022-12-11T17:38:12.490Z
+updatedAt: 2022-12-27T13:59:27.735Z
 publishedAt: 2022-12-09T17:21:28.350Z
 searchMeta: null
 rawText: " information resources program benefits services provided faqs

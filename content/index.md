@@ -1,6 +1,9 @@
 ---
 title: Institute 2 Innovate
 slug: index
+hideFromSearch: false
+hideFromSitemap: false
+showTableOfContents: false
 summary: The Illinois Criminal Justice Information Authority (ICJIA) is
   launching a new capacity-building hub for statewide community-based
   organizations entitled Institute 2 Innovate (i2i). The i2i team will help
@@ -10,7 +13,7 @@ summary: The Illinois Criminal Justice Information Authority (ICJIA) is
   constraints.
 section: root
 createdAt: 2022-12-06T17:40:55.485Z
-updatedAt: 2022-12-11T14:04:00.209Z
+updatedAt: 2022-12-27T13:59:39.239Z
 publishedAt: 2022-12-06T17:42:48.426Z
 searchMeta: null
 rawText: " the illinois criminal justice information authority icjia is

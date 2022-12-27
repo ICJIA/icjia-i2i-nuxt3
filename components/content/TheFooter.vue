@@ -72,7 +72,7 @@
               </div></v-col
             >
           </v-row>
-          <v-row
+          <!-- <v-row
             ><v-col
               class="text-center"
               style="margin-bottom: -22px"
@@ -82,7 +82,7 @@
                 >mdi-chevron-up</v-icon
               ></v-col
             ></v-row
-          >
+          > -->
         </v-container>
       </v-card>
     </v-footer>

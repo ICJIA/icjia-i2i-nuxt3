@@ -10,15 +10,18 @@
     "build": "yarn scripts && nuxt build",
     "build:serve": "npm run scripts && nuxt build && node .output/server/index.mjs ",
     "build:edge": "NITRO_PRESET=netlify-edge nuxt build",
-    "create:markdown": "node ./creators/createMarkdown.js",
-    "create:sitemap": "node ./creators/createSitemap.mjs",
     "dev": "yarn scripts && nuxt dev --port=8000 -o",
     "generate": "yarn scripts && nuxt generate",
     "preview": "nuxt preview",
-    "scripts": "yarn create:markdown && yarn create:sitemap",
     "postinstall": "nuxt prepare",
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore . --fix",
-    "lint": "npm run lint:js"
+    "lint": "npm run lint:js",
+    "create:news": "node ./creators/createMarkdownNews.js",
+    "create:pages": "node ./creators/createMarkdownPages.js",
+    "create:searchIndex": "node  ./creators/createSearchIndex.mjs",
+    "create:contentDirectory": "node ./creators/createContentDirectory.js",
+    "create:sitemap": "node ./creators/createSitemap.mjs",
+    "scripts": "yarn create:contentDirectory && yarn create:pages && yarn create:searchIndex && yarn create:sitemap"
   },
   "devDependencies": {
     "@babel/core": "^7.20.2",
@@ -80,6 +83,7 @@
     "sitemap": "^7.1.1",
     "slugify": "^1.6.5",
     "thumbor-url-builder": "^0.1.1",
+    "uuid": "^9.0.0",
     "vite-plugin-vuetify": "^1.0.0",
     "yaml": "^2.1.3"
   }
