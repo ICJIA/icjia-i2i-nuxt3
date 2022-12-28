@@ -87,7 +87,11 @@ axios
     });
 
     const pageRoutes = site.map((item) => {
-      return `/${item.attributes.slug}`;
+      if (item.attributes.slug !== "index") {
+        return `/${item.attributes.slug}`;
+      } else {
+        return `/`;
+      }
     });
 
     jsonfile.writeFileSync(
