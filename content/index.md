@@ -13,11 +13,11 @@ summary: The Illinois Criminal Justice Information Authority (ICJIA) is
   constraints.
 section: root
 createdAt: 2022-12-06T17:40:55.485Z
-updatedAt: 2022-12-27T13:59:39.239Z
+updatedAt: 2022-12-28T15:07:02.254Z
 publishedAt: 2022-12-06T17:42:48.426Z
 searchMeta: null
-rawText: " the illinois criminal justice information authority icjia is
-  launching a new capacity building hub for statewide community based
+rawText: " home boxes the illinois criminal justice information authority icjia
+  is launching a new capacity building hub for statewide community based
   organizations entitled institute 2 innovate i2i the i2i team will help
   organizations strengthen infrastructure increase sustainability and address
   capacity needs cohort members will include local organizations that have yet
@@ -30,21 +30,21 @@ rawText: " the illinois criminal justice information authority icjia is
   needs i2i supports grassroots organizations and community groups committed to
   changing the circumstance of violence in their communities i2i will be a
   resource for these partners to ensure that their capacity is increased and
-  assist them on a path to sustainability home boxes capacity building services
-  capacity building services include organizational development board
-  development program assessment evaluation refinement of program models and
-  development of logic models personnel staffing support fiscal management
-  oversight grant administration skills network building parlor an evidence
-  informed approach the parlor process is an evidenced informed approach
-  designed to address the comprehensive needs of organizations therefore each
-  parlor step will address specific needs planning develop a mission vision and
-  strategic plan administration establish board and executive staff resources
-  create proven fiscal management and financial standards learning assess human
-  capital staff needs optimization develop protocols that assess effectiveness
-  and program outcomes relationships expand external networks and connect with
-  new partners cohorts the participating organizations will receive training i e
-  webinars workshops in person consultation etc on various topics to strengthen
-  their organization s infrastructure cohorts will be announced in january 2023
+  assist them on a path to sustainability capacity building services capacity
+  building services include organizational development board development program
+  assessment evaluation refinement of program models and development of logic
+  models personnel staffing support fiscal management oversight grant
+  administration skills network building parlor an evidence informed approach
+  the parlor process is an evidenced informed approach designed to address the
+  comprehensive needs of organizations therefore each parlor step will address
+  specific needs planning develop a mission vision and strategic plan
+  administration establish board and executive staff resources create proven
+  fiscal management and financial standards learning assess human capital staff
+  needs optimization develop protocols that assess effectiveness and program
+  outcomes relationships expand external networks and connect with new partners
+  cohorts the participating organizations will receive training i e webinars
+  workshops in person consultation etc on various topics to strengthen their
+  organization s infrastructure cohorts will be announced in january 2023
   contact for more information about i2i please contact cja i2i illinois gov
   subscribe to the cj dispatch https visitor r20 constantcontact com manage
   optin v
@@ -60,7 +60,14 @@ path: /
 url: https://i2i.icjia.dev
 ---
 
-<div style="background: #fff" class="mt-12 mb-12 px-12" id="about" >
+<div style="background: #3C5984;" class="text-center">
+
+:home-boxes
+
+</div>
+
+
+<div style="background: #fff; padding-bottom: 100px;" class="mt-12 px-12" id="about">
 
 <img src="https://agency.icjia-api.cloud/uploads/i2i_logo_text_small_6ff6ea89a9.png" style="float: left; padding-right: 20px; padding-bottom: 10px;" width="120">
 
@@ -73,13 +80,9 @@ i2i supports “grassroots” organizations and community groups committed to ch
 </div>
 
 
-<div style="background: #3C5984" class="text-center">
-
-:home-boxes
-
-</div>
 
 
+<!-- - start here
 
 <div  style="margin-top: -15px; background: #f4f4f4 !important; color: #000!important; border-top: 1px solid #ddd;" class="py-3" id="services">
 
@@ -137,6 +140,8 @@ The **PARLOR Process** is an evidenced-informed approach designed to address the
 
 </div>
 
+
+
 <div style="background: #3C5984" class="text-left">
 
 <div class="v-container v-container--fluid">
@@ -180,3 +185,5 @@ Find us on [Twitter](https://twitter.com/ICJIA_Illinois), [Facebook](https://www
 </div>
 
 </div>
+
+ -->
