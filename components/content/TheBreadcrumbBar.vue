@@ -1,7 +1,12 @@
 <template>
   <div
-    style="background: #18509f; color: #fff !important; font-size: 12px"
-    class="text-right pr-5 py-1"
+    style="
+      background: #18509f;
+      color: #fff !important;
+      font-size: 12px;
+      z-index: 10000 !important;
+    "
+    class="text-left pr-5 pl-3 py-1"
   >
     <nuxt-link to="/" class="breadcrumb-link" style="color: #fff"
       >i2i HOME</nuxt-link

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="z-index: 1 !important">
     <v-card
       elevation="0"
       class="toc px-5 py-5 markdown-body"

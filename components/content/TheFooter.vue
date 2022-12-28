@@ -17,64 +17,60 @@
               class="text-center mt-2"
               style="color: white"
             >
-              <div>
-                <!-- <a
-                  href="https://icjia.illinois.gov"
-                  target="_blank"
-                  style="text-decoration: none"
-                >
-                  <img
-                    src="https://i2i.icjia-api.cloud/uploads/icjia_logo_6e30b0adb5.png"
-                    alt="Footer logo"
-                    width="100"
-                    style="border: 0px solid #ddd; display: inline"
-                    class="hover"
-                  />
-                </a> -->
-              </div>
-
               <div style="font-size: 12px; font-weight: 400">
-                <nuxt-link to="/contact" style="color: #fff; background: none"
-                  >Contact i2i</nuxt-link
-                >
-                |
-                <a
-                  href="https://visitor.r20.constantcontact.com/manage/optin?v=001MqUcqqvjwLCJXlLMSWbTe3zHHmEQgFeBuHvBcJWTbwgrxFbDSGx4HSUPpI6DJWMUPgbljtLxffqIcGFTgCnr-auak88ybvRxpoJlTMGPtZs%3D"
-                  style="color: #fff; background: none"
-                  target="_blank"
-                  >Subscribe to the CJ Dispatch</a
-                >
-                <span v-if="isTranslationEnabled"
-                  >&nbsp;|&nbsp;<a
-                    style="color: #fff; background: none; cursor: pointer"
-                    class="hover-anchor"
-                    @click.prevent="translate"
-                    >Translate
-                  </a>
-                </span>
-              </div>
-
-              <!-- <div
-                class="mt-3"
-                style="font-size: 12px; font-weight: 300; color: #ccc"
-              >
                 <strong
                   >&#169; 2023
                   <a
-                    href="https://icjia.illinois.gov"
+                    href="https://www.illinois.gov"
                     target="_blank"
-                    style="color: #aaa"
-                    >Illinois Criminal Justice Information Authority</a
+                    style="color: #fff"
+                    >State of Illinois</a
                   >
                 </strong>
-              </div> -->
+                &nbsp;|&nbsp;
+                <strong>
+                  <a
+                    href="https://www2.illinois.gov/sites/gov/Pages/default.aspx"
+                    target="_blank"
+                    style="color: #fff"
+                    >Governor JB Pritzker
+                  </a>
+                </strong>
+                &nbsp;|&nbsp;
+                <strong>
+                  <a
+                    href="https://coronavirus.illinois.gov/"
+                    target="_blank"
+                    style="color: #fff"
+                    >Statewide Coronavirus Response
+                  </a>
+                </strong>
+                &nbsp;|&nbsp;
+                <strong>
+                  <nuxt-link to="/privacy" style="color: #fff"
+                    >Privacy
+                  </nuxt-link>
+                </strong>
+                &nbsp;|&nbsp;
+                <nuxt-link to="/contact" style="color: #fff; background: none"
+                  >Contact</nuxt-link
+                >&nbsp;
+
+                <span>
+                  &nbsp;|&nbsp;
+                  <nuxt-link
+                    style="color: #fff; background: none; cursor: pointer"
+                    class="hover-anchor"
+                    to="/translate"
+                  >
+                    Translate
+                  </nuxt-link>
+                </span>
+              </div>
             </v-col>
           </v-row>
           <!-- <v-row
-            ><v-col
-              class="text-center"
-              style="margin-bottom: -22px"
-              @click="scrollTop"
+            ><v-col class="text-center" @click="scrollTop"
               ><span class="goToTop"> BACK TO TOP </span
               ><v-icon small right style="color: #fff; font-size: 10px"
                 >mdi-chevron-up</v-icon
