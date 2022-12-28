@@ -1,6 +1,6 @@
 <template>
   <div
-    style="background: #1175c1; color: #fff !important; font-size: 12px"
+    style="background: #18509f; color: #fff !important; font-size: 12px"
     class="text-right pr-5 py-1"
   >
     <nuxt-link to="/" class="breadcrumb-link" style="color: #fff"
