@@ -72,7 +72,6 @@
 <script setup>
 import Fuse from "fuse.js";
 import searchIndex from "~/assets/json/searchIndex.json";
-import { TheBreadcrumbBar } from "~~/.nuxt/components";
 
 useHead({
   title: "Search",
