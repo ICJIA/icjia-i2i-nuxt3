@@ -41,6 +41,12 @@
                   color="grey-lighten-4"
                   @click="navigateTo(result.item)"
                 >
+                  <div
+                    class="text-right mb-8"
+                    style="font-weight: 900; font-size: 11px; color: #0657a8"
+                  >
+                    {{ result.item.url }}
+                  </div>
                   <h2 style="border-bottom: 0px">{{ result.item.title }}</h2>
                   <p class="mt-2">{{ result.item.summary }}</p>
                   <!-- <p>{{ result.item }}</p> -->
