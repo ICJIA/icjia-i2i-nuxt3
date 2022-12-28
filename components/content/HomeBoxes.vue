@@ -2,13 +2,13 @@
   <div>
     <v-container fluid style="margin: 0 !important; padding: 0 !important">
       <v-row no-gutters>
-        <v-col cols="12" md="4">
+        <v-col cols="12" md="6">
           <v-card
             color="#3B5984"
             style="height: 300px"
             class="py-5 px-2 text-center info-card hover"
             :class="{ boxGutter: gutter }"
-            @click="click({ id: 'about', type: 'scrollTo' })"
+            @click="routeTo('/about')"
           >
             <v-container fill-height fluid>
               <v-row align="center" justify="center">
@@ -30,13 +30,13 @@
           </v-card></v-col
         >
 
-        <v-col cols="12" md="4">
+        <v-col cols="12" md="6">
           <v-card
             color="#10366B"
             style="height: 300px"
             class="py-5 px-2 text-center info-card hover"
             :class="{ boxGutter: gutter }"
-            @click="click({ id: 'services', type: 'scrollTo' })"
+            @click="routeTo('/information-and-resources')"
           >
             <v-container fill-height fluid>
               <v-row align="center" justify="center">
@@ -47,16 +47,18 @@
                     dark
                     >mdi-pencil-ruler</v-icon
                   >
-                  <h2 id="our-approach" class="boxHeader">Our Approach</h2>
+                  <h2 id="our-approach" class="boxHeader">
+                    Information and Resources
+                  </h2>
                   <p style="color: #fff; font-size: 20px">
-                    Find out more about our evidence-informed approach.
+                    Find out more about the tools and resources we provide.
                   </p></v-col
                 >
               </v-row>
             </v-container>
           </v-card>
         </v-col>
-        <v-col cols="12" md="4">
+        <!-- <v-col cols="12" md="4">
           <v-card
             color="#3B5984"
             style="height: 300px"
@@ -81,7 +83,7 @@
               </v-row>
             </v-container>
           </v-card>
-        </v-col>
+        </v-col> -->
       </v-row>
     </v-container>
   </div>
@@ -119,6 +121,9 @@ export default {
     },
   },
   methods: {
+    routeTo(path) {
+      this.$router.push(path);
+    },
     getColor() {
       return this.colors[1];
     },
