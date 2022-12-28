@@ -18,7 +18,7 @@
               style="color: white"
             >
               <div>
-                <a
+                <!-- <a
                   href="https://icjia.illinois.gov"
                   target="_blank"
                   style="text-decoration: none"
@@ -30,12 +30,12 @@
                     style="border: 0px solid #ddd; display: inline"
                     class="hover"
                   />
-                </a>
+                </a> -->
               </div>
 
               <div style="font-size: 12px; font-weight: 400">
                 <nuxt-link to="/contact" style="color: #fff; background: none"
-                  >Contact Us</nuxt-link
+                  >Contact i2i</nuxt-link
                 >
                 |
                 <a
@@ -45,18 +45,16 @@
                   >Subscribe to the CJ Dispatch</a
                 >
                 <span v-if="isTranslationEnabled"
-                  >|
-                  <a
+                  >&nbsp;|&nbsp;<a
                     style="color: #fff; background: none; cursor: pointer"
                     class="hover-anchor"
                     @click.prevent="translate"
-                  >
-                    Translate
+                    >Translate
                   </a>
                 </span>
               </div>
 
-              <div
+              <!-- <div
                 class="mt-3"
                 style="font-size: 12px; font-weight: 300; color: #ccc"
               >
@@ -69,8 +67,8 @@
                     >Illinois Criminal Justice Information Authority</a
                   >
                 </strong>
-              </div></v-col
-            >
+              </div> -->
+            </v-col>
           </v-row>
           <!-- <v-row
             ><v-col
