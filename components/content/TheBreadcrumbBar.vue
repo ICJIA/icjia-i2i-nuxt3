@@ -3,7 +3,7 @@
     style="
       background: #18509f;
 
-      font-size: 12px;
+      font-size: 14px;
       z-index: 99999;
     "
     class="text-left pr-5 pl-5 py-1 elevation-5"
@@ -11,7 +11,9 @@
     <nuxt-link to="/" class="breadcrumb-link" style="color: #fff"
       >i2i HOME</nuxt-link
     >
-    <span style="color: #fff; font-weight: 900">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+    <span style="color: #fff; font-weight: 900"
+      >&nbsp;&nbsp;&raquo;&nbsp;&nbsp;</span
+    >
     <span style="color: #fff; font-weight: 300">{{
       makeTitle(route.path.toUpperCase())
     }}</span>
