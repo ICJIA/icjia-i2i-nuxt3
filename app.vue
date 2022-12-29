@@ -35,6 +35,6 @@ useHead({
   },
 });
 
-const page = useCurrentPage({ slug: "slug-here" });
-console.log(page);
+// const page = useCurrentPage({ slug: "slug-here" });
+// console.log(page);
 </script>

@@ -2,11 +2,11 @@
   <div
     style="
       background: #18509f;
-      color: #fff !important;
+
       font-size: 12px;
       z-index: 99999;
     "
-    class="text-left pr-5 pl-5 py-1"
+    class="text-left pr-5 pl-5 py-1 elevation-5"
   >
     <nuxt-link to="/" class="breadcrumb-link" style="color: #fff"
       >i2i HOME</nuxt-link
