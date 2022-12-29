@@ -4,11 +4,11 @@
 
 // import newsRoutes from "./public/routesNews.json";
 import vuetify from "vite-plugin-vuetify";
-import pageRoutes from "./public/routesPages.json";
+import appRoutes from "./public/appRoutes.json";
 
 // const siteRoutes = [...newsRoutes, ...pageRoutes];
-const siteRoutes = [...pageRoutes];
-console.log("Generated routes:", siteRoutes);
+// const siteRoutes = [...pageRoutes];
+// console.log("Generated routes:", siteRoutes);
 export default defineNuxtConfig({
   app: {
     // baseURL: "/i2i/",
@@ -116,7 +116,7 @@ export default defineNuxtConfig({
     },
   },
   generate: {
-    routes: siteRoutes,
+    routes: appRoutes,
   },
   apollo: {
     clients: {

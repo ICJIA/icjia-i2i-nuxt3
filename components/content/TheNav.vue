@@ -134,7 +134,7 @@
           size="default"
           class="hidden-md-and-down navItem"
           style="font-weight: 900 !important; font-size: 16px"
-          @click="openTranslationModal"
+          @click="goToTranslate"
         >
           <v-tooltip activator="parent" location="bottom"> Translate </v-tooltip
           ><v-icon icon="mdi-web" size="large"></v-icon
@@ -163,7 +163,7 @@
                 v-if="isTranslationEnabled"
                 exact
                 style="cursor: pointer"
-                @click="openTranslationModal"
+                to="/translate"
               >
                 <v-list-item-title style="font-size: 16px; font-weight: 700"
                   ><v-icon size="x-small" icon="mdi-web" left></v-icon
@@ -207,8 +207,13 @@ onMounted(() => {
 });
 
 const router = useRouter();
+
 const goToSearch = () => {
   router.push({ path: "/search" });
+};
+
+const goToTranslate = () => {
+  router.push({ path: "/translate" });
 };
 
 const openTranslationModal = () => {

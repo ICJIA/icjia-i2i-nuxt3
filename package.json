@@ -18,11 +18,12 @@
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore . --fix",
     "lint": "npm run lint:js",
     "create:news": "node ./creators/createMarkdownNews.js",
+    "create:routes": "node ./creators/createSiteRoutes.mjs",
     "create:pages": "node ./creators/createMarkdownPages.js",
     "create:searchIndex": "node  ./creators/createSearchIndex.mjs",
     "create:contentDirectory": "node ./creators/createContentDirectory.js",
     "create:sitemap": "node ./creators/createSitemap.mjs",
-    "scripts": "yarn create:contentDirectory && yarn create:pages && yarn create:searchIndex && yarn create:sitemap"
+    "scripts": "yarn create:contentDirectory && yarn create:pages && yarn create:searchIndex && yarn create:sitemap && yarn create:routes"
   },
   "devDependencies": {
     "@babel/core": "^7.20.2",
