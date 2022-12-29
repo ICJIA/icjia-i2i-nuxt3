@@ -48,7 +48,7 @@ onMounted(() => {
           style="
             min-height: 110vh !important;
             background: #fafafa;
-            margin-top: -45px;
+            margin-top: 12px;
             margin-bottom: -35px;
             border-left: 1px solid #ddd;
             z-index: 1;

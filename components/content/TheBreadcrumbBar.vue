@@ -1,6 +1,11 @@
 <template>
   <div
-    style="background: #18509f; color: #fff !important; font-size: 12px"
+    style="
+      background: #18509f;
+      color: #fff !important;
+      font-size: 12px;
+      z-index: 99999;
+    "
     class="text-left pr-5 pl-5 py-1"
   >
     <nuxt-link to="/" class="breadcrumb-link" style="color: #fff"
