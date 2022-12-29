@@ -30,7 +30,7 @@ onMounted(() => {
   <div class="pb-12">
     <v-container fluid style="margin: 0; padding: 0"
       ><v-row
-        ><v-col cols="12" :md="cols" class="px-5">
+        ><v-col cols="12" :md="cols" class="px-12">
           <div v-if="data" class="mt-6">
             <h1>{{ data.title.toUpperCase() }}</h1>
             <ContentDoc :key="data?.title" :value="data" class="markdown-body">
@@ -49,8 +49,8 @@ onMounted(() => {
             min-height: 110vh !important;
             background: #fafafa;
             margin-top: -45px;
-            margin-bottom: -20px;
-            border-left: 1px solid #e9e9e9;
+            margin-bottom: -35px;
+            border-left: 1px solid #ddd;
             z-index: 1;
             margin-right: 0;
             padding-right: 0;

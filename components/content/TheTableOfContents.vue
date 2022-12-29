@@ -1,9 +1,9 @@
 <template>
-  <div style="z-index: 1 !important">
+  <div>
     <v-card
       elevation="0"
       class="toc px-5 py-5 markdown-body"
-      style="border-left: 0px solid #eee; background: #fafafa"
+      style="background: #fafafa"
     >
       <div
         id="navigation"
