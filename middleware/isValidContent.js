@@ -1,3 +1,7 @@
+import appRoutes from "assets/json/appRoutes.json";
+
+console.log("appRoutes from middleware: ", appRoutes);
+
 export default defineNuxtRouteMiddleware((to, from) => {
   // const isClient = process.client;
   // const isServer = process.server;

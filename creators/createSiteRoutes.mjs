@@ -20,4 +20,10 @@ jsonfile.writeFileSync(`public/appRoutes.json`, appRoutes, function (err) {
   }
 });
 
+jsonfile.writeFileSync(`assets/json/appRoutes.json`, appRoutes, function (err) {
+  if (err) {
+    console.error(err);
+  }
+});
+
 console.log("public/appRoutes.json created:\n", appRoutes);
