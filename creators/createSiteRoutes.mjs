@@ -10,7 +10,7 @@ dotenv.config();
 
 // const siteRoutes = [...pages, ...posts];
 
-const manualRoutes = [];
+const manualRoutes = ["/search", "/translate"];
 
 const appRoutes = [...pageRoutes, ...manualRoutes];
 
