@@ -55,7 +55,7 @@ onMounted(() => {
             margin-right: 0;
             padding-right: 0;
           "
-          class="hidden-sm-and-down"
+          class="hidden-sm-and-down elevation-0"
         >
           <!-- TOC HERE -->
           <TheTableOfContents :data="data.body.toc" class="toc" />
