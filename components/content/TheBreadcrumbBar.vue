@@ -14,7 +14,7 @@
     <span style="color: #000; font-weight: 900"
       >&nbsp;&nbsp;&raquo;&nbsp;&nbsp;</span
     >
-    <span style="color: #000; font-weight: 300">{{
+    <span style="color: #000; font-weight: 400; font-size: 13px">{{
       makeTitle(route.path.toUpperCase())
     }}</span>
   </div>
