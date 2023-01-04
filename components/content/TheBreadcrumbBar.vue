@@ -1,20 +1,20 @@
 <template>
   <div
     style="
-      background: #e5910b;
+      background: #143b89;
       border-bottom: 1px solid #aaa;
-      font-size: 14px;
+      font-size: 13px;
       z-index: 99999;
     "
     class="text-left pr-5 pl-5 py-1 elevation-0"
   >
-    <nuxt-link to="/" class="breadcrumb-link" style="color: #000"
+    <nuxt-link to="/" class="breadcrumb-link" style="color: #fff"
       >i2i HOME</nuxt-link
     >
-    <span style="color: #000; font-weight: 900"
+    <span style="color: #fff; font-weight: 900"
       >&nbsp;&nbsp;&raquo;&nbsp;&nbsp;</span
     >
-    <span style="color: #000; font-weight: 400; font-size: 13px">{{
+    <span style="color: #fff; font-weight: 300; font-size: 12px">{{
       makeTitle(route.path.toUpperCase())
     }}</span>
   </div>
