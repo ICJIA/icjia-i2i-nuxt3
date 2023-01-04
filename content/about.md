@@ -3,7 +3,7 @@ title: About Us
 slug: about
 hideFromSearch: false
 hideFromSitemap: false
-showTableOfContents: false
+showTableOfContents: true
 summary: >
   This is the summary for the about page. Vias vaccae enim tendentem tibi
   nati redimitus tactusque nate remos, alumni. Ponti ne docuisse: sociorum
@@ -34,7 +34,7 @@ summary: >
   - History of program  
 section: root
 createdAt: 2022-12-06T17:39:17.825Z
-updatedAt: 2022-12-28T14:50:32.715Z
+updatedAt: 2023-01-04T18:55:13.402Z
 publishedAt: 2022-12-06T17:39:21.149Z
 searchMeta: "icjia grassroots i2i "
 rawText: " program overview the illinois criminal justice information authority
@@ -65,7 +65,17 @@ rawText: " program overview the illinois criminal justice information authority
   individuals while struggling with capacity historical disinvestment continues
   to plague grassroots organizations leaving them vulnerable and at risk of
   dissolving these groups will benefit from additional support to address their
-  fundamental challenges and organizational needs "
+  fundamental challenges and organizational needs i2i supports grassroots
+  organizations and community groups committed to changing the circumstance of
+  violence in their communities i2i will be a resource for these partners to
+  ensure that their capacity is increased and assist them on a path to
+  sustainability program approach i2i will use an evidence informed approach
+  designed to address the comprehensive needs of organizations each step in the
+  process will address specific needs to strengthen the organization s
+  infrastructure program organizations the participating organizations will
+  receive training i e webinars workshops in person consultation etc on various
+  topics to strengthen their organization s infrastructure cohorts will be
+  announced in january 2023 "
 draft: false
 navigation: true
 path: /about
@@ -82,7 +92,7 @@ Capacity building often gets overlooked or postponed in an organization’s driv
 
 i2i will provide support to “grassroots” organizations and community groups by strengthening their capacity in the following dimensions: 
 
-### Capacity-Building Services: 
+Capacity-Building Services: 
 
 •	Vision and Impact
 
@@ -99,10 +109,23 @@ i2i will provide support to “grassroots” organizations and community groups 
 •	Strategic relationships
 
 
+
 ## Program History (Challenge)
  
 Throughout the State of Illinois, thousands of organizations work directly with communities and individuals while struggling with capacity. Historical disinvestment continues to plague “grassroots” organizations, leaving them vulnerable and at risk of dissolving. These groups will benefit from additional support to address their fundamental challenges and organizational needs.
+ 
+i2i supports “grassroots” organizations and community groups committed to changing the circumstance of violence in their communities. i2i will be a resource for these partners to ensure that their capacity is increased and assist them on a path to sustainability.
+ 
+
+## Program Approach 
+
+i2i will use an evidence-informed approach designed to address the comprehensive needs of organizations. Each step in the process will address specific needs to strengthen the organization's infrastructure. 
 
 
+ 
+## Program Organizations 
+
+The participating organizations will receive training (i.e., webinars, workshops, in-person consultation, etc.) on various topics to strengthen their organization's infrastructure.
+Cohorts will be announced in January 2023
 
 
