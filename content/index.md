@@ -57,7 +57,7 @@ rawText: " home boxes the illinois criminal justice information authority icjia
 draft: false
 navigation: true
 path: /
-url: https://i2i.icjia.dev
+url: https://i2i.illinois.gov
 ---
 
 <div style="background: #3C5984;" class="text-center">

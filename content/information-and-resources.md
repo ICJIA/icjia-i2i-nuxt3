@@ -33,7 +33,7 @@ rawText: " applicant tools eligibility eligible applicants faqs more here
 draft: false
 navigation: true
 path: /information-and-resources
-url: https://i2i.icjia.dev/information-and-resources
+url: https://i2i.illinois.gov/information-and-resources
 ---
 
 ## Applicant Tools

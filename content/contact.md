@@ -25,7 +25,7 @@ rawText: "for more information about i2i please contact cja i2i illinois gov
 draft: false
 navigation: true
 path: /contact
-url: https://i2i.icjia.dev/contact
+url: https://i2i.illinois.gov/contact
 ---
 
 For more information about i2i, please contact cja.i2i@illinois.gov.

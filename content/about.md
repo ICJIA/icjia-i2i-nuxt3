@@ -79,7 +79,7 @@ rawText: " program overview the illinois criminal justice information authority
 draft: false
 navigation: true
 path: /about
-url: https://i2i.icjia.dev/about
+url: https://i2i.illinois.gov/about
 ---
 
 ## Program Overview
