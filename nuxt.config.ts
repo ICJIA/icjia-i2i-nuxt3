@@ -29,6 +29,11 @@ export default defineNuxtConfig({
           src: "https://code.jquery.com/jquery-3.6.1.slim.min.js",
           type: "text/javascript",
         },
+        {
+          src: "https://analytics.icjia-api.cloud/js/plausible.js",
+          "data-domain": "i2i.illinois.gov",
+          defer: true,
+        },
       ],
     },
   },
@@ -42,6 +47,7 @@ export default defineNuxtConfig({
   build: {
     transpile: ["vuetify"],
   },
+
   vite: {},
   runtimeConfig: {
     // The private keys which are only available within server-side
@@ -59,7 +65,6 @@ export default defineNuxtConfig({
         process.env.NUXT_PUBLIC_BASE_URL || "ERROR: no site base url specified",
     },
   },
-  buildModules: ["vue-plausible"],
 
   modules: [
     "@nuxtjs/google-fonts",
@@ -83,16 +88,7 @@ export default defineNuxtConfig({
       anchorLinks: false,
     },
   },
-  plausible: {
-    // Use as fallback if no runtime config is available at runtime
-    domain: process.env.NUXT_PLAUSIBLE_DOMAIN,
-  },
-  publicRuntimeConfig: {
-    plausible: {
-      domain: process.env.NUXT_PLAUSIBLE_DOMAIN,
-      apiHost: process.env.NUXT_PLAUSIBLE_API_HOST,
-    },
-  },
+
   googleFonts: {
     inject: true,
     download: true,
