@@ -59,6 +59,7 @@ export default defineNuxtConfig({
         process.env.NUXT_PUBLIC_BASE_URL || "ERROR: no site base url specified",
     },
   },
+  buildModules: ["vue-plausible"],
 
   modules: [
     "@nuxtjs/google-fonts",
@@ -80,6 +81,16 @@ export default defineNuxtConfig({
     markdown: {
       mdc: true,
       anchorLinks: false,
+    },
+  },
+  plausible: {
+    // Use as fallback if no runtime config is available at runtime
+    domain: process.env.NUXT_PLAUSIBLE_DOMAIN,
+  },
+  publicRuntimeConfig: {
+    plausible: {
+      domain: process.env.NUXT_PLAUSIBLE_DOMAIN,
+      apiHost: process.env.NUXT_PLAUSIBLE_API_HOST,
     },
   },
   googleFonts: {

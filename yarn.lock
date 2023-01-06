@@ -7601,6 +7601,11 @@ pkg-types@^1.0.0, pkg-types@^1.0.1:
     mlly "^1.0.0"
     pathe "^1.0.0"
 
+plausible-tracker@^0.3.4:
+  version "0.3.8"
+  resolved "https://registry.yarnpkg.com/plausible-tracker/-/plausible-tracker-0.3.8.tgz#9b8b322cc41e0e1d6473869ef234deea365a5a40"
+  integrity sha512-lmOWYQ7s9KOUJ1R+YTOR3HrjdbxIS2Z4de0P/Jx2dQPteznJl2eX3tXxKClpvbfyGP59B5bbhW8ftN59HbbFSg==
+
 pluralize@^8.0.0:
   version "8.0.0"
   resolved "https://registry.yarnpkg.com/pluralize/-/pluralize-8.0.0.tgz#1a6fa16a38d12a1901e0320fa017051c539ce3b1"
@@ -9869,6 +9874,13 @@ vue-eslint-parser@^9.0.1, vue-eslint-parser@^9.0.3:
     esquery "^1.4.0"
     lodash "^4.17.21"
     semver "^7.3.6"
+
+vue-plausible@^1.3.2:
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/vue-plausible/-/vue-plausible-1.3.2.tgz#c797ee03a7c8849dc847e706c5250aa10908dd0f"
+  integrity sha512-7hdLrDjw0+qjdM9hxowOirQSHPCljWwd8scW0tRFHyXAQSE/yBWrJ3EPuEiZlJUoth9ac0KLbHM+wSSkWHttiA==
+  dependencies:
+    plausible-tracker "^0.3.4"
 
 vue-router@^4.1.6:
   version "4.1.6"
