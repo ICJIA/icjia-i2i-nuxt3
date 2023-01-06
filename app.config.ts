@@ -2,7 +2,7 @@ export default defineAppConfig({
   title: "Institute to Innovate (i2i)",
   description: "Investing in Public Safety by Investing in You",
   api: "https://i2i.icjia-api.cloud",
-  root: "https://i2i.icjia.dev",
+  root: "https://i2i.illinois.gov",
   isTranslationEnabled: true,
   footerMenu: [
     {
@@ -13,10 +13,10 @@ export default defineAppConfig({
       main: "About",
       link: "/about",
     },
-    {
-      main: "Information & Resources",
-      link: "/information-and-resources",
-    },
+    // {
+    //   main: "Information & Resources",
+    //   link: "/information-and-resources",
+    // },
 
     {
       main: "Contact",
@@ -39,13 +39,13 @@ export default defineAppConfig({
       main: "About",
       link: "/about",
     },
-    {
-      main: "Information & Resources",
-      link: "/information-and-resources",
-    },
     // {
-    //   main: "Contact",
-    //   link: "/contact",
+    //   main: "Information & Resources",
+    //   link: "/information-and-resources",
     // },
+    {
+      main: "Contact",
+      link: "/contact",
+    },
   ],
 });
