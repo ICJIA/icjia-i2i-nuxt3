@@ -34,6 +34,13 @@ export default defineNuxtConfig({
           "data-domain": "i2i.illinois.gov",
           defer: true,
         },
+        {
+          src: "https://www.googletagmanager.com/gtag/js?id=G-DVJ6R097SW",
+          async: true,
+        },
+        {
+          src: "ga.js",
+        },
       ],
     },
   },
