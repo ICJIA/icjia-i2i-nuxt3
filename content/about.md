@@ -34,7 +34,7 @@ summary: >
   - History of program  
 section: root
 createdAt: 2022-12-06T17:39:17.825Z
-updatedAt: 2023-01-04T18:55:13.402Z
+updatedAt: 2023-01-06T18:12:14.366Z
 publishedAt: 2022-12-06T17:39:21.149Z
 searchMeta: "icjia grassroots i2i "
 rawText: " program overview the illinois criminal justice information authority
@@ -83,6 +83,8 @@ url: https://i2i.illinois.gov/about
 ---
 
 ## Program Overview
+
+<img src="https://agency.icjia-api.cloud/uploads/i2i_logo_text_small_6ff6ea89a9.png" style="float: left; padding-right: 20px; padding-bottom: 10px;" width="120">
 
 The Illinois Criminal Justice Information Authority (ICJIA) is launching a new capacity-building hub for statewide community-based organizations entitled Institute 2 Innovate (i2i). The i2i staff will help organizations strengthen infrastructure, increase sustainability, and address capacity needs. Cohort members will include local organizations that have yet to receive funding from the state of Illinois and ICJIA grantees with capacity constraints.
 
