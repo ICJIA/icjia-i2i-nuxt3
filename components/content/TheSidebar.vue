@@ -54,9 +54,9 @@
             >
           </div>
         </div>
-        <v-list-item exact to="/contact" style="font-weight: 900 !important">
+        <!-- <v-list-item exact to="/contact" style="font-weight: 900 !important">
           Contact</v-list-item
-        >
+        > -->
         <v-divider class="my-3"></v-divider>
 
         <v-list-item exact to="/search">
