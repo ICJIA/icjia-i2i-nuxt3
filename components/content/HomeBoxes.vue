@@ -36,7 +36,7 @@
             style="height: 300px"
             class="py-5 px-2 text-center info-card hover"
             :class="{ boxGutter: gutter }"
-            @click="routeTo('/information-and-resources')"
+            @click="routeTo('/contact')"
           >
             <v-container fill-height fluid>
               <v-row align="center" justify="center">
@@ -47,11 +47,9 @@
                     dark
                     >mdi-pencil-ruler</v-icon
                   >
-                  <h2 id="our-approach" class="boxHeader">
-                    Information and Resources
-                  </h2>
+                  <h2 id="our-approach" class="boxHeader">Contact Us</h2>
                   <p style="color: #fff; font-size: 20px">
-                    Find out more about the tools and resources we provide.
+                    Contact i2i for more information.
                   </p></v-col
                 >
               </v-row>

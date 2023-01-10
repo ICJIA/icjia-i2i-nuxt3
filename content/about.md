@@ -4,37 +4,16 @@ slug: about
 hideFromSearch: false
 hideFromSitemap: false
 showTableOfContents: true
-summary: >
-  This is the summary for the about page. Vias vaccae enim tendentem tibi
-  nati redimitus tactusque nate remos, alumni. Ponti ne docuisse: sociorum
-  gladium herbiferos genibus Phoebi, et imago. About
-
-
-  - Program overview 
-
-      - SERVICES Provided 
-
-      
-  - Program partners
-
-      - Brief description of each partner and role (include web links) 
-
-  - Program Approach 
-
-      - PARLOR PROCESS 
-
-  - Program COHORTS 
-
-      - TIER 1 
-
-      - TIER 2 
-
-      - TIER 3 
-
-  - History of program  
+summary: The Illinois Criminal Justice Information Authority (ICJIA) is
+  launching a new capacity-building hub for statewide community-based
+  organizations entitled Institute 2 Innovate (i2i). The i2i staff will help
+  organizations strengthen infrastructure, increase sustainability, and address
+  capacity needs. Cohort members will include local organizations that have yet
+  to receive funding from the state of Illinois and ICJIA grantees with capacity
+  constraints.
 section: root
 createdAt: 2022-12-06T17:39:17.825Z
-updatedAt: 2023-01-06T18:12:14.366Z
+updatedAt: 2023-01-10T00:04:22.816Z
 publishedAt: 2022-12-06T17:39:21.149Z
 searchMeta: "icjia grassroots i2i "
 rawText: " program overview the illinois criminal justice information authority
@@ -60,22 +39,22 @@ rawText: " program overview the illinois criminal justice information authority
   groups by strengthening their capacity in the following dimensions capacity
   building services vision and impact governance and leadership program delivery
   resource generation internal operations and management evaluation and learning
-  strategic relationships program history challenge throughout the state of
-  illinois thousands of organizations work directly with communities and
-  individuals while struggling with capacity historical disinvestment continues
-  to plague grassroots organizations leaving them vulnerable and at risk of
-  dissolving these groups will benefit from additional support to address their
-  fundamental challenges and organizational needs i2i supports grassroots
-  organizations and community groups committed to changing the circumstance of
-  violence in their communities i2i will be a resource for these partners to
-  ensure that their capacity is increased and assist them on a path to
-  sustainability program approach i2i will use an evidence informed approach
-  designed to address the comprehensive needs of organizations each step in the
-  process will address specific needs to strengthen the organization s
-  infrastructure program organizations the participating organizations will
-  receive training i e webinars workshops in person consultation etc on various
-  topics to strengthen their organization s infrastructure cohorts will be
-  announced in january 2023 "
+  strategic relationships program history throughout the state of illinois
+  thousands of organizations work directly with communities and individuals
+  while struggling with capacity historical disinvestment continues to plague
+  grassroots organizations leaving them vulnerable and at risk of dissolving
+  these groups will benefit from additional support to address their fundamental
+  challenges and organizational needs i2i supports grassroots organizations and
+  community groups committed to changing the circumstance of violence in their
+  communities i2i will be a resource for these partners to ensure that their
+  capacity is increased and assist them on a path to sustainability program
+  approach i2i will use an evidence informed approach designed to address the
+  comprehensive needs of organizations each step in the process will address
+  specific needs to strengthen the organization s infrastructure program
+  organizations the participating organizations will receive training i e
+  webinars workshops in person consultation etc on various topics to strengthen
+  their organization s infrastructure cohorts will be announced in january 2023
+  "
 draft: false
 navigation: true
 path: /about
@@ -112,7 +91,7 @@ Capacity-Building Services:
 
 
 
-## Program History (Challenge)
+## Program History
  
 Throughout the State of Illinois, thousands of organizations work directly with communities and individuals while struggling with capacity. Historical disinvestment continues to plague “grassroots” organizations, leaving them vulnerable and at risk of dissolving. These groups will benefit from additional support to address their fundamental challenges and organizational needs.
  
