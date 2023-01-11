@@ -3,7 +3,7 @@
     <v-container fluid
       ><v-row
         ><v-col>
-          <div class="text-center">
+          <div class="text-center" data-aos="zoom-in">
             <h1>CONTACT</h1>
             <p>
               For more information about i2i, please contact

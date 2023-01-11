@@ -27,7 +27,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="pb-12">
+  <div class="pb-12" data-aos="fade-in">
     <v-container fluid style="margin: 0; padding: 0"
       ><v-row
         ><v-col cols="12" :md="cols" class="px-12">
