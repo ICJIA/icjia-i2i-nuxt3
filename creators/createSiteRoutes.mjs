@@ -10,9 +10,11 @@ dotenv.config();
 
 // const siteRoutes = [...pages, ...posts];
 
-const manualRoutes = ["/search", "/translate"];
+const manualRoutes = ["/search", "/translate", "/contact"];
 
-const appRoutes = [...pageRoutes, ...manualRoutes];
+const appRoutes = Array.from(new Set([...pageRoutes, ...manualRoutes]));
+
+// const  = [...pageRoutes, ...manualRoutes];
 
 jsonfile.writeFileSync(`public/appRoutes.json`, appRoutes, function (err) {
   if (err) {
