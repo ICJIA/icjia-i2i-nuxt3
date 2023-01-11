@@ -81,6 +81,7 @@ export default defineNuxtConfig({
     "@nuxt/image-edge",
     "@vueuse/nuxt",
     "@nuxt/content",
+
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     async (options, nuxt) => {
       await nuxt.hooks.hook("vite:extendConfig", (config) => {

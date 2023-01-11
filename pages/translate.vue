@@ -210,6 +210,9 @@
 </template>
 
 <script setup>
+useHead({
+  title: "Translate",
+});
 // const googleTranslate = (lang) => {
 //   alert("Trigger translation here. \n\n" + "Language: " + lang);
 // };

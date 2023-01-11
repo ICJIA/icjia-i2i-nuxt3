@@ -64,6 +64,10 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+useHead({
+  title: "Contact Us",
+});
+</script>
 
 <style lang="scss" scoped></style>
