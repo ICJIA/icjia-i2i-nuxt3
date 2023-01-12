@@ -1,6 +1,6 @@
 <template>
   <NuxtLayout name="home">
-    <div v-if="data && isMounted">
+    <div v-if="data && isMounted" style="margin-bottom: -45px !important">
       <ContentDoc :key="data?.title" :value="data" class="markdown-body">
         <template #empty>Document not found</template>
         <template #not-found>Document not found</template>
