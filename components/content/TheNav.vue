@@ -28,9 +28,9 @@
       </div>
       <v-spacer class="hidden-md-and-up"></v-spacer>
       <img
-        alt="ICJIA Logo"
+        alt="i2i Logo"
         class="hover ml-4 mr-4"
-        src="/i2iSmall.png"
+        src="/i2iSmallFB.png"
         width="55"
         height="55"
         @click="$router.push('/')"
