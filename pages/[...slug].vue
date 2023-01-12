@@ -51,7 +51,6 @@ useHead({
       ><v-row
         ><v-col cols="12" :md="cols" class="px-12">
           <div v-if="data" class="mt-6">
-            {{ data.summary }}
             <h1>{{ data.title.toUpperCase() }}</h1>
             <ContentDoc :key="data?.title" :value="data" class="markdown-body">
               <template #empty>Document not found</template>
