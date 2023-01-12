@@ -38,18 +38,7 @@ export default defineNuxtConfig({
         {
           hid: "og-image",
           property: "og:image",
-          content:
-            "https://i2i.icjia-api.cloud/uploads/thumbnail_i2i_logo_text_small_3c874143bd.png?updated_at=2022-12-06T17:57:54.755Z",
-        },
-        {
-          hid: "og-image-width",
-          property: "og:image:width",
-          content: "1200",
-        },
-        {
-          hid: "og-image-height",
-          property: "og:image:height",
-          content: "630",
+          content: "https://i2i.illinois.gov/i2iSmallFB.png",
         },
       ],
       link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
