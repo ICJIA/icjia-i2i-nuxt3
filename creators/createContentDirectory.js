@@ -25,3 +25,17 @@ PUBLIC_FILES_TO_REMOVE.forEach((fileName) => {
 });
 
 console.log("Files removed: ", PUBLIC_FILES_TO_REMOVE);
+
+// check to see if .env file exists
+
+// const envPath = path.join(__dirname, "../.env1");
+// try {
+//   if (fs.existsSync(envPath)) {
+//     console.log("SUCCESS: .env found.");
+//   }
+// } catch (err) {
+//   console.log(
+//     "ERROR: .env file not detected. Please create a .env file in the root directory of the project. See .env.example for an example of the .env file."
+//   );
+//   console.error(err);
+// }

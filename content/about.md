@@ -13,7 +13,7 @@ summary: "The Illinois Criminal Justice Information Authority (ICJIA) is
   constraints. "
 section: root
 createdAt: 2022-12-06T17:39:17.825Z
-updatedAt: 2023-01-12T14:05:38.310Z
+updatedAt: 2023-01-12T16:27:48.574Z
 publishedAt: 2022-12-06T17:39:21.149Z
 searchMeta: "icjia grassroots i2i "
 rawText: " program overview the illinois criminal justice information authority
@@ -80,7 +80,7 @@ Capacity building often gets overlooked or postponed in an organization’s driv
 
 i2i will provide support to “grassroots” organizations and community groups by strengthening their capacity in the following dimensions:  
 
-## Capacity-Building Services: 
+## Capacity-Building Services
 
 - Vision and Impact 
 
