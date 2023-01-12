@@ -15,12 +15,31 @@ export default defineNuxtConfig({
     head: {
       charset: "utf-8",
       viewport: "width=device-width, initial-scale=1",
-      // title: "Institute to Innovate",
+      title: "Institute to Innovate",
       titleTemplate: "I2I | %s ",
       meta: [
         {
+          hid: "description",
           name: "description",
-          content: "Investing in Public Safety by Investing in You.",
+          content:
+            "Institute to Innovate (i2i): Investing in Public Safety by Investing in You.",
+        },
+        {
+          hid: "og-title",
+          property: "og:title",
+          content: "Institute to Innovate",
+        },
+        {
+          hid: "og-desc",
+          property: "og:description",
+          content:
+            "Institute to Innovate (i2i): Investing in Public Safety by Investing in You.",
+        },
+        {
+          hid: "og-image",
+          property: "og:image",
+          content:
+            "https://i2i.icjia-api.cloud/uploads/i2i_Small_5fb05c84d5.png?updated_at=2022-12-10T20:08:14.156Z",
         },
       ],
       link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
