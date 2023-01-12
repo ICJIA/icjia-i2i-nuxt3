@@ -39,7 +39,7 @@ export default defineNuxtConfig({
           hid: "og-image",
           property: "og:image",
           content:
-            "https://i2i.icjia-api.cloud/uploads/i2i_Small_5fb05c84d5.png?updated_at=2022-12-10T20:08:14.156Z",
+            "https://i2i.icjia-api.cloud/uploads/thumbnail_i2i_logo_text_small_3c874143bd.png?updated_at=2022-12-06T17:57:54.755Z",
         },
       ],
       link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
